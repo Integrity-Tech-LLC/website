@@ -43,9 +43,9 @@ async function sendEmail(req, res) {
           .status(error.statusCode || 500)
           .json({ error: error.message });
       }
+      console.log("I'm sending the success code");
+      return res.status(200).json({ error: "" });
     });
-  console.log("I'm sending the success code");
-  return res.status(200).json({ error: "" });
 }
 
 export default sendEmail;
