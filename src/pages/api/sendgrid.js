@@ -4,7 +4,7 @@ sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
 const verifyRecaptcha = async (token) => {
   const secretKey = process.env.RECAPTCHA_SECRET_KEY;
-
+  console.log("I'm verifying captcha");
   return await fetch("https://www.google.com/recaptcha/api/siteverify", {
     method: "POST",
     headers: {
@@ -15,11 +15,14 @@ const verifyRecaptcha = async (token) => {
 };
 
 async function sendEmail(req, res) {
+  console.log("I'm inside send email");
   verifyRecaptcha(req.body.token)
     .then((reCaptchaRes) => reCaptchaRes.json())
     .then((reCaptchaRes) => {
+      console.log("captcha is verified");
       try {
         if (reCaptchaRes.success && reCaptchaRes.score >= 0.5) {
+          console.log("I'm about to send an email");
           sendgrid.send({
             to: "chris@integritytechsoftware.com", // Your email where you'll receive emails
             from: "Christopherjay71186@gmail.com", // your website email address here
@@ -29,6 +32,7 @@ async function sendEmail(req, res) {
       <p>Contact Reason: ${req.body.reason}</p>
       <p>Message: ${req.body.message}</p></div>`,
           });
+          console.log("email sent");
         } else {
           return res
             .status(error.statusCode || 401)
@@ -40,7 +44,7 @@ async function sendEmail(req, res) {
           .json({ error: error.message });
       }
     });
-
+  console.log("I'm sending the success code");
   return res.status(200).json({ error: "" });
 }
 
