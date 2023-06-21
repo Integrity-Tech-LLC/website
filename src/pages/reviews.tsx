@@ -14,16 +14,16 @@ export default function Reviews() {
           backgroundRepeat: "no-repeat",
           marginTop: 50,
         }}>
-        <div className={styles.descriptionBlue}>
-          <h2 className={styles.headerBlue}>We Invest In You!</h2>
-          <p className={styles.textBlue}>
+        <div className={styles.banner}>
+          <h2 className={styles.bannerHeader}>We Invest In You!</h2>
+          <p className={styles.bannerText}>
             At Integrity Tech, your mission becomes our mission. We are fully
             invested in you from day one. See what others have said who have
             worked with us.
           </p>
         </div>
       </div>
-      <div className={styles.description}>
+      <div className={styles.container}>
         <div className={styles.text}>
           <Image
             src="/jared.jpeg"
@@ -46,13 +46,13 @@ export default function Reviews() {
             <br />
           </p>
           <br />
-          <p className={styles.review}>
+          <p className={styles.signature}>
             <span className={styles.name}>--Jared Hineman</span>: Co-Founder of
             WeCleanLocal
           </p>
         </div>
       </div>
-      <div className={styles.description}>
+      <div className={styles.container}>
         <div className={styles.text}>
           <Image
             src="/jason.jpeg"
@@ -73,13 +73,13 @@ export default function Reviews() {
             meet customer needs.
           </p>
           <br />
-          <p className={styles.review}>
+          <p className={styles.signature}>
             <span className={styles.name}>--Jason Gibb</span>: COO at Nash
             Capital
           </p>
         </div>
       </div>
-      <div className={styles.description}>
+      <div className={styles.container}>
         <div className={styles.text}>
           <Image
             src="/homero.jpeg"
@@ -97,7 +97,7 @@ export default function Reviews() {
             as smart as he is determined.
           </p>
           <br />
-          <p className={styles.review}>
+          <p className={styles.signature}>
             <span className={styles.name}>--Homero Rios</span>: Embedded
             Software Engineer
           </p>

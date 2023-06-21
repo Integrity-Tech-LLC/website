@@ -13,9 +13,9 @@ export default function Services() {
           backgroundRepeat: "no-repeat",
           marginTop: 50,
         }}>
-        <div className={styles.servicesDescriptionBlue}>
-          <h2 className={styles.headerBlue}>Quality Matters</h2>
-          <p className={styles.textBlue}>
+        <div className={styles.banner}>
+          <h2 className={styles.bannerHeader}>Quality Matters</h2>
+          <p className={styles.bannerText}>
             If you're looking for an app built with a tremendous amount of care
             and consideration, look no further than Integrity Tech. Throughout
             our experience we have learned what separates the good applications
@@ -25,7 +25,7 @@ export default function Services() {
           </p>
         </div>
       </div>
-      <div className={styles.servicesDescription}>
+      <div className={styles.container}>
         <h2 className={styles.header}>Custom Web Apps</h2>
         <p className={styles.text}>
           Have a dream that seems out of reach? Let us help. From website
@@ -34,7 +34,7 @@ export default function Services() {
           reach.{" "}
         </p>
       </div>
-      <div className={styles.servicesDescription}>
+      <div className={styles.container}>
         <h2 className={styles.header}>Custom Mobile Apps</h2>
         <p className={styles.text}>
           Native apps are gaining popularity. Don't fall behind the trends. At
@@ -42,7 +42,7 @@ export default function Services() {
           constructing your application.
         </p>
       </div>
-      <div className={styles.servicesDescription}>
+      <div className={styles.container}>
         <h2 className={styles.header}>API System Integrations</h2>
         <p className={styles.text}>
           Are you using third party software but find it is lacking one or two
@@ -52,7 +52,7 @@ export default function Services() {
           problems.
         </p>
       </div>
-      <div className={styles.servicesDescription}>
+      <div className={styles.container}>
         <h2 className={styles.header}>Tutoring/Mentorship</h2>
         <p className={styles.text}>
           Are you an aspiring software developer? While much of this profession

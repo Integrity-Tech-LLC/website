@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "@/styles/Pages/WeClean.module.css";
+import styles from "@/styles/Pages/OurWork/WeClean.module.css";
 import weclean from "public/WeClean.png";
 import Image from "next/image";
 
@@ -15,15 +15,15 @@ export default function WeClean() {
           backgroundPosition: "center",
           marginTop: 50,
         }}>
-        <div className={styles.descriptionBlue}>
-          <h2 className={styles.headerBlue}>WeClean Project Overview</h2>
-          <p className={styles.textBlue}>
+        <div className={styles.banner}>
+          <h2 className={styles.bannerHeader}>WeClean Project Overview</h2>
+          <p className={styles.bannerText}>
             We build a large-scale SaaS application for WeCleanLocal. There is a
             lot to unpack with this project and we are very proud of it.
           </p>
         </div>
       </div>
-      <div className={styles.description}>
+      <div className={styles.body}>
         <div className={styles.text}>
           <Image
             src="/WeClean.png"

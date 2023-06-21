@@ -14,11 +14,11 @@ export default function AboutUs() {
           backgroundRepeat: "no-repeat",
           marginTop: 50,
         }}>
-        <div className={styles.descriptionBlue}>
-          <h2 className={styles.headerBlue}>About The Founder</h2>
+        <div className={styles.banner}>
+          <h2 className={styles.bannerHeader}>About The Founder</h2>
         </div>
       </div>
-      <div className={styles.description}>
+      <div className={styles.body}>
         <h2 className={styles.header}>Christopher Neisen</h2>
         <div className={styles.text}>
           <Image

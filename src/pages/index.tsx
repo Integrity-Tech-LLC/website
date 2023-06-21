@@ -28,7 +28,7 @@ export default function Home() {
   }, [current]);
   return (
     <>
-      <div className={styles.descriptionBlue}>
+      <div className={styles.banner}>
         <Image
           className={styles.logo}
           src="/homepagelogo.png"
@@ -46,7 +46,7 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
           marginTop: 50,
         }}>
-        <div style={{ marginTop: "-80px" }} className={styles.descriptionBlack}>
+        <div style={{ marginTop: "-80px" }} className={styles.bodyBlack}>
           <h2 className={styles.headerBlack}>What We Offer</h2>
           <p className={styles.textBlack}>
             We offer everything from website creation to custom app development.
@@ -59,10 +59,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.descriptionWhite}>
+      <div className={styles.bodyWhite}>
         <h2 className={styles.headerWhite}>We Make an Impression!</h2>
         {current === 1 && (
-          <div className={styles.description}>
+          <div className={styles.container}>
             <div className={styles.text}>
               <Image
                 src="/jared.jpeg"
@@ -75,7 +75,7 @@ export default function Home() {
               <br />
               <p>Chris helped us turn our wireframes into working Software.</p>
               <br />
-              <p className={styles.review}>
+              <p className={styles.signature}>
                 <span className={styles.name}>--Jared Hineman</span>: Co-Founder
                 of WeCleanLocal
               </p>
@@ -83,7 +83,7 @@ export default function Home() {
           </div>
         )}
         {current === 2 && (
-          <div className={styles.description}>
+          <div className={styles.container}>
             <div className={styles.text}>
               <Image
                 src="/jason.jpeg"
@@ -98,7 +98,7 @@ export default function Home() {
                 functional software product in just a few weeks.
               </p>
               <br />
-              <p className={styles.review}>
+              <p className={styles.signature}>
                 <span className={styles.name}>--Jason Gibb</span>: COO at Nash
                 Capital
               </p>
@@ -106,7 +106,7 @@ export default function Home() {
           </div>
         )}
         {current === 3 && (
-          <div className={styles.description}>
+          <div className={styles.container}>
             <div className={styles.text}>
               <Image
                 src="/homero.jpeg"
@@ -121,7 +121,7 @@ export default function Home() {
                 I strongly recommend Chris, he is as smart as he is determined.
               </p>
               <br />
-              <p className={styles.review}>
+              <p className={styles.signature}>
                 <span className={styles.name}>--Homero Rios</span>: Embedded
                 Software Engineer
               </p>
@@ -143,7 +143,7 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
           marginTop: 100,
         }}>
-        <div style={{ marginTop: "-80px" }} className={styles.descriptionBlack}>
+        <div style={{ marginTop: "-80px" }} className={styles.bodyBlack}>
           <h2 className={styles.headerBlack}>Our Work Speaks For Itself</h2>
           <div className={styles.weclean}>
             <h2 className={styles.header}>WeClean SaaS App</h2>
@@ -172,7 +172,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className={styles.descriptionWhite}>
+        <div className={styles.bodyWhite}>
           <h2 className={styles.headerWhite}>Who is Integrity Tech?</h2>
           <div className={styles.weclean}>
             <h2 className={styles.header}>Christopher Neisen</h2>
@@ -194,7 +194,7 @@ export default function Home() {
                 entire way of life.
               </p>
               <br />
-              <div className={styles.review}>
+              <div className={styles.signature}>
                 --Founder and Lead Software Engineer
               </div>
             </div>
@@ -215,7 +215,7 @@ export default function Home() {
           }}>
           <div
             style={{ marginTop: "-80px", height: 400 }}
-            className={styles.descriptionBlack}>
+            className={styles.bodyBlack}>
             <h2 className={styles.headerBlack}>Get In Touch!</h2>
             <p className={styles.textBlack}>
               We offer free estimates! Contact us below and we'll walk you

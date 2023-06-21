@@ -16,18 +16,18 @@ export default function OurWork() {
           backgroundRepeat: "no-repeat",
           marginTop: 50,
         }}>
-        <div className={styles.descriptionBlue}>
-          <h2 className={styles.headerBlue}>
+        <div className={styles.banner}>
+          <h2 className={styles.bannerHeader}>
             Be Inspired By The Dreams of Others
           </h2>
-          <p className={styles.textBlue}>
+          <p className={styles.bannerText}>
             Here are some examples of what we've done for others, and we can do
             the same for you! There is no problem too complex for us, and no
             dream that we can't help you achieve.
           </p>
         </div>
       </div>
-      <div className={styles.description}>
+      <div className={styles.body}>
         <h2 className={styles.header}>WeClean SaaS App</h2>
         <div className={styles.text}>
           <Image

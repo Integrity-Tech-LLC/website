@@ -115,9 +115,9 @@ export default function Contact() {
           backgroundPosition: "center",
           marginTop: 50,
         }}>
-        <div className={styles.descriptionBlue}>
-          <h2 className={styles.headerBlue}>We're Glad to Hear From You!</h2>
-          <p className={styles.textBlue}>
+        <div className={styles.banner}>
+          <h2 className={styles.bannerHeader}>We're Glad to Hear From You!</h2>
+          <p className={styles.bannerText}>
             Reach out for a free estimate! Our estimation process is fully
             transparent. You will always know how much and what you are paying
             for before any agreements are made. We're happy to answer any
@@ -126,7 +126,7 @@ export default function Contact() {
         </div>
       </div>
       {!messageSent ? (
-        <div className={styles.description}>
+        <div className={styles.body}>
           <div className={styles.text}>
             <form onSubmit={handleSubmit}>
               <input
@@ -174,7 +174,7 @@ export default function Contact() {
                 without your permission.
               </p>
               <button
-                className={styles.contact}
+                className={styles.sendmail}
                 type="submit"
                 name="sendMessage">
                 <span>Send</span>
@@ -184,7 +184,7 @@ export default function Contact() {
           </div>
         </div>
       ) : (
-        <div className={styles.description}>
+        <div className={styles.body}>
           <p className={styles.confirm}>
             Thank you for your message! We'll reach out to you very soon!
           </p>

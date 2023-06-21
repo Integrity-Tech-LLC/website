@@ -1,4 +1,4 @@
-.description {
+.body {
     width: 100%;
     padding: 20px;
     display: inline-block;
@@ -83,14 +83,14 @@
     margin-right: auto;
 }
 
-.descriptionBlue {
+.banner {
     width: 100%;
     padding: 20px;
     background-color: rgb(0, 0, 0, 0.85);
 
 }
 
-.textBlue {
+.bannerText {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -104,7 +104,7 @@
     margin-bottom: 10px;
 }
 
-.headerBlue {
+.bannerHeader {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -202,7 +202,7 @@
     flex-grow: 1;
 }
 
-.contact {
+.sendmail {
     display: flex;
     justify-content: center;
     color: #FFFFFF;
