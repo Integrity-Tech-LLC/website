@@ -34,11 +34,13 @@ async function sendEmail(req, res) {
           });
           console.log("email sent");
         } else {
+          console.log("recaptchares", reCaptchaRes);
           return res
             .status(error.statusCode || 401)
             .json({ error: "Captcha Validation Failed" });
         }
       } catch (error) {
+        console.log("something went wrong", error);
         return res
           .status(error.statusCode || 500)
           .json({ error: error.message });
