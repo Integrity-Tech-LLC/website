@@ -4,7 +4,7 @@ sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
 const verifyRecaptcha = async (token) => {
   const secretKey = process.env.RECAPTCHA_SECRET_KEY;
-  console.log("I'm verifying captcha");
+  console.log("I'm verifying captcha", secretKey);
   return await fetch("https://www.google.com/recaptcha/api/siteverify", {
     method: "POST",
     headers: {
@@ -37,9 +37,7 @@ function sendEmail(req, res) {
         return res.status(200).json({ error: "" });
       } else {
         console.log("recaptchares", reCaptchaRes);
-        return res
-          .status(error.statusCode || 401)
-          .json({ error: "Captcha Validation Failed" });
+        return res.status(error.statusCode || 401);
       }
     })
     .catch((error) => {
