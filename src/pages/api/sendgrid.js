@@ -33,15 +33,14 @@ function sendEmail(req, res) {
       <p>Message: ${req.body.message}</p></div>`,
         });
         console.log("email sent");
+        console.log("I'm sending the success code");
+        return res.status(200).json({ error: "" });
       } else {
         console.log("recaptchares", reCaptchaRes);
         return res
           .status(error.statusCode || 401)
           .json({ error: "Captcha Validation Failed" });
       }
-
-      console.log("I'm sending the success code");
-      return res.status(200).json({ error: "" });
     })
     .catch((error) => {
       console.log("something went wrong", error);
