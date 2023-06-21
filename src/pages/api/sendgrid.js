@@ -34,15 +34,15 @@ function sendEmail(req, res) {
         });
         console.log("email sent");
         console.log("I'm sending the success code");
-        return res.status(200).json({ error: "" });
+        return res.status(200);
       } else {
         console.log("recaptchares", reCaptchaRes);
-        return res.status(error.statusCode || 401);
+        return res.status(401);
       }
     })
     .catch((error) => {
       console.log("something went wrong", error);
-      return res.status(error.statusCode || 500).json({ error: error.message });
+      return res.status(500);
     });
 }
 
