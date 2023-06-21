@@ -5,6 +5,8 @@ import Image from "next/image";
 import { emailFormatValidationHelper } from "@/helpers/emailFormatValidationHelper";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { BiMailSend } from "react-icons/bi";
+import { AiFillPhone } from "react-icons/ai";
+import { GrMail } from "react-icons/gr";
 
 export default function Contact() {
   const [fullname, setFullname] = useState("");
@@ -173,13 +175,33 @@ export default function Contact() {
                 Note: We never store your information and will never contact you
                 without your permission.
               </p>
-              <button
-                className={styles.sendmail}
-                type="submit"
-                name="sendMessage">
-                <span>Send</span>
-                <BiMailSend size={34} />
-              </button>
+              <br />
+              <div style={{ display: "inline-block", width: "100%" }}>
+                <button
+                  className={styles.sendmail}
+                  type="submit"
+                  name="sendMessage">
+                  <span>Send</span>
+                  <BiMailSend size={34} />
+                </button>
+                <ul className={styles.contactList}>
+                  <li
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      marginLeft: "-161px",
+                    }}>
+                    <AiFillPhone size={20} />{" "}
+                    <span style={{ marginLeft: 5 }}>701-429-4837</span>
+                  </li>
+                  <li style={{ display: "flex", justifyContent: "center" }}>
+                    <GrMail size={20} />{" "}
+                    <span style={{ marginLeft: 5 }}>
+                      chris@integritytechsoftware.com
+                    </span>
+                  </li>
+                </ul>
+              </div>
             </form>
           </div>
         </div>
