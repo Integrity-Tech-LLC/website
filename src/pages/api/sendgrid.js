@@ -25,7 +25,7 @@ function sendEmail(req, res) {
         console.log("I'm about to send an email");
         sendgrid
           .send({
-            to: "chris@integritytechsoftware.com", // Your email where you'll receive emails
+            to: "cneisen716@gmail.com", // Your email where you'll receive emails
             from: "Christopherjay71186@gmail.com", // your website email address here
             subject: `New Contact Message`,
             html: `<div><p>Full Name: ${req.body.fullname}</p>
