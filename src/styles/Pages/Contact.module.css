@@ -148,6 +148,10 @@
     order: 1;
     align-self: stretch;
     flex-grow: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .inputFieldRed {
@@ -164,6 +168,10 @@
     order: 1;
     align-self: stretch;
     flex-grow: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .messageText {
@@ -182,6 +190,10 @@
     order: 1;
     align-self: stretch;
     flex-grow: 1;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .messageTextRed {
@@ -200,6 +212,10 @@
     order: 1;
     align-self: stretch;
     flex-grow: 1;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .sendmail {

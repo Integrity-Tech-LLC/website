@@ -73,7 +73,9 @@ export default function Home() {
                 priority
               />
               <br />
-              <p>Chris helped us turn our wireframes into working Software.</p>
+              <p className={styles.review}>
+                Chris helped us turn our wireframes into working Software.
+              </p>
               <br />
               <p className={styles.signature}>
                 <span className={styles.name}>--Jared Hineman</span>: Co-Founder
@@ -93,7 +95,7 @@ export default function Home() {
                 className={styles.img}
                 priority
               />
-              <p>
+              <p className={styles.review}>
                 Chris helped us take a design concept from scratch to fully
                 functional software product in just a few weeks.
               </p>
@@ -117,7 +119,7 @@ export default function Home() {
                 priority
               />
               <br />
-              <p>
+              <p className={styles.review}>
                 I strongly recommend Chris, he is as smart as he is determined.
               </p>
               <br />

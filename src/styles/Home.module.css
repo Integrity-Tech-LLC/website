@@ -238,6 +238,9 @@
         width: 100%;
         margin-top: 330px;
     }
+    .review {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (min-width: 1450px) {
