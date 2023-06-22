@@ -81,10 +81,8 @@ export default function WeClean() {
           <h2 className={styles.descriptionHeader}>The Plan</h2>
           <br />
           <p style={{ paddingLeft: 30 }}>
-            After the architecture and technologies were decided. We went about
-            building the actual application. The data structure was relationally
-            structured so it became important to build the app in a specific
-            sequence.
+            The data structure of the WeClean App was relationally structured so
+            it became important to build the app in a specific sequence.
           </p>
           <br />
           <ul style={{ paddingLeft: 60 }}>
