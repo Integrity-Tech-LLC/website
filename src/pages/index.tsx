@@ -49,8 +49,8 @@ export default function Home() {
         <div style={{ marginTop: "-80px" }} className={styles.bodyBlack}>
           <h2 className={styles.headerBlack}>What We Offer</h2>
           <p className={styles.textBlack}>
-            We offer everything from website creation to custom app development.
-            We help you connect to the software you need.
+            We offer everything from custom software integrations to custom app
+            development. We help you connect to the software you need.
           </p>
           <div className={styles.link}>
             <Link href={`/services`}>
@@ -191,9 +191,10 @@ export default function Home() {
               <p>
                 Hi! My name is Chris and I founded Integrity Tech to help people
                 bridge the gap between their dreams and the technologies they
-                need to reach them. I have a true passion to help people and
-                it's the driving force behind not just my business, but my
-                entire way of life.
+                need to reach them. Throughout my career I have noticed how much
+                unlocked potential there is in technology, and how few people
+                there are who have access. I decided to start my business to
+                help empower others by being their key to technology.
               </p>
               <br />
               <div className={styles.signature}>

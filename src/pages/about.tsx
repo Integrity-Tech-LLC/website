@@ -33,37 +33,36 @@ export default function AboutUs() {
           <p>
             Hi! My name is Chris and I founded Integrity Tech to help people
             bridge the gap between their dreams and the technologies they need
-            to reach them. I have a true passion to help people and it's the
-            driving force behind not just my business, but my entire way of
-            life.
+            to reach them. Throughout my career I have noticed how much unlocked
+            potential there is in technology, and how few people there are who
+            have access. I decided to start my business to help empower others
+            by being their key to technology.
             <br />
             <br />I chose the name "Integrity" because that's what I want my
             entire business to be founded on. When I take on clients, I partner
             with them to see their dreams come to fruition. Nothing brings me
             more joy than seeing the excitement on someone's face when they
-            realize their dreams are not so out of reach as they thought, and
-            the fact that I can help get them there.
+            realize what can truly be done with software, and the fact that I
+            can help get them there.
             <br />
             <br />
             In 2020, I graduated from Emerging Digital Academy as a part of
             their very first class. Since then I've worked for a number of
-            companies and have always been trusted with high levels of
-            responsibility and have never failed to produce.
+            companies. The stories I could tell about what I helped them achieve
+            would surprise you. It's here that I truly learned the untapped
+            power of software.
             <br />
             <br />
-            Over the course of a few years I decided to start Integrity Tech
-            because while I love what I do, there has always been something
-            missing within my soul. I always felt like I was working to build
-            another's empire. While empires are all fine and dandy, I want to
-            use my skill for something more than just lining my own pockets, not
-            to mention the pockets of another. As I mentioned, my passion lays
-            in helping people. It is the primary reason I chose this career
-            path. <br />
+            I realized there was a market here unlike any other. There is such a
+            large amount of missed potential simply due to a lack of knowledge.
+            I feel a need to help solve this problem. As I mentioned, my passion
+            lays in helping people. It is the primary reason Integrity Tech
+            exists. <br />
             <br />
-            The fact of the matter is that I truly genuinely care and if you
-            choose Integrity Tech, my heart will be just as invested in your
-            dream. By founding Integrity Tech, I'm able to achieve my dream by
-            helping you achieve yours.
+            By choosing Integrity Tech we will go above and beyond to ensure a
+            bridge is built between you and the software you need. By founding
+            Integrity Tech, I'm able to help you unlock the door to limitless
+            potential.
           </p>
           <br />
           <div className={styles.link}>
