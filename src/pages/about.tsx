@@ -60,9 +60,7 @@ export default function AboutUs() {
             exists. <br />
             <br />
             By choosing Integrity Tech we will go above and beyond to ensure a
-            bridge is built between you and the software you need. By founding
-            Integrity Tech, I'm able to help you unlock the door to limitless
-            potential.
+            bridge is built between you and the software you need.
           </p>
           <br />
           <div className={styles.link}>
