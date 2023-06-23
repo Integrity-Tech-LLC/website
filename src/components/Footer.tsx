@@ -5,7 +5,7 @@ export default function Footer() {
   const date = new Date();
   return (
     <div className={styles.footer}>
-      &copy; Integity Tech {date.getFullYear()}
+      &copy; Integity Tech LLC {date.getFullYear()}
     </div>
   );
 }
