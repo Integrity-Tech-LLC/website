@@ -23,7 +23,7 @@ export default function Home() {
         } else if (current === 3) {
           setCurrent(1);
         }
-      }, 8000);
+      }, 10000);
     }
   }, [current]);
   return (

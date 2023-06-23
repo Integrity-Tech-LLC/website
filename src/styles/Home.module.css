@@ -159,7 +159,7 @@
     width: 98%;
     padding: 20px;
     animation-name: enter;
-    animation-duration: 8s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
 }
 .weclean {
@@ -257,12 +257,12 @@
         opacity: 0;
     }
         
-    15% {
+    25% {
         opacity: 1;
         animation-timing-function: ease-out;
     }
         
-    85% {
+    75% {
         opacity: 1;
         animation-timing-function: ease-in;
     }
