@@ -21,7 +21,7 @@ async function sendEmail(req, res) {
       try {
         if (reCaptchaRes.success && reCaptchaRes.score >= 0.5) {
           sendgrid.send({
-            to: "cneisen716@gmail.com", // Your email where you'll receive emails
+            to: "chris@integritytechsoftware.com", // Your email where you'll receive emails
             from: "Christopherjay71186@gmail.com", // your website email address here
             subject: `New Contact Message`,
             html: `<div><p>Full Name: ${req.body.fullname}</p>

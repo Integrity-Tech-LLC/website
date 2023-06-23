@@ -49,14 +49,14 @@ export default function AboutUs() {
             In 2020, I graduated from Emerging Digital Academy as a part of
             their very first class. Since then I've worked for a number of
             companies. The stories I could tell about what I helped them achieve
-            would surprise you. It's here that I truly learned the untapped
+            would surprise you. It's there that I truly learned the untapped
             power of software.
             <br />
             <br />
             I realized there was a market here unlike any other. There is such a
             large amount of missed potential simply due to a lack of knowledge.
             I feel a need to help solve this problem. As I mentioned, my passion
-            lays in helping people. It is the primary reason Integrity Tech
+            lies in helping people. It is the primary reason Integrity Tech
             exists. <br />
             <br />
             By choosing Integrity Tech we will go above and beyond to ensure a

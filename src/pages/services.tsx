@@ -28,9 +28,9 @@ export default function Services() {
       <div className={styles.container}>
         <h2 className={styles.header}>Software Integrations</h2>
         <p className={styles.text}>
-          Are you using third party software but find it is lacking one or two
-          key features? Or do you wish a certain process in your company could
-          be automated? Software systems will often provide back doors called
+          Are you using third-party software but find it is lacking one or two
+          key features? Do you wish a certain process in your company could be
+          automated? Software systems will often provide back doors called
           "APIs" that can be used to write custom logic. We can automate
           processes, tie systems together, and sometimes create brand new
           features.
@@ -51,18 +51,17 @@ export default function Services() {
       <div className={styles.container}>
         <h2 className={styles.header}>Custom Web Apps</h2>
         <p className={styles.text}>
-          Have a dream that seems out of reach? Let us help. From website
-          creation all the way to tailor-made systems, we connect you to the
-          power of software. <br />
-          <br />
+          Do you have a dream that seems out of reach? Let us help. From website
+          creation to tailor-made systems, we connect you to the power of
+          software.
         </p>
       </div>
       <div className={styles.container}>
         <h2 className={styles.header}>Custom Mobile Apps</h2>
         <p className={styles.text}>
-          Native apps are gaining popularity. Don't fall behind the trends. Let
-          Integrity Tech unlock the door for you. We use the latest in mobile
-          development technology when constructing your application.
+          Native apps are gaining popularity. Don't fall behind the trends. We
+          use the latest in mobile development technology when constructing your
+          application.
         </p>
       </div>
     </>
