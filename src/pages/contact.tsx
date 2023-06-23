@@ -65,7 +65,6 @@ export default function Contact() {
       setLocalToastText("Captcha validation failed");
       return;
     }
-    setMessageSent(true);
     const res = await fetch("/api/sendgrid", {
       body: JSON.stringify({
         email,
@@ -83,9 +82,12 @@ export default function Contact() {
 
     const { error } = await res.json();
     if (error) {
+      setLocalToast(true);
+      setLocalToastText("Something went wrong");
       console.log("this is the error", error);
       return;
     }
+    setMessageSent(true);
   };
   return (
     <>
