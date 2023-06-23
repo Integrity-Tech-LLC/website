@@ -253,22 +253,21 @@
 
 @keyframes enter {
 
-    /*enters from right side and ends in middle of page, then exists to the left, ran again for next photo*/
     0% {
-        transform: translate3d(2000px, 0px, 0px);
+        opacity: 0;
     }
-
+        
     15% {
-        transform: translate3d(0px, 0px, 0px);
+        opacity: 1;
         animation-timing-function: ease-out;
     }
-
+        
     85% {
-        transform: translate3d(0px, 0px, 0px);
+        opacity: 1;
         animation-timing-function: ease-in;
     }
-
+        
     100% {
-        transform: translate3d(-2000px, 0px, 0px);
+        opacity: 0;
     }
 }
