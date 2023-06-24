@@ -7,7 +7,7 @@ export function middleware(req: NextRequest, ev: NextFetchEvent) {
     console.log(req.headers.get("x-forwarded-proto"), "req.headers")
 
     if (currentEnv === 'production' && 
-         req.headers.get("x-forwarded-proto")?.indexOf("https") !== -1) {
+         req.headers.get("x-forwarded-proto") !== "https,http") {
         return NextResponse.redirect(
            `https://${req.headers.get('host')}${req.nextUrl.pathname}`,
            301
