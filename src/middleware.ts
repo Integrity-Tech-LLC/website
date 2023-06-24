@@ -4,7 +4,7 @@ type Environment = "production" | "development" | "other";
 export function middleware(req: NextRequest, ev: NextFetchEvent) {
     const currentEnv = process.env.NODE_ENV as Environment;
     console.log(currentEnv, "currentEnv");
-    console.log(req.nextUrl, "req")
+    console.log(req.nextUrl.protocol, "protocol");
 
     if (currentEnv === 'production' && 
          req.headers.get("x-forwarded-proto")?.indexOf("https") !== -1) {
