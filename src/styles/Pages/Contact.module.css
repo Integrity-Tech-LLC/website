@@ -6,11 +6,11 @@
 
 @media screen and (max-width: 1450px) {
     .inputField {
-        width: 100%;
+        width: 98%;
         margin-right: 0%;
     }
      .inputFieldRed {
-        width: 100%;
+        width: 98%;
         margin-right: 0%;
     }
      .error {
@@ -20,16 +20,30 @@
 
 @media screen and (min-width: 1450px) {
     .inputField {
-        width: 32%;
+        width: 48.5%;
         margin-right: 1%;
     }
     .inputFieldRed {
-        width: 32%;
+        width: 48.5%;
         margin-right: 1%;
     }
     .error {
         width: 18%;
     }
+}
+
+.radio {
+    margin: 0;
+    gap: 10px;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 29px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    cursor: pointer;
 }
 
 .text {
@@ -132,6 +146,26 @@
     text-align: right;
     color: rgb(139, 158, 183, 0.85);
     font-weight: 700;
+}
+
+.inputFieldRadio {
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .inputField {

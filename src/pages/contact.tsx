@@ -7,6 +7,7 @@ import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { BiMailSend } from "react-icons/bi";
 import { AiFillPhone } from "react-icons/ai";
 import { GrMail } from "react-icons/gr";
+import { InlineWidget } from "react-calendly";
 
 export default function Contact() {
   const [fullname, setFullname] = useState("");
@@ -133,30 +134,69 @@ export default function Contact() {
       {!messageSent ? (
         <div className={styles.body}>
           <div className={styles.text}>
-            <form onSubmit={handleSubmit}>
+            <div className={styles.inputFieldRadio}>
               <input
-                className={
-                  valid || fullname ? styles.inputField : styles.inputFieldRed
-                }
-                placeholder="Full Name"
-                type="text"
-                name="fullname"
-                value={fullname}
-                onChange={(event) => setFullname(event.target.value)}
+                className={styles.radio}
+                type="radio"
+                value="I'm requesting an estimate"
+                checked={reason === "I'm requesting an estimate"}
+                onChange={() => setReason("I'm requesting an estimate")}
               />
+              <span
+                style={{
+                  marginLeft: 10,
+                  verticalAlign: "top",
+                  height: 20,
+                }}>
+                I'm requesting an estimate
+              </span>
+            </div>
+            <div className={styles.inputFieldRadio}>
               <input
-                className={
-                  (valid || email) && emailValid
-                    ? styles.inputField
-                    : styles.inputFieldRed
+                className={styles.radio}
+                type="radio"
+                value="I have a question about something else"
+                checked={reason === "I have a question about something else"}
+                onChange={() =>
+                  setReason("I have a question about something else")
                 }
-                placeholder="Email"
-                type="text"
-                name="email"
-                value={email}
-                onChange={(event) => setEmail(event.target.value)}
               />
-              <select
+              <span
+                style={{
+                  marginLeft: 10,
+                  verticalAlign: "top",
+                  height: 20,
+                }}>
+                I have a question about something else
+              </span>
+            </div>
+            <br />
+            <br />
+            {reason === "I have a question about something else" ? (
+              <form onSubmit={handleSubmit}>
+                <input
+                  className={
+                    valid || fullname ? styles.inputField : styles.inputFieldRed
+                  }
+                  placeholder="Full Name"
+                  type="text"
+                  name="fullname"
+                  value={fullname}
+                  onChange={(event) => setFullname(event.target.value)}
+                />
+                <input
+                  className={
+                    (valid || email) && emailValid
+                      ? styles.inputField
+                      : styles.inputFieldRed
+                  }
+                  placeholder="Email"
+                  type="text"
+                  name="email"
+                  value={email}
+                  onChange={(event) => setEmail(event.target.value)}
+                />
+                {/* <select
                 className={styles.inputField}
                 name="reason"
                 value={reason}
@@ -167,45 +207,50 @@ export default function Contact() {
                 <option value="I have a question about something else">
                   I have a question about something else
                 </option>
-              </select>
-              <textarea
-                onChange={(event) => setMessage(event.target.value)}
-                value={message}
-                className={
-                  valid || message ? styles.messageText : styles.messageTextRed
-                }></textarea>
-              <p className={styles.note}>
-                Note: We never store your information and will never contact you
-                without your permission.
-              </p>
-              <br />
-              <div style={{ display: "inline-block", width: "100%" }}>
-                <button
-                  className={styles.sendmail}
-                  type="submit"
-                  name="sendMessage">
-                  <span>Send</span>
-                  <BiMailSend size={34} />
-                </button>
-                <ul className={styles.contactList}>
-                  <li
-                    style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      marginLeft: "-161px",
-                    }}>
-                    <AiFillPhone size={20} />{" "}
-                    <span style={{ marginLeft: 5 }}>701-429-4837</span>
-                  </li>
-                  <li style={{ display: "flex", justifyContent: "center" }}>
-                    <GrMail size={20} />{" "}
-                    <span style={{ marginLeft: 5 }}>
-                      chris@integritytechsoftware.com
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </form>
+              </select> */}
+                <textarea
+                  onChange={(event) => setMessage(event.target.value)}
+                  value={message}
+                  className={
+                    valid || message
+                      ? styles.messageText
+                      : styles.messageTextRed
+                  }></textarea>
+                <p className={styles.note}>
+                  Note: We never store your information and will never contact
+                  you without your permission.
+                </p>
+                <br />
+                <div style={{ display: "inline-block", width: "100%" }}>
+                  <button
+                    className={styles.sendmail}
+                    type="submit"
+                    name="sendMessage">
+                    <span>Send</span>
+                    <BiMailSend size={34} />
+                  </button>
+                  <ul className={styles.contactList}>
+                    <li
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        marginLeft: "-161px",
+                      }}>
+                      <AiFillPhone size={20} />{" "}
+                      <span style={{ marginLeft: 5 }}>701-429-4837</span>
+                    </li>
+                    <li style={{ display: "flex", justifyContent: "center" }}>
+                      <GrMail size={20} />{" "}
+                      <span style={{ marginLeft: 5 }}>
+                        chris@integritytechsoftware.com
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </form>
+            ) : (
+              <InlineWidget url="https://calendly.com/integritytechsoftware/scope-estimation" />
+            )}
           </div>
         </div>
       ) : (

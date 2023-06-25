@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { pathRootHelper } from "@/helpers/pathRootHelper";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { AiOutlineClose } from "react-icons/ai";
 
 export default function NavBarContainer() {
   const router = useRouter();
@@ -76,7 +77,7 @@ export default function NavBarContainer() {
           <div
             className={styles.hamburger}
             onClick={() => setMobileNav(!mobileNav)}>
-            <RxHamburgerMenu />
+            {mobileNav ? <AiOutlineClose /> : <RxHamburgerMenu />}
           </div>
           <div className={styles.freeEstimate}>Get a Free Estimate Now!</div>
         </div>
