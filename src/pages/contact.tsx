@@ -249,7 +249,10 @@ export default function Contact() {
                 </div>
               </form>
             ) : (
-              <InlineWidget url="https://calendly.com/integritytechsoftware/scope-estimation" />
+              <InlineWidget
+                url="https://calendly.com/integritytechsoftware/scope-estimation"
+                styles={{ height: 1100 }}
+              />
             )}
           </div>
         </div>
