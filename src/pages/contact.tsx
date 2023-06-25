@@ -7,7 +7,7 @@ import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { BiMailSend } from "react-icons/bi";
 import { AiFillPhone } from "react-icons/ai";
 import { GrMail } from "react-icons/gr";
-import { InlineWidget } from "react-calendly";
+import { InlineWidget, useCalendlyEventListener } from "react-calendly";
 
 export default function Contact() {
   const [fullname, setFullname] = useState("");
@@ -19,6 +19,7 @@ export default function Contact() {
   const [localToast, setLocalToast] = useState(false);
   const [localToastText, setLocalToastText] = useState("");
   const [messageSent, setMessageSent] = useState(false);
+  const [height, setHeight] = useState(2500);
   const { executeRecaptcha } = useGoogleReCaptcha();
 
   useEffect(() => {
@@ -90,6 +91,12 @@ export default function Contact() {
     }
     setMessageSent(true);
   };
+
+  useCalendlyEventListener({
+    onDateAndTimeSelected: () => setHeight(1100),
+    onEventTypeViewed: () => setHeight(2500),
+  });
+
   return (
     <>
       {localToast && (
@@ -251,7 +258,7 @@ export default function Contact() {
             ) : (
               <InlineWidget
                 url="https://calendly.com/integritytechsoftware/scope-estimation"
-                styles={{ height: 1100 }}
+                styles={{ height }}
               />
             )}
           </div>
