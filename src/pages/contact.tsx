@@ -55,6 +55,7 @@ export default function Contact() {
       setLocalToastText("Email address must be in the correct format");
       setValid(false);
       setEmailValid(false);
+      return;
     }
     if (!executeRecaptcha) {
       setLocalToast(true);
