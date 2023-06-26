@@ -8,6 +8,7 @@ import { BiMailSend } from "react-icons/bi";
 import { AiFillPhone } from "react-icons/ai";
 import { GrMail } from "react-icons/gr";
 import { InlineWidget, useCalendlyEventListener } from "react-calendly";
+import ClipLoader from "react-spinners/ClipLoader";
 
 export default function Contact() {
   const [fullname, setFullname] = useState("");
@@ -20,6 +21,7 @@ export default function Contact() {
   const [localToastText, setLocalToastText] = useState("");
   const [messageSent, setMessageSent] = useState(false);
   const [height, setHeight] = useState(2500);
+  const [loaded, setLoaded] = useState(false);
   const { executeRecaptcha } = useGoogleReCaptcha();
 
   useEffect(() => {
@@ -30,6 +32,12 @@ export default function Contact() {
       }, 5000);
     }
   }, [localToast]);
+
+  useEffect(() => {
+    if (reason === "I have a question about something else") {
+      setLoaded(false);
+    }
+  }, [reason]);
 
   useEffect(() => {
     if (messageSent) {
@@ -95,7 +103,10 @@ export default function Contact() {
 
   useCalendlyEventListener({
     onDateAndTimeSelected: () => setHeight(1100),
-    onEventTypeViewed: () => setHeight(2500),
+    onEventTypeViewed: () => {
+      setLoaded(true);
+      setHeight(2500);
+    },
   });
 
   return (
@@ -257,10 +268,22 @@ export default function Contact() {
                 </div>
               </form>
             ) : (
-              <InlineWidget
-                url="https://calendly.com/integritytechsoftware/scope-estimation"
-                styles={{ height }}
-              />
+              <>
+                {!loaded && (
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}>
+                    <ClipLoader color={"#06038d"} size={150} />
+                  </div>
+                )}
+                <InlineWidget
+                  url="https://calendly.com/integritytechsoftware/scope-estimation"
+                  styles={{ height }}
+                />
+              </>
             )}
           </div>
         </div>
