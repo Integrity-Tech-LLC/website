@@ -6,7 +6,7 @@ import smartphone from "public/smartphone.jpg";
 import brand from "public/brand.jpeg";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import contact from "public/contactbackground.jpeg";
+import contact from "public/contactpagephoto.jpeg";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 const inter = Inter({ subsets: ["latin"] });

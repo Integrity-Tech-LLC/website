@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "@/styles/Pages/Contact.module.css";
-import contact from "public/contactbackground.jpeg";
+import contact from "public/contactpagephoto.jpeg";
 import Image from "next/image";
 import { emailFormatValidationHelper } from "@/helpers/emailFormatValidationHelper";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
