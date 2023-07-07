@@ -46,18 +46,17 @@ export default function AboutUs() {
             can help get them there.
             <br />
             <br />
-            In 2020, I graduated from Emerging Digital Academy as a part of
-            their very first class. Since then I've worked for a number of
-            companies. The stories I could tell about what I helped them achieve
-            would surprise you. It's there that I truly learned the untapped
-            power of software.
+            I have always found the most joy in helping others achieve their
+            goals. Since I've started my career I've worked for a number of
+            companies. However working for many of these companies allowed me
+            very little opportunity to truly help, so I decided to venture out
+            on my own.
             <br />
             <br />
-            I realized there was a market here unlike any other. There is such a
-            large amount of missed potential simply due to a lack of knowledge.
-            I feel a need to help solve this problem. As I mentioned, my passion
-            lies in helping people. It is the primary reason Integrity Tech
-            exists. <br />
+            There is such a large amount of missed potential simply due to a
+            lack of knowledge. I feel a need to help solve this problem. As I
+            mentioned, my passion lies in helping people. It is the primary
+            reason Integrity Tech exists. <br />
             <br />
             By choosing Integrity Tech we will go above and beyond to ensure a
             bridge is built between you and the software you need.
