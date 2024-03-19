@@ -4,6 +4,7 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import paperTexture from "public/paper-texture.jpg";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
+import ErrorBoundary from "@/components/ErrorBoundry";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -29,8 +30,9 @@ export default function App({ Component, pageProps }: AppProps) {
             minHeight: 1200,
           }}>
           <NavBarContainer />
-
-          <Component {...pageProps} />
+          <ErrorBoundary>
+            <Component {...pageProps} />
+          </ErrorBoundary>
           <Footer />
         </div>
       </main>
