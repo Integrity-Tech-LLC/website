@@ -13,7 +13,9 @@ import ClipLoader from "react-spinners/ClipLoader";
 export default function Contact() {
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
-  const [reason, setReason] = useState("I'm requesting an estimate");
+  const [reason, setReason] = useState(
+    "I have a question about something else"
+  );
   const [message, setMessage] = useState("");
   const [valid, setValid] = useState(true);
   const [emailValid, setEmailValid] = useState(true);
@@ -33,11 +35,11 @@ export default function Contact() {
     }
   }, [localToast]);
 
-  useEffect(() => {
-    if (reason === "I have a question about something else") {
-      setLoaded(false);
-    }
-  }, [reason]);
+  // useEffect(() => {
+  //   if (reason === "I have a question about something else") {
+  //     setLoaded(false);
+  //   }
+  // }, [reason]);
 
   useEffect(() => {
     if (messageSent) {
@@ -45,7 +47,7 @@ export default function Contact() {
         setMessageSent(false);
         setFullname("");
         setEmail("");
-        setReason("I'm requesting an estimate");
+        // setReason("I'm requesting an estimate");
         setMessage("");
       }, 6000);
     }
@@ -143,17 +145,15 @@ export default function Contact() {
         <div className={styles.banner}>
           <h2 className={styles.bannerHeader}>We're Glad to Hear From You!</h2>
           <p className={styles.bannerText}>
-            Reach out for a free estimate! Our estimation process is fully
-            transparent. You will always know how much and what you are paying
-            for before any agreements are made. We're happy to answer any
-            general questions you might have as well.
+            Reach out for a free estimate! We're happy to answer any general
+            questions you might have as well.
           </p>
         </div>
       </div>
       {!messageSent ? (
         <div className={styles.body}>
           <div className={styles.text}>
-            <div className={styles.inputFieldRadio}>
+            {/* <div className={styles.inputFieldRadio}>
               <input
                 className={styles.radio}
                 type="radio"
@@ -169,8 +169,8 @@ export default function Contact() {
                 }}>
                 I'm requesting an estimate
               </span>
-            </div>
-            <div className={styles.inputFieldRadio}>
+            </div> */}
+            {/* <div className={styles.inputFieldRadio}>
               <input
                 className={styles.radio}
                 type="radio"
@@ -188,34 +188,34 @@ export default function Contact() {
                 }}>
                 I have a question about something else
               </span>
-            </div>
-            <br />
-            <br />
-            {reason === "I have a question about something else" ? (
-              <form onSubmit={handleSubmit}>
-                <input
-                  className={
-                    valid || fullname ? styles.inputField : styles.inputFieldRed
-                  }
-                  placeholder="Full Name"
-                  type="text"
-                  name="fullname"
-                  value={fullname}
-                  onChange={(event) => setFullname(event.target.value)}
-                />
-                <input
-                  className={
-                    (valid || email) && emailValid
-                      ? styles.inputField
-                      : styles.inputFieldRed
-                  }
-                  placeholder="Email"
-                  type="text"
-                  name="email"
-                  value={email}
-                  onChange={(event) => setEmail(event.target.value)}
-                />
-                {/* <select
+            </div> */}
+            {/* <br />
+            <br /> */}
+            {/* {reason === "I have a question about something else" ? ( */}
+            <form onSubmit={handleSubmit}>
+              <input
+                className={
+                  valid || fullname ? styles.inputField : styles.inputFieldRed
+                }
+                placeholder="Full Name"
+                type="text"
+                name="fullname"
+                value={fullname}
+                onChange={(event) => setFullname(event.target.value)}
+              />
+              <input
+                className={
+                  (valid || email) && emailValid
+                    ? styles.inputField
+                    : styles.inputFieldRed
+                }
+                placeholder="Email"
+                type="text"
+                name="email"
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
+              />
+              {/* <select
                 className={styles.inputField}
                 name="reason"
                 value={reason}
@@ -227,47 +227,45 @@ export default function Contact() {
                   I have a question about something else
                 </option>
               </select> */}
-                <textarea
-                  onChange={(event) => setMessage(event.target.value)}
-                  value={message}
-                  className={
-                    valid || message
-                      ? styles.messageText
-                      : styles.messageTextRed
-                  }></textarea>
-                <p className={styles.note}>
-                  Note: We never store your information and will never contact
-                  you without your permission.
-                </p>
-                <br />
-                <div style={{ display: "inline-block", width: "100%" }}>
-                  <button
-                    className={styles.sendmail}
-                    type="submit"
-                    name="sendMessage">
-                    <span>Send</span>
-                    <BiMailSend size={34} />
-                  </button>
-                  <ul className={styles.contactList}>
-                    <li
-                      style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        marginLeft: "-161px",
-                      }}>
-                      <AiFillPhone size={20} />{" "}
-                      <span style={{ marginLeft: 5 }}>701-429-4837</span>
-                    </li>
-                    <li style={{ display: "flex", justifyContent: "center" }}>
-                      <GrMail size={20} />{" "}
-                      <span style={{ marginLeft: 5 }}>
-                        chris@integritytechsoftware.com
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </form>
-            ) : (
+              <textarea
+                onChange={(event) => setMessage(event.target.value)}
+                value={message}
+                className={
+                  valid || message ? styles.messageText : styles.messageTextRed
+                }></textarea>
+              <p className={styles.note}>
+                Note: We never store your information and will never contact you
+                without your permission.
+              </p>
+              <br />
+              <div style={{ display: "inline-block", width: "100%" }}>
+                <button
+                  className={styles.sendmail}
+                  type="submit"
+                  name="sendMessage">
+                  <span>Send</span>
+                  <BiMailSend size={34} />
+                </button>
+                <ul className={styles.contactList}>
+                  <li
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      marginLeft: "-161px",
+                    }}>
+                    <AiFillPhone size={20} />{" "}
+                    <span style={{ marginLeft: 5 }}>701-429-4837</span>
+                  </li>
+                  <li style={{ display: "flex", justifyContent: "center" }}>
+                    <GrMail size={20} />{" "}
+                    <span style={{ marginLeft: 5 }}>
+                      chris@integritytechsoftware.com
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </form>
+            {/* ) : (
               <>
                 {!loaded && (
                   <div
@@ -284,7 +282,7 @@ export default function Contact() {
                   styles={{ height }}
                 />
               </>
-            )}
+            )} */}
           </div>
         </div>
       ) : (

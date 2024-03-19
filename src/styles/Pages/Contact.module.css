@@ -148,6 +148,10 @@
     font-weight: 700;
 }
 
+.link:hover {
+    color: #06038d;
+}
+
 .inputFieldRadio {
     width: 100%;
     display: inline-block;

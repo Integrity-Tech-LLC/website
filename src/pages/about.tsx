@@ -15,7 +15,7 @@ export default function AboutUs() {
           marginTop: 50,
         }}>
         <div className={styles.banner}>
-          <h2 className={styles.bannerHeader}>About The Founder</h2>
+          <h2 className={styles.bannerHeader}>Meet The Team!</h2>
         </div>
       </div>
       <div className={styles.body}>
@@ -29,14 +29,11 @@ export default function AboutUs() {
             className={styles.img}
             priority
           />
-
           <p>
-            Hi! My name is Chris and I founded Integrity Tech to help people
-            bridge the gap between their dreams and the technologies they need
-            to reach them. Throughout my career I have noticed how much unlocked
-            potential there is in technology, and how few people there are who
-            have access. I decided to start my business to help empower others
-            by being their key to technology.
+            My name is Chris and I founded Integrity Tech to help equip small
+            business owners to be able to have a fair shot in an ever-growing
+            technology-driven society. It's time to level the playing field and
+            help people get the tools they need to properly compete.
             <br />
             <br />I chose the name "Integrity" because that's what I want my
             entire business to be founded on. When I take on clients, I partner
@@ -54,17 +51,14 @@ export default function AboutUs() {
             <br />
             <br />
             There is such a large amount of missed potential simply due to a
-            lack of knowledge. I feel a need to help solve this problem. As I
-            mentioned, my passion lies in helping people. It is the primary
-            reason Integrity Tech exists. <br />
+            lack of knowledge. It is the primary reason Integrity Tech exists.{" "}
+            <br />
             <br />
             By choosing Integrity Tech we will go above and beyond to ensure a
             bridge is built between you and the software you need.
           </p>
           <br />
-          <div className={styles.link}>
-            --Founder and Lead Software Engineer
-          </div>
+          <div className={styles.link}>--Founder and Software Engineer</div>
         </div>
       </div>
     </>

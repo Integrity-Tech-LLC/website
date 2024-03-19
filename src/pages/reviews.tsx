@@ -79,30 +79,6 @@ export default function Reviews() {
           </p>
         </div>
       </div>
-      <div className={styles.container}>
-        <div className={styles.text}>
-          <Image
-            src="/homero.jpeg"
-            alt="homero"
-            width={80}
-            height={80}
-            className={styles.img}
-            priority
-          />
-          <p>
-            Chris has been mentoring me for some time now. His directions are
-            very concise and he doesn't give up on me until I understand what we
-            are going through. Chris also never just gives me the answers he
-            helps me to discover the answer. I strongly recommend Chris, he is
-            as smart as he is determined.
-          </p>
-          <br />
-          <p className={styles.signature}>
-            <span className={styles.name}>--Homero Rios</span>: Embedded
-            Software Engineer
-          </p>
-        </div>
-      </div>
     </>
   );
 }

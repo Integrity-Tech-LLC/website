@@ -1,6 +1,4 @@
-import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import smartphone from "public/smartphone.jpg";
 import brand from "public/brand.jpeg";
@@ -8,8 +6,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import contact from "public/contactpagephoto.jpeg";
 import { AiOutlineArrowRight } from "react-icons/ai";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [current, setCurrent] = useState(1);
@@ -19,8 +15,6 @@ export default function Home() {
         if (current === 1) {
           setCurrent(2);
         } else if (current === 2) {
-          setCurrent(3);
-        } else if (current === 3) {
           setCurrent(1);
         }
       }, 8000);
@@ -47,10 +41,13 @@ export default function Home() {
           marginTop: 50,
         }}>
         <div style={{ marginTop: "-80px" }} className={styles.bodyBlack}>
-          <h2 className={styles.headerBlack}>What We Offer</h2>
+          <h2 className={styles.headerBlack}>
+            You're resource for custom websites and apps
+          </h2>
           <p className={styles.textBlack}>
-            We offer everything from customized software integrations to custom
-            app development. We help you connect to the software you need.
+            We offer fully customizable websites and web applications tailored
+            to your unique business needs, ensuring a fully utilized online
+            presence.{" "}
           </p>
           <div className={styles.link}>
             <Link href={`/services`}>
@@ -103,29 +100,6 @@ export default function Home() {
               <p className={styles.signature}>
                 <span className={styles.name}>--Jason Gibb</span>: COO at Nash
                 Capital
-              </p>
-            </div>
-          </div>
-        )}
-        {current === 3 && (
-          <div className={styles.container}>
-            <div className={styles.text}>
-              <Image
-                src="/homero.jpeg"
-                alt="homero"
-                width={80}
-                height={80}
-                className={styles.img}
-                priority
-              />
-              <br />
-              <p className={styles.review}>
-                I strongly recommend Chris, he is as smart as he is determined.
-              </p>
-              <br />
-              <p className={styles.signature}>
-                <span className={styles.name}>--Homero Rios</span>: Embedded
-                Software Engineer
               </p>
             </div>
           </div>

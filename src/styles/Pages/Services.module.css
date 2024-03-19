@@ -2,6 +2,7 @@
     width: 50%;
     padding: 20px;
     display: inline-block;
+    vertical-align: top;
 }
 
 @media screen and (max-width: 1450px) {
@@ -78,4 +79,40 @@
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.price {
+    list-style-type: none;
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    color: green;
+}
+
+.link {
+    color: rgb(139, 158, 183, 0.85);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    width: 50%;
+    max-width: 710px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hyperlink {
+    color: rgb(139, 158, 183, 0.85);
+    font-weight: 700;
+}
+
+.link:hover {
+    color: #06038d;
+}
+
+.hyperlink:hover {
+    color: #06038d;
 }

@@ -129,11 +129,11 @@ export default function NavBarContainer() {
               </Link>
             </div>
             <br />
-            <div onClick={() => setMobileNav(false)}>
+            {/* <div onClick={() => setMobileNav(false)}>
               <Link href="/contact" className={styles.freeEstimateMobile}>
                 Get a Free Estimate Now!
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       )}

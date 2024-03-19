@@ -29,6 +29,7 @@ export default function App({ Component, pageProps }: AppProps) {
             minHeight: 1200,
           }}>
           <NavBarContainer />
+
           <Component {...pageProps} />
           <Footer />
         </div>
