@@ -42,7 +42,7 @@ export default function Home() {
         }}>
         <div style={{ marginTop: "-80px" }} className={styles.bodyBlack}>
           <h2 className={styles.headerBlack}>
-            You're resource for custom websites and apps
+            Your resource for custom websites and apps
           </h2>
           <p className={styles.textBlack}>
             We offer fully customizable websites and web applications tailored

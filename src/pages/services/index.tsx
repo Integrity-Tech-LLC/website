@@ -36,7 +36,7 @@ export default function Services() {
           services in fully explained bundles and packages with a flat rate so
           you know exactly what you are getting and what you are paying. We can
           then add any customization you want as extra features. There's nothing
-          more frustrating then having to invest your time to get information.
+          more frustrating than having to invest your time to get information.
           Skip the line with Integrity Tech.
           <div className={styles.link}>
             <Link href={`/services/packages`}>
