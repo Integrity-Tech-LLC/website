@@ -30,15 +30,6 @@ export default function App({ Component, pageProps }: AppProps) {
             backgroundColor: "rgb(255, 255, 255, 0.5)",
             minHeight: 1200,
           }}>
-          {/* <Head>
-            <title>Integrity Tech</title>
-            <link
-              rel="icon"
-              type="image/x-icon"
-              href="icon_trimmed_transparent_blue.png"
-            />
-          </Head> */}
-
           <NavBarContainer />
           <ErrorBoundary>
             <Component {...pageProps} />

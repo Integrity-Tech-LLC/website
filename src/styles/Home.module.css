@@ -25,7 +25,7 @@
     font-size: 18px;
     line-height: 25px;
     color: #FFFFFF;
-    text-align: justify;
+    text-align: left;
     max-width: 1000px;
     margin: 50px auto;
 }
@@ -56,8 +56,8 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
-    color: #000000;
-    text-align: justify;
+    color: hwb(0 0% 100%);
+    text-align: left;
     max-width: 1000px;
     margin: 50px auto;
 }
