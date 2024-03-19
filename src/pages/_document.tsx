@@ -4,14 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <body>
-        <Head>
-          <title>Integrity Tech</title>
-          <link
-            rel="icon"
-            type="image/x-icon"
-            href="icon_trimmed_transparent_blue.png"
-          />
-        </Head>
+        <Head></Head>
         <Main />
         <NextScript />
       </body>

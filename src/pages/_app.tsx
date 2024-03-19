@@ -5,6 +5,7 @@ import type { AppProps } from "next/app";
 import paperTexture from "public/paper-texture.jpg";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import ErrorBoundary from "@/components/ErrorBoundry";
+import Head from "next/head";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -29,6 +30,15 @@ export default function App({ Component, pageProps }: AppProps) {
             backgroundColor: "rgb(255, 255, 255, 0.5)",
             minHeight: 1200,
           }}>
+          <Head>
+            <title>Integrity Tech</title>
+            <link
+              rel="icon"
+              type="image/x-icon"
+              href="icon_trimmed_transparent_blue.png"
+            />
+          </Head>
+
           <NavBarContainer />
           <ErrorBoundary>
             <Component {...pageProps} />
