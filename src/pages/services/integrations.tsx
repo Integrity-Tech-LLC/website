@@ -24,7 +24,7 @@ export default function Integrations() {
             you? Let us help. Below is a list of common integrations that are
             used in many different business websites. Here at Integrity Tech we
             are able to incorperate any of these features into your custom
-            application.
+            website.
           </p>
         </div>
       </div>
