@@ -184,7 +184,7 @@ export default function Home() {
                 <br />
                 <br />
                 <div className={styles.signature}>
-                  --Founder and Lead Software Engineer
+                  --Founder and Software Engineer
                 </div>
               </div>
             </div>
