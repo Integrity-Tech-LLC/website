@@ -43,11 +43,11 @@ export default function Packages() {
           <li>Mobile responsiveness</li>
           <li>Domain registration</li>
           <li>Website hosting</li>
-          <li>Google workspace set up</li>
+          <li>Google workspace set-up</li>
           <li>
-            Google business registeration (note: must have a physical location)
+            Google business registration (note: must have a physical location)
           </li>
-          <li>Business Gmail set up</li>
+          <li>Business Gmail set-up</li>
         </ul>
       </div>
       <div className={styles.container}>
@@ -64,7 +64,7 @@ export default function Packages() {
           <li>Database implementation</li>
           <li>
             Up to 3 additional custom integrations and features of your choosing
-            (see some{" "}
+            (see{" "}
             <Link href={`/services/integrations`}>
               <span className={styles.hyperlink}>
                 suggested integrations here
@@ -80,13 +80,13 @@ export default function Packages() {
           <li className={styles.price}>$10,000</li>
           <li>Includes everything from Business Starter and Business Grower</li>
           <li>
-            E-commerce integration (Example: Shopify or BigCommerce integration)
+            E-commerce integration (Example: Shopify, BigCommerce or Etsy
+            integration)
           </li>
           <li>Fully customizable website with up to 30 pages</li>
           <li>Total of 15 employee logins</li>
           <li>
-            Total of 10 additional custom integrations of your choosing (see
-            some{" "}
+            Total of 10 additional custom integrations of your choosing (see{" "}
             <Link href={`/services/integrations`}>
               <span className={styles.hyperlink}>
                 suggested integrations here
@@ -101,8 +101,8 @@ export default function Packages() {
         <ul className={styles.text}>
           <li className={styles.price}>Varies</li>
           <li>
-            If you need something more then what these packages offer, you might
-            want to consider a custom application rather then a website.{" "}
+            If you need something more than what these packages offer, you might
+            want to consider a custom application rather than a website.{" "}
             <Link href={`/contact`}>
               <span className={styles.hyperlink}>Contact us </span>
             </Link>

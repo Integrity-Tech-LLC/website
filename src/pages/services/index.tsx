@@ -50,9 +50,9 @@ export default function Services() {
         <p className={styles.text}>
           With all the software products out there you would think there would
           be enough to meet every need your business has. However most mass
-          produced software misses the mark in more then one way. Why not create
+          produced software misses the mark in more than one way. Why not create
           something that is truly yours and tailor made for you? Talk to us! You
-          might be truly surprised what we can build for you.
+          might be surprised what we can build for you.
           <div className={styles.link}>
             <Link href={`/contact`}>
               Contact Us <AiOutlineArrowRight size={18} />
