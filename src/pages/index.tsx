@@ -9,6 +9,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 
 export default function Home() {
   const [current, setCurrent] = useState(1);
+  const [team, setTeam] = useState(1);
   useEffect(() => {
     if (current) {
       setTimeout(() => {
@@ -20,6 +21,20 @@ export default function Home() {
       }, 8000);
     }
   }, [current]);
+
+  useEffect(() => {
+    if (team) {
+      setTimeout(() => {
+        if (team === 1) {
+          setTeam(2);
+        } else if (team === 2) {
+          setTeam(3);
+        } else if (team === 3) {
+          setTeam(1);
+        }
+      }, 8000);
+    }
+  }, [team]);
   return (
     <>
       <div className={styles.banner}>
@@ -150,33 +165,81 @@ export default function Home() {
         </div>
         <div className={styles.bodyWhite}>
           <h2 className={styles.headerWhite}>Who is Integrity Tech?</h2>
-          <div className={styles.weclean}>
-            <h2 className={styles.header}>Christopher Neisen</h2>
-            <div className={styles.text}>
-              <Image
-                src="/chris.jpeg"
-                alt="Chris"
-                width={80}
-                height={80}
-                className={styles.img}
-                priority
-              />
-
-              <p>
-                Hi! My name is Chris and I founded Integrity Tech to help people
-                bridge the gap between their dreams and the technologies they
-                need to reach them. Throughout my career I have noticed how much
-                unlocked potential there is in technology, and how few people
-                there are who have access. I decided to start my business to
-                help empower others by being their key to technology.
-              </p>
-              <br />
-              <div className={styles.signature}>
-                --Founder and Lead Software Engineer
+          {team === 1 && (
+            <div className={styles.container}>
+              <h2 className={styles.header}>Christopher Neisen</h2>
+              <div className={styles.text}>
+                <Image
+                  src="/chris.jpeg"
+                  alt="Chris"
+                  width={80}
+                  height={80}
+                  className={styles.img}
+                  priority
+                />
+                <p>
+                  I founded Integrity Tech to help people bridge the gap between
+                  their dreams and the technologies they need to reach them.
+                </p>
+                <br />
+                <br />
+                <div className={styles.signature}>
+                  --Founder and Lead Software Engineer
+                </div>
               </div>
             </div>
-          </div>
-          <div className={styles.linkWhite}>
+          )}
+          {team === 2 && (
+            <div className={styles.container}>
+              <h2 className={styles.header}>Megan Neisen</h2>
+              <div className={styles.text}>
+                <Image
+                  src="/megan.png"
+                  alt="Megan"
+                  width={80}
+                  height={80}
+                  className={styles.img}
+                  priority
+                />
+
+                <p>
+                  In my spare time I like to read, write, and create art in my
+                  sketchbook. During the summer I love being outside and I enjoy
+                  riding my bike.
+                  <br />
+                  <br />
+                </p>
+                <br />
+                <div className={styles.signature}>
+                  --Bookkeeper and Content Editor
+                </div>
+              </div>
+            </div>
+          )}
+          {team === 3 && (
+            <div className={styles.container}>
+              <h2 className={styles.header}>Cooper</h2>
+              <div className={styles.text}>
+                <Image
+                  src="/cooper.jpg"
+                  alt="Cooper"
+                  width={80}
+                  height={80}
+                  className={styles.img}
+                  priority
+                />
+
+                <p>
+                  I like to run everywhere, in every direction, for absolutely
+                  no reason. I'm not always full of energy though. Sometimes I'd
+                  rather stare up at the ceiling and sit very still for hours.
+                </p>
+                <br />
+                <div className={styles.signature}>--Office Mascot</div>
+              </div>
+            </div>
+          )}
+          <div className={styles.linkWhite} style={{ marginTop: 430 }}>
             <Link href={`/about`}>
               Read More <AiOutlineArrowRight size={18} />
             </Link>
