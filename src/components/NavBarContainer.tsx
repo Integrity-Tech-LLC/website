@@ -69,6 +69,11 @@ export default function NavBarContainer() {
             className={pathRoot == "/about" ? styles.linkActive : styles.link}>
             About Us
           </Link>
+          <Link
+            href="/game"
+            className={pathRoot == "/game" ? styles.linkActive : styles.link}>
+            Logo Attack
+          </Link>
         </div>
         <div className={styles.navRight}>
           <Link href="/contact" className={styles.contact}>
@@ -119,6 +124,15 @@ export default function NavBarContainer() {
                   pathRoot == "/about" ? styles.linkActive : styles.link
                 }>
                 About Us
+              </Link>
+            </div>
+            <div onClick={() => setMobileNav(false)}>
+              <Link
+                href="/game"
+                className={
+                  pathRoot == "/game" ? styles.linkActive : styles.link
+                }>
+                Logo Attack
               </Link>
             </div>
             <br />
