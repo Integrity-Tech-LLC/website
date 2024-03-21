@@ -55,6 +55,7 @@ if(start) {
       if(score > highScore) {
       localStorage.setItem("highScore", score)
       }
+      setScore(0)
   }
 }
 }, [start, timer])
