@@ -66,6 +66,7 @@ useEffect(() => {
   setClassSwitchSeq3forth(styles.logoSeq3forth);
   setClassSwitchSeq3fifth(styles.logoSeq3fifth);
   setClassSwitchSeq4(styles.logoSeq4);
+  setClickCount(0);
   let seqTime = Number((Math.floor(Math.random() * 3) + 2) * 1000)
    setTimeout(() => {
       let newSeq = Number(Math.ceil((Math.random()) * 6))
