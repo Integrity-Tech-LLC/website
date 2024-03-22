@@ -329,17 +329,6 @@ const clickFunc = () => {
             setClassSwitchSeq4(true)
             setClickCount(0)
           clickFunc()
-          setTimeout(() => {
-      let newSeq = Number(Math.ceil((Math.random()) * 6))
-      if(newSeq === sequence) {
-        if(newSeq === 6) {
-        newSeq -= 1
-        } else {
-        newSeq += 1
-        }
-      }
-      setSequence(newSeq)
-          }, 100);
           }
         }}>
            {classSwitchSeq4 ? (
