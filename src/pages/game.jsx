@@ -51,8 +51,7 @@ useEffect(() => {
       if(score > highScore) {
       localStorage.setItem("highScore", score)
       }
-      setScore(0)
-    }, 5000);
+    }, 4000);
   }
 }, [gameOver])
 
@@ -414,7 +413,10 @@ const clickFunc = () => {
         <button
             className={styles.startBtn}
             name="startGame"
-            onClick={() => setStart(true)}>
+            onClick={() => {
+            setScore(0);
+            setStart(true);
+            }}>
             <span>Start</span>
           </button>
         )
