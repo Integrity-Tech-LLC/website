@@ -187,7 +187,7 @@ const clickFunc = () => {
           clickFunc()
         }}>
           {classSwitchSeq1 ? (
-          <GiSpikyExplosion size={90} style={{fill: 'red'}} className={styles.quickDisappear} />
+          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
           ) : (
         <Image
         src="/base_icon_transparent_background.png"
@@ -207,7 +207,7 @@ const clickFunc = () => {
         }}
         style={{left: xAxisSeq2, padding: 0, margin: 0}}>
            {classSwitchSeq2 ? (
-          <GiSpikyExplosion size={90} style={{fill: 'red'}} className={styles.quickDisappear} />
+          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
           ) : (
       <Image
         style={{textAlign: 'center'}}
@@ -248,7 +248,7 @@ const clickFunc = () => {
         }}
         style={{left: '30%'}}>
            {classSwitchSeq3second ? (
-          <GiSpikyExplosion size={90} style={{fill: 'red'}} className={styles.quickDisappear} />
+          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
           ) : (
         <Image
         src="/base_icon_transparent_background.png"
@@ -267,7 +267,7 @@ const clickFunc = () => {
         }}
         style={{left: '30%'}}>
            {classSwitchSeq3third ? (
-          <GiSpikyExplosion size={90} style={{fill: 'red'}} className={styles.quickDisappear} />
+          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
           ) : (
         <Image
         src="/base_icon_transparent_background.png"
@@ -286,7 +286,7 @@ const clickFunc = () => {
         }}
         style={{left: '30%'}}>
            {classSwitchSeq3forth ? (
-          <GiSpikyExplosion size={90} style={{fill: 'red'}} className={styles.quickDisappear} />
+          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
           ) : (
           <Image
         src="/base_icon_transparent_background.png"
@@ -305,7 +305,7 @@ const clickFunc = () => {
         }}
         style={{left: '30%'}}>
            {classSwitchSeq3fifth ? (
-          <GiSpikyExplosion size={90} style={{fill: 'red'}} className={styles.quickDisappear} />
+          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
           ) : (
         <Image
         src="/base_icon_transparent_background.png"
@@ -332,7 +332,7 @@ const clickFunc = () => {
           }
         }}>
            {classSwitchSeq4 ? (
-          <GiSpikyExplosion size={600} style={{fill: 'red'}} className={styles.quickDisappear} />
+          <GiSpikyExplosion size={600} style={{fill: '#06038d'}} className={styles.quickDisappear} />
           ) : (
     <Image
         src="/base_icon_transparent_background.png"
@@ -353,7 +353,7 @@ const clickFunc = () => {
         }}
         style={{left: xAxisSeq5}}>
         {classSwitchSeq5 ? (
-          <GiSpikyExplosion size={90} style={{fill: 'red'}} className={styles.quickDisappear} />
+          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
           ) : (
         <Image
         src="/base_icon_transparent_background.png"
@@ -373,7 +373,7 @@ const clickFunc = () => {
         }}
         style={{bottom: yAxisSeq6}}>
            {classSwitchSeq6 ? (
-          <GiSpikyExplosion size={90} style={{fill: 'red'}} className={styles.quickDisappear} />
+          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
           ) : (
       <Image
         src="/base_icon_transparent_background.png"
