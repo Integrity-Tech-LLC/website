@@ -81,6 +81,8 @@ useEffect(() => {
   setClassSwitchSeq3forth(false);
   setClassSwitchSeq3fifth(false);
   setClassSwitchSeq4(false);
+  setClassSwitchSeq5(false)
+  setClassSwitchSeq6(false)
   setClickCount(0);
    setTimeout(() => {
       let newSeq = Number(Math.ceil((Math.random()) * 6))
@@ -146,8 +148,6 @@ const dimensions = getWindowDimensions();
   setXAxis(x)
   setYAxis(y)
     setClassSwitchSeq1(false)
-    setClassSwitchSeq5(false)
-    setClassSwitchSeq6(false)
   }, 100);
 }, [clicked])
 
@@ -347,8 +347,8 @@ const clickFunc = () => {
     <Image
         src="/base_icon_transparent_background.png"
         alt="company logo"
-        width={600}
-        height={400}
+        width={300}
+        height={200}
         priority
         />
           )}
