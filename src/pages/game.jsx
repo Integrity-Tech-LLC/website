@@ -181,11 +181,7 @@ const clickFunc = () => {
       sequence === 1 ? (
         <div 
         className={styles.logoSeq1}
-        style={{left: xAxis, top: yAxis}}
-         onClick={() => {
-          setClassSwitchSeq1(true)
-          clickFunc()
-        }}>
+        style={{left: xAxis, top: yAxis}}>
           {classSwitchSeq1 ? (
           <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
           ) : (
@@ -195,16 +191,16 @@ const clickFunc = () => {
         width={90}
         height={60}
         priority
+        onClick={() => {
+          setClassSwitchSeq1(true)
+          clickFunc()
+        }}
         />
           )}
          
       </div>
       ) :sequence === 2 ? (
         <div className={styles.logoSeq2}
-        onClick={() => {
-          setClassSwitchSeq2(true)
-          clickFunc()
-        }}
         style={{left: xAxisSeq2, padding: 0, margin: 0}}>
            {classSwitchSeq2 ? (
           <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
@@ -216,6 +212,10 @@ const clickFunc = () => {
         width={90}
         height={60}
         priority
+        onClick={() => {
+          setClassSwitchSeq2(true)
+          clickFunc()
+        }}
         />
           )}
         </div>
@@ -223,10 +223,6 @@ const clickFunc = () => {
       ) :sequence === 3 ? (
         <>
         <div className={styles.logoSeq3first}
-        onClick={() => {
-          setClassSwitchSeq3first(true)
-          clickFunc()
-        }}
         style={{left: '30%'}}>
            {classSwitchSeq3first ? (
           <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
@@ -237,15 +233,16 @@ const clickFunc = () => {
         width={90}
         height={60}
         priority
+         onClick={() => {
+          setClassSwitchSeq3first(true)
+          clickFunc()
+        }}
         />
           )}
         </div>
         <div 
         className={styles.logoSeq3second}
-        onClick={() => {
-          setClassSwitchSeq3second(true)
-          clickFunc()
-        }}
+        
         style={{left: '30%'}}>
            {classSwitchSeq3second ? (
           <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
@@ -256,15 +253,15 @@ const clickFunc = () => {
         width={90}
         height={60}
         priority
+        onClick={() => {
+          setClassSwitchSeq3second(true)
+          clickFunc()
+        }}
         />
           )}
         </div>
         <div 
         className={styles.logoSeq3third}
-        onClick={() => {
-          setClassSwitchSeq3third(true)
-          clickFunc()
-        }}
         style={{left: '30%'}}>
            {classSwitchSeq3third ? (
           <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
@@ -275,15 +272,15 @@ const clickFunc = () => {
         width={90}
         height={60}
         priority
+         onClick={() => {
+          setClassSwitchSeq3third(true)
+          clickFunc()
+        }}
         />
           )}
         </div>
         <div 
         className={styles.logoSeq3forth}
-        onClick={() => {
-          setClassSwitchSeq3forth(true)
-          clickFunc()
-        }}
         style={{left: '30%'}}>
            {classSwitchSeq3forth ? (
           <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
@@ -294,15 +291,15 @@ const clickFunc = () => {
         width={90}
         height={60}
         priority
+         onClick={() => {
+          setClassSwitchSeq3forth(true)
+          clickFunc()
+        }}
         />
           )}
         </div>
         <div 
         className={styles.logoSeq3fifth}
-        onClick={() => {
-          setClassSwitchSeq3fifth(true)
-          clickFunc()
-        }}
         style={{left: '30%'}}>
            {classSwitchSeq3fifth ? (
           <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
@@ -313,6 +310,10 @@ const clickFunc = () => {
         width={90}
         height={60}
         priority
+        onClick={() => {
+          setClassSwitchSeq3fifth(true)
+          clickFunc()
+        }}
         />
           )}
         </div>
@@ -323,14 +324,7 @@ const clickFunc = () => {
         <span   
         style={{textAlign: 'center'}}
         className={styles.logoSeq4}
-        onClick={() => {
-          setClickCount(clickCount => clickCount + 1)
-          if(clickCount === 10) {
-            setClassSwitchSeq4(true)
-            setClickCount(0)
-          clickFunc()
-          }
-        }}>
+        >
            {classSwitchSeq4 ? (
           <GiSpikyExplosion size={600} style={{fill: '#06038d'}} className={styles.quickDisappear} />
           ) : (
@@ -340,6 +334,14 @@ const clickFunc = () => {
         width={300}
         height={200}
         priority
+        onClick={() => {
+          setClickCount(clickCount => clickCount + 1)
+          if(clickCount === 10) {
+            setClassSwitchSeq4(true)
+            setClickCount(0)
+          clickFunc()
+          }
+        }}
         />
           )}
         </span>
@@ -347,10 +349,6 @@ const clickFunc = () => {
       ) :sequence === 5 ? (
         <div  
         className={styles.logoSeq5}
-        onClick={() => {
-          setClassSwitchSeq5(true)
-          clickFunc()
-        }}
         style={{left: xAxisSeq5}}>
         {classSwitchSeq5 ? (
           <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
@@ -361,16 +359,16 @@ const clickFunc = () => {
         width={90}
         height={60}
         priority
+        onClick={() => {
+          setClassSwitchSeq5(true)
+          clickFunc()
+        }}
         />
           )}
         </div>
       ) : (
         <div 
         className={styles.logoSeq6}
-        onClick={() => {
-          setClassSwitchSeq6(true)
-          clickFunc()
-        }}
         style={{bottom: yAxisSeq6}}>
            {classSwitchSeq6 ? (
           <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
@@ -381,6 +379,10 @@ const clickFunc = () => {
         width={90}
         height={60}
         priority
+        onClick={() => {
+          setClassSwitchSeq6(true)
+          clickFunc()
+        }}
         />
           )}
         </div>
