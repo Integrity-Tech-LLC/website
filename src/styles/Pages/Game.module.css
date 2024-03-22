@@ -71,7 +71,7 @@
     position: absolute;
     z-index: 500;
     cursor: pointer;
-    animation: spin 1s, seq5 1s;
+    animation: spin 1s, seq5 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -80,7 +80,7 @@
     position: absolute;
     z-index: 500;
     cursor: pointer;
-    animation: spin 1s, seq6 1s;
+    animation: spin 1s, seq6 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
