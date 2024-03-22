@@ -50,6 +50,8 @@ useEffect(() => {
       setGameOver(false)
       if(score > highScore) {
       localStorage.setItem("highScore", score)
+      const scoreRecords = localStorage.getItem("highScore")
+      setHighScore(scoreRecords)
       }
     }, 4000);
   }
