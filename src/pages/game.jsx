@@ -156,8 +156,10 @@ const clickFunc = () => {
   setClicked(clicked => !clicked)
   if(sequence === 4) {
     setScore(score => Number(score) + 10)
+  } else if(sequence === 2 || sequence === 5 || sequence === 6) {
+    setScore(score => Number(score) + 3)
   } else {
-  setScore(score => Number(score) + 1)
+    setScore(score => Number(score) + 1)
   }
 }
 
@@ -183,7 +185,7 @@ const clickFunc = () => {
         className={styles.logoSeq1}
         style={{left: xAxis, top: yAxis}}>
           {classSwitchSeq1 ? (
-          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
+          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} />
           ) : (
         <Image
         src="/base_icon_transparent_background.png"
@@ -203,7 +205,7 @@ const clickFunc = () => {
         <div className={styles.logoSeq2}
         style={{left: xAxisSeq2, padding: 0, margin: 0}}>
            {classSwitchSeq2 ? (
-          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
+          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} />
           ) : (
       <Image
         style={{textAlign: 'center'}}
@@ -225,7 +227,7 @@ const clickFunc = () => {
         <div className={styles.logoSeq3first}
         style={{left: '30%'}}>
            {classSwitchSeq3first ? (
-          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
+          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} />
           ) : (
       <Image
         src="/base_icon_transparent_background.png"
@@ -245,7 +247,7 @@ const clickFunc = () => {
         
         style={{left: '30%'}}>
            {classSwitchSeq3second ? (
-          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
+          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} />
           ) : (
         <Image
         src="/base_icon_transparent_background.png"
@@ -264,7 +266,7 @@ const clickFunc = () => {
         className={styles.logoSeq3third}
         style={{left: '30%'}}>
            {classSwitchSeq3third ? (
-          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
+          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} />
           ) : (
         <Image
         src="/base_icon_transparent_background.png"
@@ -283,7 +285,7 @@ const clickFunc = () => {
         className={styles.logoSeq3forth}
         style={{left: '30%'}}>
            {classSwitchSeq3forth ? (
-          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
+          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} />
           ) : (
           <Image
         src="/base_icon_transparent_background.png"
@@ -302,7 +304,7 @@ const clickFunc = () => {
         className={styles.logoSeq3fifth}
         style={{left: '30%'}}>
            {classSwitchSeq3fifth ? (
-          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
+          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} />
           ) : (
         <Image
         src="/base_icon_transparent_background.png"
@@ -326,7 +328,7 @@ const clickFunc = () => {
         className={styles.logoSeq4}
         >
            {classSwitchSeq4 ? (
-          <GiSpikyExplosion size={600} style={{fill: '#06038d'}} className={styles.quickDisappear} />
+          <GiSpikyExplosion size={600} style={{fill: '#06038d'}} />
           ) : (
     <Image
         src="/base_icon_transparent_background.png"
@@ -351,7 +353,7 @@ const clickFunc = () => {
         className={styles.logoSeq5}
         style={{left: xAxisSeq5}}>
         {classSwitchSeq5 ? (
-          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
+          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} />
           ) : (
         <Image
         src="/base_icon_transparent_background.png"
@@ -371,7 +373,7 @@ const clickFunc = () => {
         className={styles.logoSeq6}
         style={{bottom: yAxisSeq6}}>
            {classSwitchSeq6 ? (
-          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
+          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} />
           ) : (
       <Image
         src="/base_icon_transparent_background.png"
