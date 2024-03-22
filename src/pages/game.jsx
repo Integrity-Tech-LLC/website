@@ -114,7 +114,7 @@ useEffect(() => {
       const x = Math.floor(Math.random() * 6)
       const percent = x + '0%'
       setXAxisSeq5(percent)
-      }, 1000);
+      }, 2000);
     }
   }, [xAxisSeq5, clicked, sequence]);
 
