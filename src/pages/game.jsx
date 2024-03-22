@@ -2,18 +2,19 @@ import React, { useEffect, useState } from "react";
 import styles from "@/styles/Pages/Game.module.css";
 import review from "public/review.jpeg";
 import Image from "next/image";
+import { GiSpikyExplosion } from "react-icons/gi";
 
 export default function Game() {
-  const [classSwitchSeq1, setClassSwitchSeq1] = useState(styles.logoSeq1);
-  const [classSwitchSeq2, setClassSwitchSeq2] = useState(styles.logoSeq2);
-  const [classSwitchSeq3first, setClassSwitchSeq3first] = useState(styles.logoSeq3first);
-  const [classSwitchSeq3second, setClassSwitchSeq3second] = useState(styles.logoSeq3second);
-  const [classSwitchSeq3third, setClassSwitchSeq3third] = useState(styles.logoSeq3third);
-  const [classSwitchSeq3forth, setClassSwitchSeq3forth] = useState(styles.logoSeq3forth);
-  const [classSwitchSeq3fifth, setClassSwitchSeq3fifth] = useState(styles.logoSeq3fifth);
-  const [classSwitchSeq4, setClassSwitchSeq4] = useState(styles.logoSeq4);
-  const [classSwitchSeq5, setClassSwitchSeq5] = useState(styles.logoSeq5);
-  const [classSwitchSeq6, setClassSwitchSeq6] = useState(styles.logoSeq6);
+  const [classSwitchSeq1, setClassSwitchSeq1] = useState(false);
+  const [classSwitchSeq2, setClassSwitchSeq2] = useState(false);
+  const [classSwitchSeq3first, setClassSwitchSeq3first] = useState(false);
+  const [classSwitchSeq3second, setClassSwitchSeq3second] = useState(false);
+  const [classSwitchSeq3third, setClassSwitchSeq3third] = useState(false);
+  const [classSwitchSeq3forth, setClassSwitchSeq3forth] = useState(false);
+  const [classSwitchSeq3fifth, setClassSwitchSeq3fifth] = useState(false);
+  const [classSwitchSeq4, setClassSwitchSeq4] = useState(false);
+  const [classSwitchSeq5, setClassSwitchSeq5] = useState(false);
+  const [classSwitchSeq6, setClassSwitchSeq6] = useState(false);
   const [clickCount, setClickCount] = useState(0);
   const [xAxis, setXAxis] = useState(0);
   const [xAxisSeq2, setXAxisSeq2] = useState(0);
@@ -26,6 +27,7 @@ export default function Game() {
   const [start, setStart] = useState(false)
   const [timer, setTimer] = useState(30);
   const [highScore, setHighScore] = useState(0);
+  const [gameOver, setGameOver] = useState(false);
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -43,6 +45,16 @@ setHighScore(scoreRecords)
 }, [start])
 
 useEffect(() => {
+  if(gameOver) {
+    setTimeout(() => {
+      setGameOver(false)
+    }, 5000);
+  }
+}, [gameOver])
+
+
+
+useEffect(() => {
 if(start) {
   setTimeout(() => {
     if(timer) {
@@ -56,19 +68,20 @@ if(start) {
       localStorage.setItem("highScore", score)
       }
       setScore(0)
+      setGameOver(true)
   }
 }
 }, [start, timer])
 
 useEffect(() => {
-  setClassSwitchSeq3first(styles.logoSeq3first);
-  setClassSwitchSeq3second(styles.logoSeq3second);
-  setClassSwitchSeq3third(styles.logoSeq3third);
-  setClassSwitchSeq3forth(styles.logoSeq3forth);
-  setClassSwitchSeq3fifth(styles.logoSeq3fifth);
-  setClassSwitchSeq4(styles.logoSeq4);
+  setClassSwitchSeq2(false)
+  setClassSwitchSeq3first(false);
+  setClassSwitchSeq3second(false);
+  setClassSwitchSeq3third(false);
+  setClassSwitchSeq3forth(false);
+  setClassSwitchSeq3fifth(false);
+  setClassSwitchSeq4(false);
   setClickCount(0);
-  let seqTime = Number((Math.floor(Math.random() * 3) + 2) * 1000)
    setTimeout(() => {
       let newSeq = Number(Math.ceil((Math.random()) * 6))
       if(newSeq === sequence) {
@@ -79,7 +92,7 @@ useEffect(() => {
         }
       }
       setSequence(newSeq)
-      }, Number(seqTime));
+      }, 2000);
 }, [sequence])
 
   useEffect(() => {
@@ -132,10 +145,9 @@ const dimensions = getWindowDimensions();
   }
   setXAxis(x)
   setYAxis(y)
-    setClassSwitchSeq1(styles.logoSeq1)
-    setClassSwitchSeq2(styles.logoSeq2)
-    setClassSwitchSeq5(styles.logoSeq5)
-    setClassSwitchSeq6(styles.logoSeq6)
+    setClassSwitchSeq1(false)
+    setClassSwitchSeq5(false)
+    setClassSwitchSeq6(false)
   }, 100);
 }, [clicked])
 
@@ -165,162 +177,248 @@ const clickFunc = () => {
         </div>
       </div>
       {start ? (
-
-     
       sequence === 1 ? (
-          <Image
+        <div 
+        className={styles.logoSeq1}
         style={{left: xAxis, top: yAxis}}
+         onClick={() => {
+          setClassSwitchSeq1(true)
+          clickFunc()
+        }}>
+          {classSwitchSeq1 ? (
+          <GiSpikyExplosion size={90} style={{fill: 'red'}} className={styles.quickDisappear} />
+          ) : (
+        <Image
         src="/base_icon_transparent_background.png"
         alt="company logo"
         width={90}
         height={60}
         priority
-        className={classSwitchSeq1}
-        onClick={() => {
-          setClassSwitchSeq1(styles.whenclicked)
-          clickFunc()
-        }}
-      />
-      ) :sequence === 2 ? (
-      <Image
-        style={{left: xAxisSeq2}}
-        src="/base_icon_transparent_background.png"
-        alt="company logo"
-        width={90}
-        height={60}
-        priority
-        className={classSwitchSeq2}
-        onClick={() => {
-          setClassSwitchSeq2(styles.whenclicked)
-          clickFunc()
-        }}
         />
+          )}
+         
+      </div>
+      ) :sequence === 2 ? (
+        <div className={styles.logoSeq2}
+        onClick={() => {
+          setClassSwitchSeq2(true)
+          clickFunc()
+        }}
+        style={{left: xAxisSeq2, padding: 0, margin: 0}}>
+           {classSwitchSeq2 ? (
+          <GiSpikyExplosion size={90} style={{fill: 'red'}} className={styles.quickDisappear} />
+          ) : (
+      <Image
+        style={{textAlign: 'center'}}
+        src="/base_icon_transparent_background.png"
+        alt="company logo"
+        width={90}
+        height={60}
+        priority
+        />
+          )}
+        </div>
+      
       ) :sequence === 3 ? (
         <>
+        <div className={styles.logoSeq3first}
+        onClick={() => {
+          setClassSwitchSeq3first(true)
+          clickFunc()
+        }}
+        style={{left: '30%'}}>
+           {classSwitchSeq3first ? (
+          <GiSpikyExplosion size={90} style={{fill: 'red'}} className={styles.quickDisappear} />
+          ) : (
       <Image
-        style={{left: '30%'}}
         src="/base_icon_transparent_background.png"
         alt="company logo"
         width={90}
         height={60}
         priority
-        className={classSwitchSeq3first}
+        />
+          )}
+        </div>
+        <div 
+        className={styles.logoSeq3second}
         onClick={() => {
-          setClassSwitchSeq3first(styles.whenclicked)
+          setClassSwitchSeq3second(true)
           clickFunc()
         }}
+        style={{left: '30%'}}>
+           {classSwitchSeq3second ? (
+          <GiSpikyExplosion size={90} style={{fill: 'red'}} className={styles.quickDisappear} />
+          ) : (
+        <Image
+        src="/base_icon_transparent_background.png"
+        alt="company logo"
+        width={90}
+        height={60}
+        priority
         />
+          )}
+        </div>
+        <div 
+        className={styles.logoSeq3third}
+        onClick={() => {
+          setClassSwitchSeq3third(true)
+          clickFunc()
+        }}
+        style={{left: '30%'}}>
+           {classSwitchSeq3third ? (
+          <GiSpikyExplosion size={90} style={{fill: 'red'}} className={styles.quickDisappear} />
+          ) : (
+        <Image
+        src="/base_icon_transparent_background.png"
+        alt="company logo"
+        width={90}
+        height={60}
+        priority
+        />
+          )}
+        </div>
+        <div 
+        className={styles.logoSeq3forth}
+        onClick={() => {
+          setClassSwitchSeq3forth(true)
+          clickFunc()
+        }}
+        style={{left: '30%'}}>
+           {classSwitchSeq3forth ? (
+          <GiSpikyExplosion size={90} style={{fill: 'red'}} className={styles.quickDisappear} />
+          ) : (
           <Image
-        style={{left: '30%'}}
         src="/base_icon_transparent_background.png"
         alt="company logo"
         width={90}
         height={60}
         priority
-        className={classSwitchSeq3second}
+        />
+          )}
+        </div>
+        <div 
+        className={styles.logoSeq3fifth}
         onClick={() => {
-          setClassSwitchSeq3second(styles.whenclicked)
+          setClassSwitchSeq3fifth(true)
           clickFunc()
         }}
-        />
-          <Image
-        style={{left: '30%'}}
+        style={{left: '30%'}}>
+           {classSwitchSeq3fifth ? (
+          <GiSpikyExplosion size={90} style={{fill: 'red'}} className={styles.quickDisappear} />
+          ) : (
+        <Image
         src="/base_icon_transparent_background.png"
         alt="company logo"
         width={90}
         height={60}
         priority
-        className={classSwitchSeq3third}
-        onClick={() => {
-          setClassSwitchSeq3third(styles.whenclicked)
-          clickFunc()
-        }}
         />
-          <Image
-        style={{left: '30%'}}
-        src="/base_icon_transparent_background.png"
-        alt="company logo"
-        width={90}
-        height={60}
-        priority
-        className={classSwitchSeq3forth}
-        onClick={() => {
-          setClassSwitchSeq3forth(styles.whenclicked)
-          clickFunc()
-        }}
-        />
-          <Image
-        style={{left: '30%'}}
-        src="/base_icon_transparent_background.png"
-        alt="company logo"
-        width={90}
-        height={60}
-        priority
-        className={classSwitchSeq3fifth}
-        onClick={() => {
-          setClassSwitchSeq3fifth(styles.whenclicked)
-          clickFunc()
-        }}
-        />
+          )}
+        </div>
         </>
       ) :sequence === 4 ? (
         <>
-        <h1 style={{textAlign: 'center'}}>Quick! Keep Tapping!</h1>
+        <h1 style={{textAlign: 'center'}}>Quick! Keep Tapping! {clickCount}</h1>
+        <span   
+        style={{textAlign: 'center'}}
+        className={styles.logoSeq4}
+        onClick={() => {
+          setClickCount(clickCount => clickCount + 1)
+          if(clickCount === 10) {
+            setClassSwitchSeq4(true)
+            setClickCount(0)
+          clickFunc()
+          setTimeout(() => {
+      let newSeq = Number(Math.ceil((Math.random()) * 6))
+      if(newSeq === sequence) {
+        if(newSeq === 6) {
+        newSeq -= 1
+        } else {
+        newSeq += 1
+        }
+      }
+      setSequence(newSeq)
+          }, 100);
+          }
+        }}>
+           {classSwitchSeq4 ? (
+          <GiSpikyExplosion size={600} style={{fill: 'red'}} className={styles.quickDisappear} />
+          ) : (
     <Image
         src="/base_icon_transparent_background.png"
         alt="company logo"
         width={600}
         height={400}
         priority
-        className={classSwitchSeq4}
-        onClick={() => {
-          console.log(clickCount)
-          setClickCount(clickCount => clickCount + 1)
-          if(clickCount === 10) {
-            setClassSwitchSeq4(styles.whenclicked)
-            setClickCount(0)
-          clickFunc()
-          }
-          
-        }}
         />
+          )}
+        </span>
         </>
       ) :sequence === 5 ? (
+        <div  
+        className={styles.logoSeq5}
+        onClick={() => {
+          setClassSwitchSeq5(true)
+          clickFunc()
+        }}
+        style={{left: xAxisSeq5}}>
+        {classSwitchSeq5 ? (
+          <GiSpikyExplosion size={90} style={{fill: 'red'}} className={styles.quickDisappear} />
+          ) : (
         <Image
-        style={{left: xAxisSeq5}}
         src="/base_icon_transparent_background.png"
         alt="company logo"
         width={90}
         height={60}
         priority
-        className={classSwitchSeq5}
-        onClick={() => {
-          setClassSwitchSeq5(styles.whenclicked)
-          clickFunc()
-        }}
         />
+          )}
+        </div>
       ) : (
+        <div 
+        className={styles.logoSeq6}
+        onClick={() => {
+          setClassSwitchSeq6(true)
+          clickFunc()
+        }}
+        style={{bottom: yAxisSeq6}}>
+           {classSwitchSeq6 ? (
+          <GiSpikyExplosion size={90} style={{fill: 'red'}} className={styles.quickDisappear} />
+          ) : (
       <Image
-        style={{bottom: yAxisSeq6}}
         src="/base_icon_transparent_background.png"
         alt="company logo"
         width={90}
         height={60}
         priority
-        className={classSwitchSeq6}
-        onClick={() => {
-          setClassSwitchSeq6(styles.whenclicked)
-          clickFunc()
-        }}
         />
+          )}
+        </div>
       )
        ) : (
-         <button
+        gameOver ? (
+          <>
+          <div className={styles.gameOver}>
+            <h1>Game Over</h1>
+          </div>
+          <div className={styles.gameOver}>
+            <p>Score: {score}</p>
+          </div>
+          {score > highScore && (
+          <div style={{color: '#06038d', fontWeight: 700}} className={styles.gameOver}>
+            <p>new high score!</p>
+          </div>
+          )}
+          </>
+        ) : (
+        <button
             className={styles.startBtn}
             name="startGame"
             onClick={() => setStart(true)}>
             <span>Start</span>
           </button>
+        )
+      
        )}
     
     </>

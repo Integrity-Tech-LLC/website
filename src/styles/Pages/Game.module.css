@@ -1,14 +1,10 @@
 .logoSeq1 {
-    height: 90px;
-    width: 120px;
     position: absolute;
     z-index: 500;
     cursor: pointer;
 }
 
 .logoSeq2 {
-    height: 90px;
-    width: 120px;
     position: absolute;
     z-index: 500;
     cursor: pointer;
@@ -18,8 +14,6 @@
 }
 
 .logoSeq3first {
-    height: 90px;
-    width: 120px;
     position: absolute;
     z-index: 500;
     cursor: pointer;
@@ -29,8 +23,6 @@
 }
 
 .logoSeq3second {
-    height: 90px;
-    width: 120px;
     position: absolute;
     z-index: 500;
     cursor: pointer;
@@ -40,8 +32,6 @@
 }
 
 .logoSeq3third {
-    height: 90px;
-    width: 120px;
     position: absolute;
     z-index: 500;
     cursor: pointer;
@@ -51,8 +41,6 @@
 }
 
 .logoSeq3forth {
-    height: 90px;
-    width: 120px;
     position: absolute;
     z-index: 500;
     cursor: pointer;
@@ -62,8 +50,6 @@
 }
 
 .logoSeq3fifth {
-    height: 90px;
-    width: 120px;
     position: absolute;
     z-index: 500;
     cursor: pointer;
@@ -82,8 +68,6 @@
 }
 
 .logoSeq5 {
-    height: 90px;
-    width: 120px;
     position: absolute;
     z-index: 500;
     cursor: pointer;
@@ -93,8 +77,6 @@
 }
 
 .logoSeq6 {
-    height: 90px;
-    width: 120px;
     position: absolute;
     z-index: 500;
     cursor: pointer;
@@ -103,18 +85,12 @@
     animation-timing-function: linear;
 }
 
-.whenclicked {
-    height: 90px;
-    width: 120px;
-    position: absolute;
-    z-index: 500;
-    animation-name: gotcha;
-    animation-duration: 0.10s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+.quickDisappear {
+animation: fade;
+animation-iteration-count: 0.1;
+animation-timing-function: linear;
+animation-fill-mode: forwards;
 }
-
-
 
 .score {
     font-family: 'Montserrat';
@@ -151,6 +127,18 @@
     margin-right: auto;
 }
 
+.gameOver {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    width: 100%;
+}
+
 .startBtn {
     display: flex;
     justify-content: center;
@@ -178,6 +166,16 @@
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
 
