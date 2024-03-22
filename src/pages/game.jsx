@@ -229,7 +229,7 @@ const clickFunc = () => {
         }}
         style={{left: '30%'}}>
            {classSwitchSeq3first ? (
-          <GiSpikyExplosion size={90} style={{fill: 'red'}} className={styles.quickDisappear} />
+          <GiSpikyExplosion size={90} style={{fill: '#06038d'}} className={styles.quickDisappear} />
           ) : (
       <Image
         src="/base_icon_transparent_background.png"
