@@ -48,6 +48,7 @@ useEffect(() => {
   if(gameOver) {
     setTimeout(() => {
       setGameOver(false)
+      setScore(0)
     }, 5000);
   }
 }, [gameOver])
@@ -67,7 +68,6 @@ if(start) {
       if(score > highScore) {
       localStorage.setItem("highScore", score)
       }
-      setScore(0)
       setGameOver(true)
   }
 }
