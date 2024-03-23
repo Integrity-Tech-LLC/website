@@ -197,9 +197,8 @@ const clickFunc = () => {
           setClassSwitchSeq1(true)
           clickFunc()
         }}
-        />
-          )}
-         
+        /> 
+          )} 
       </div>
       ) :sequence === 2 ? (
         <div className={styles.logoSeq2}

@@ -44,9 +44,7 @@ export default function Packages() {
           <li>Domain registration</li>
           <li>Website hosting</li>
           <li>Google workspace set-up</li>
-          <li>
-            Google business registration (note: must have a physical location)
-          </li>
+          <li>Google business registration</li>
           <li>Business Gmail set-up</li>
         </ul>
       </div>
