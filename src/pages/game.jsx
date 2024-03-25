@@ -3,8 +3,10 @@ import styles from "@/styles/Pages/Game.module.css";
 import review from "public/review.jpeg";
 import Image from "next/image";
 import { GiSpikyExplosion } from "react-icons/gi";
+import { pathRootHelper } from "@/helpers/pathRootHelper";
 
 export default function Game() {
+   const pathRoot = pathRootHelper(router.pathname);
   const [classSwitchSeq1, setClassSwitchSeq1] = useState(false);
   const [classSwitchSeq2, setClassSwitchSeq2] = useState(false);
   const [classSwitchSeq3first, setClassSwitchSeq3first] = useState(false);
@@ -38,11 +40,12 @@ function getWindowDimensions() {
 }
 
 useEffect(() => {
-document.getElementById("body").style.overflowY = "hidden"
-
-return () => {
-  document.getElementById("body").style.overflowY = "scroll"
-}
+  if(pathRoot === "game") {
+    window.addEventListener('scroll', () => window.scrollTo(0, 0))
+  }
+  return () => {
+    window.removeEventListener('scroll', () => window.scrollTo(0, 0))
+  }
 }, [])
 
 useEffect(() => {
