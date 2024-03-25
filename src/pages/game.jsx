@@ -171,10 +171,9 @@ const clickFunc = () => {
           width: "100%",
           backgroundSize: "100% 250px",
           backgroundRepeat: "no-repeat",
-          marginTop: 50,
         }}>
         <div className={styles.banner}>
-          <br />
+          <br /><br /><br />
           <h2 className={styles.bannerHeader}>Logo Attack! Time: {timer}</h2>
           <p className={styles.score}>Score: {score}</p>
           <p className={styles.score}> High Score: {highScore || 0}</p>
