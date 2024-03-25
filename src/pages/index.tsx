@@ -239,7 +239,7 @@ export default function Home() {
               </div>
             </div>
           )}
-          <div className={styles.linkWhite} style={{ marginTop: 430 }}>
+          <div className={styles.linkWhite}>
             <Link href={`/about`}>
               Read More <AiOutlineArrowRight size={18} />
             </Link>

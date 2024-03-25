@@ -21,13 +21,15 @@ export default function App({ Component, pageProps }: AppProps) {
         style={{
           backgroundImage: `url(${paperTexture.src})`,
           width: "100%",
-          backgroundSize: "100% 100%",
-          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundRepeat: "repeat",
+          minHeight: "95vh",
+          marginTop: "-30px",
         }}>
         <div
           style={{
             backgroundColor: "rgb(255, 255, 255, 0.5)",
-            minHeight: 600,
+            minHeight: "95vh",
           }}>
           <NavBarContainer />
           <ErrorBoundary>
