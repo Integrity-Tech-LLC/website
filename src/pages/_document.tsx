@@ -16,7 +16,7 @@ export default function Document() {
           href="icon_trimmed_transparent_blue.png"
         />
       </Head>
-      <body>
+      <body id="body">
         <Main />
         <NextScript />
       </body>

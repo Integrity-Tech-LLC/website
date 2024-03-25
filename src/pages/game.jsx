@@ -38,7 +38,11 @@ function getWindowDimensions() {
 }
 
 useEffect(() => {
-window.onscroll = () => { window.scrollTo(0, 0); };
+document.getElementById("body").style.overflowY = "hidden"
+
+return () => {
+  document.getElementById("body").style.overflowY = "scroll"
+}
 }, [])
 
 useEffect(() => {
