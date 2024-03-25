@@ -38,6 +38,10 @@ function getWindowDimensions() {
 }
 
 useEffect(() => {
+window.onscroll = () => { window.scrollTo(0, 0); };
+}, [])
+
+useEffect(() => {
   if(!start) {
 const scoreRecords = localStorage.getItem("highScore")
 setHighScore(scoreRecords)
