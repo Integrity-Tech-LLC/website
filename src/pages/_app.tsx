@@ -23,13 +23,13 @@ export default function App({ Component, pageProps }: AppProps) {
           width: "100%",
           backgroundSize: "cover",
           backgroundRepeat: "repeat",
-          minHeight: "95vh",
+          minHeight: "92vh",
           marginTop: "-30px",
         }}>
         <div
           style={{
             backgroundColor: "rgb(255, 255, 255, 0.5)",
-            minHeight: "95vh",
+            minHeight: "92vh",
           }}>
           <NavBarContainer />
           <ErrorBoundary>

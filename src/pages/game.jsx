@@ -3,12 +3,8 @@ import styles from "@/styles/Pages/Game.module.css";
 import review from "public/review.jpeg";
 import Image from "next/image";
 import { GiSpikyExplosion } from "react-icons/gi";
-import { pathRootHelper } from "@/helpers/pathRootHelper";
-import { useRouter } from "next/router";
 
 export default function Game() {
-  const router = useRouter();
-  const pathRoot = pathRootHelper(router.pathname);
   const [classSwitchSeq1, setClassSwitchSeq1] = useState(false);
   const [classSwitchSeq2, setClassSwitchSeq2] = useState(false);
   const [classSwitchSeq3first, setClassSwitchSeq3first] = useState(false);
@@ -40,15 +36,6 @@ function getWindowDimensions() {
     height
   };
 }
-
-useEffect(() => {
-  if(pathRoot === "game") {
-    window.addEventListener('scroll', () => window.scrollTo(0, 0))
-  }
-  return () => {
-    window.removeEventListener('scroll', () => window.scrollTo(0, 0))
-  }
-}, [])
 
 useEffect(() => {
   if(!start) {
