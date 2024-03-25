@@ -59,7 +59,7 @@
 }
 
 .logoSeq4 {
-    height: 80%;
+    height: 60%;
     width: 100%;
     margin: 0 auto;
     position: absolute;
@@ -239,7 +239,7 @@
     }
 
     100% {
-        bottom: -10%;
+        bottom: 0%;
     }
 }
 
@@ -247,7 +247,7 @@
 
 @keyframes seq3first {
     0% {
-        bottom: -10%;
+        bottom: 0%;
     }
 
     10% {
@@ -291,14 +291,14 @@
     }
 
     100% {
-        bottom: -10%;
+        bottom: 0%;
         left: 5%;
     }
 }
 
 @keyframes seq3second {
     0% {
-        bottom: -10%;
+        bottom: 0%;
     }
 
     10% {
@@ -342,14 +342,14 @@
     }
 
     100% {
-        bottom: -10%;
+        bottom: 0%;
         left: 10%;
     }
 }
 
 @keyframes seq3forth {
     0% {
-        bottom: -10%;
+        bottom: 0%;
     }
 
     10% {
@@ -393,14 +393,14 @@
     }
 
     100% {
-        bottom: -10%;
+        bottom: 0%;
         left: 45%;
     }
 }
 
 @keyframes seq3fifth {
     0% {
-        bottom: -10%;
+        bottom: 0%;
     }
 
     10% {
@@ -444,14 +444,14 @@
     }
 
     100% {
-        bottom: -10%;
+        bottom: 0%;
         left: 60%;
     }
 }
 
 @keyframes seq2 {
     0% {
-        bottom: -10%;
+        bottom: 0%;
     }
 
     10% {
@@ -491,53 +491,6 @@
     }
 
     100% {
-        bottom: -10%;
-    }
-}
-
-@keyframes gotcha {
-
-    0% {
-        clip: rect(0px, 160px, 100px, 0px);
-    }
-
-    10% {
-        clip: rect(0px, 160px, 90px, 0px);
-    }
-
-    20% {
-        clip: rect(0px, 160px, 80px, 0px);
-    }
-
-    30% {
-        clip: rect(0px, 160px, 70px, 0px);
-    }
-
-    40% {
-        clip: rect(0px, 160px, 60px, 0px);
-    }
-
-    50% {
-        clip: rect(0px, 160px, 50px, 0px);
-    }
-
-    60% {
-        clip: rect(0px, 160px, 40px, 0px);
-    }
-
-    70% {
-        clip: rect(0px, 160px, 30px, 0px);
-    }
-
-    80% {
-        clip: rect(0px, 160px, 20px, 0px);
-    }
-
-    90% {
-        clip: rect(0px, 160px, 10px, 0px);
-    }
-
-    100% {
-        clip: rect(0px, 160px, 0px, 0px);
+        bottom: 0%;
     }
 }

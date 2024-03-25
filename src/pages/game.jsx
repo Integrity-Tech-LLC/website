@@ -180,6 +180,7 @@ const clickFunc = () => {
           <p className={styles.score}> High Score: {highScore || 0}</p>
         </div>
       </div>
+      <div style={{height: '100%', overflow: 'hidden'}}>
       {start ? (
       sequence === 1 ? (
         <div 
@@ -417,7 +418,7 @@ const clickFunc = () => {
         )
       
        )}
-    
+    </div>
     </>
   );
 }
