@@ -132,9 +132,8 @@ export default function Home() {
           width: "100%",
           backgroundSize: "100% 430px",
           backgroundRepeat: "no-repeat",
-          marginTop: 100,
         }}>
-        <div style={{ marginTop: "-80px" }} className={styles.bodyBlack}>
+        <div className={styles.bodyBlack}>
           <h2 className={styles.headerBlack}>Our Work Speaks For Itself</h2>
           <div className={styles.weclean}>
             <h2 className={styles.header}>WeClean SaaS App</h2>
