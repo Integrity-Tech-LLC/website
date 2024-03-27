@@ -46,7 +46,7 @@ export default function Maintenance() {
         <ul className={styles.text}>
           <li className={styles.price}>$200 a month</li>
           <li>Includes everything from Basic Upkeep</li>
-          <li>Up to 5 email addresses on your Google Business Account</li>
+          <li>Up to 5 email addresses on your Google Workspace Account</li>
           <li>Up to 3 free service hours a month</li>
         </ul>
       </div>
@@ -57,7 +57,7 @@ export default function Maintenance() {
           <li>Includes Basic Upkeep and Moderate Upkeep</li>
           <li>Free Premium Hosting</li>
           <li>Free Database hosting</li>
-          <li>Up to 10 email addresses on your Google Business Account</li>
+          <li>Up to 10 email addresses on your Google Workspace Account</li>
           <li>Up to 5 free service hours a month</li>
         </ul>
       </div>
@@ -66,7 +66,7 @@ export default function Maintenance() {
         <ul className={styles.text}>
           <li className={styles.price}>$1000 a month</li>
           <li>Includes Basic Upkeep, Moderate Upkeep and Consistant Upkeep</li>
-          <li>Up to 25 email addresses on your Google Business Account</li>
+          <li>Up to 25 email addresses on your Google Workspace Account</li>
           <li>Up to 12 free service hours a month</li>
         </ul>
       </div>
