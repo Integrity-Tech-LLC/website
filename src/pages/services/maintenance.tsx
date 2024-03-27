@@ -31,9 +31,20 @@ export default function Maintenance() {
         </div>
       </div>
       <div className={styles.container}>
+        <h2 className={styles.header}>Bare-bones Upkeep</h2>
+        <ul className={styles.text}>
+          <li className={styles.priceMonth}>$50/month</li>
+          <li>Free website monitoring</li>
+          <li>Free basic hosting</li>
+          <li>Free domain registeration</li>
+          <li>Free SSL</li>
+        </ul>
+      </div>
+      <div className={styles.container}>
         <h2 className={styles.header}>Basic Upkeep</h2>
         <ul className={styles.text}>
           <li className={styles.priceMonth}>$100/month</li>
+          <li>Free website monitoring</li>
           <li>Free basic hosting</li>
           <li>Free domain registeration</li>
           <li>Free SSL</li>
