@@ -109,10 +109,19 @@
     font-weight: 700;
 }
 
+.hyperlinkwhite {
+    color: rgb(139, 158, 183, 0.85);
+    font-weight: 700;
+}
+
 .link:hover {
     color: #06038d;
 }
 
 .hyperlink:hover {
     color: #06038d;
+}
+
+.hyperlinkwhite:hover {
+    color: white;
 }

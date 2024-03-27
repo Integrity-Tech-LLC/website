@@ -12,7 +12,6 @@ export default function AboutUs() {
           width: "100%",
           backgroundSize: "100% 550px",
           backgroundRepeat: "no-repeat",
-
           marginTop: 50,
         }}>
         <div className={styles.banner}>

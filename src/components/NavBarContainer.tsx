@@ -6,11 +6,17 @@ import { useRouter } from "next/router";
 import { pathRootHelper } from "@/helpers/pathRootHelper";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
+import {
+  MdKeyboardArrowRight,
+  MdOutlineKeyboardArrowDown,
+} from "react-icons/md";
 
 export default function NavBarContainer() {
   const router = useRouter();
   const pathRoot = pathRootHelper(router.pathname);
   const [mobileNav, setMobileNav] = useState(false);
+  const [servicesSub, setServicesSub] = useState(false);
+  console.log(router.pathname);
   return (
     <>
       <div className={styles.nav}>
@@ -43,13 +49,66 @@ export default function NavBarContainer() {
           />
         </div>
         <div className={styles.navLeft}>
-          <Link
-            href="/services"
-            className={
-              pathRoot == "/services" ? styles.linkActive : styles.link
-            }>
-            Services
-          </Link>
+          <div id={styles.servicesContainer}>
+            <div>
+              <Link
+                href="/services"
+                id={styles.services}
+                className={
+                  pathRoot == "/services" ? styles.linkActive : styles.link
+                }>
+                Services
+              </Link>
+            </div>
+            <ul id={styles.servicesdropdowncontent}>
+              <li style={{ fontSize: 30, marginBottom: 20 }}>
+                {" "}
+                <Link
+                  href="/services"
+                  id={styles.services}
+                  className={
+                    pathRoot == "/services"
+                      ? styles.dropdownlinkactive
+                      : styles.dropdownlink
+                  }>
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/packages"
+                  className={
+                    router.pathname == "/services/packages"
+                      ? styles.dropdownlinkactive
+                      : styles.dropdownlink
+                  }>
+                  Website Packages
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/maintenance"
+                  className={
+                    router.pathname == "/services/maintenance"
+                      ? styles.dropdownlinkactive
+                      : styles.dropdownlink
+                  }>
+                  Maintenance Packages
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/integrations"
+                  className={
+                    router.pathname == "/services/integrations"
+                      ? styles.dropdownlinkactive
+                      : styles.dropdownlink
+                  }>
+                  Suggested Integrations
+                </Link>
+              </li>
+            </ul>
+          </div>
           <Link
             href="/reviews"
             className={
@@ -90,15 +149,81 @@ export default function NavBarContainer() {
       {mobileNav && (
         <div className={styles.navMobile}>
           <div className={styles.linksMobile}>
-            <div onClick={() => setMobileNav(false)}>
-              <Link
-                href="/services"
+            <div
+              style={{ marginLeft: 25 }}
+              onClick={() => setServicesSub(!servicesSub)}>
+              <span
                 className={
                   pathRoot == "/services" ? styles.linkActive : styles.link
                 }>
                 Services
-              </Link>
+              </span>{" "}
+              {servicesSub ? (
+                <span>
+                  <MdOutlineKeyboardArrowDown
+                    style={{ verticalAlign: "text-top", color: "white" }}
+                    size={22}
+                  />
+                </span>
+              ) : (
+                <span>
+                  <MdKeyboardArrowRight
+                    style={{ verticalAlign: "text-top", color: "white" }}
+                    size={22}
+                  />
+                </span>
+              )}
             </div>
+            {servicesSub && (
+              <div onClick={() => setMobileNav(false)}>
+                <div className={styles.subMenuServices}>
+                  <ul style={{ listStyleType: "none" }}>
+                    <li>
+                      {" "}
+                      <Link
+                        href="/services"
+                        id={styles.services}
+                        className={styles.dropdownlink}>
+                        Our Services
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/services/packages"
+                        className={
+                          router.pathname == "/services/packages"
+                            ? styles.dropdownlinkactive
+                            : styles.dropdownlink
+                        }>
+                        Website Packages
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/services/maintenance"
+                        className={
+                          router.pathname == "/services/maintenance"
+                            ? styles.dropdownlinkactive
+                            : styles.dropdownlink
+                        }>
+                        Maintenance Packages
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/services/integrations"
+                        className={
+                          router.pathname == "/services/integrations"
+                            ? styles.dropdownlinkactive
+                            : styles.dropdownlink
+                        }>
+                        Suggested Integrations
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            )}
             <div onClick={() => setMobileNav(false)}>
               <Link
                 href="/reviews"

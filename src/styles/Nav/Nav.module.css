@@ -26,7 +26,7 @@
     background: #06038d;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 4;
-    animation-name: navMobile;
+    animation-name: dropDown;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
 }
@@ -166,9 +166,77 @@
     cursor: pointer;
 }
 
-@keyframes navMobile {
+#servicesContainer {
+    display: inline-block;
+}
 
-    /*enters from right side and ends in middle of page, then exists to the left, ran again for next photo*/
+#servicesContainer div:hover+#servicesdropdowncontent,
+#servicesdropdowncontent:hover {
+    list-style-type: none;
+    line-height: 30px;
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 1000px;
+    margin-left: 2.5%;
+    margin-top: 0px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 0px 0px 10px 10px;
+    border-left:2px solid #06038d;
+    border-bottom: 2px solid #06038d;
+    border-right: 2px solid #06038d;
+    animation-name: navMobile;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+
+#servicesdropdowncontent {
+    display: none;
+}
+
+.subMenuServices {
+    background-color: white;
+    margin-top: 10px;
+    width: 120%;
+    text-align: left;
+    padding-left: 20%;
+    animation-name: dropDownServices;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+.dropdownlink {
+    color: #06038d;
+}
+
+.dropdownlinkactive {
+    color: #06038d;
+    border-bottom: 2px solid #06038d;
+}
+
+@keyframes dropDownServices {
+
+    0% {
+        transform: translate3d(0px, -2000px, 0px);
+        opacity: 0;
+    }
+
+    5% {
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: ease-out;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+}
+
+@keyframes dropDown {
+
     0% {
         transform: translate3d(0px, -2000px, 0px);
     }
