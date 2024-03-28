@@ -24,24 +24,24 @@ export default function Packages() {
             as extras.
             <br />
             <br />
-            We never use third party platforms like Wordpress to build your
+            We never use third-party platforms like Wordpress to build your
             site. We build everything from the ground up. This is designed to
-            allow you to have even further control over your site and further
-            reduces overhead so we can pass the savings onto you. If you want an
-            idea of how much control you can have, check out{" "}
+            allow you to have even further control over your site and reduces
+            overhead so we can pass the savings onto you. If you want an idea of
+            how much control you can have, check out{" "}
             <Link href={`/game`}>
-              <span className={styles.hyperlinkwhite}>Logo Attack</span>
+              <span className={styles.hyperlinkwhite}>Logo Attack.</span>
             </Link>{" "}
-            . It's a game we built on our own website to demonstrate the level
-            of customization we can offer.
+            It's a game we built on our own website to demonstrate the level of
+            customization we can offer.
             <br />
             <br /> All custom websites are required to have a{" "}
             <Link href={`/services/maintenance`}>
               <span className={styles.hyperlinkwhite}>
-                monthly maintenance plan
+                monthly maintenance plan.
               </span>
             </Link>{" "}
-            . We have many flexable options so you can pick the one that's right
+            We have many flexible options so you can pick the one that's right
             for you.
           </p>
         </div>

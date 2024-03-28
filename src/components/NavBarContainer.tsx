@@ -53,7 +53,6 @@ export default function NavBarContainer() {
             <div>
               <Link
                 href="/services"
-                id={styles.services}
                 className={
                   pathRoot == "/services" ? styles.linkActive : styles.link
                 }>
@@ -61,11 +60,10 @@ export default function NavBarContainer() {
               </Link>
             </div>
             <ul id={styles.servicesdropdowncontent}>
-              <li style={{ fontSize: 30, marginBottom: 20 }}>
+              <li style={{ marginBottom: 20 }}>
                 {" "}
                 <Link
                   href="/services"
-                  id={styles.services}
                   className={
                     pathRoot == "/services"
                       ? styles.dropdownlinkactive
@@ -74,7 +72,7 @@ export default function NavBarContainer() {
                   Services
                 </Link>
               </li>
-              <li>
+              <li style={{ fontSize: 12 }}>
                 <Link
                   href="/services/packages"
                   className={
@@ -85,7 +83,7 @@ export default function NavBarContainer() {
                   Website Packages
                 </Link>
               </li>
-              <li>
+              <li style={{ fontSize: 12 }}>
                 <Link
                   href="/services/maintenance"
                   className={
@@ -96,7 +94,7 @@ export default function NavBarContainer() {
                   Maintenance Packages
                 </Link>
               </li>
-              <li>
+              <li style={{ fontSize: 12 }}>
                 <Link
                   href="/services/integrations"
                   className={
@@ -180,10 +178,7 @@ export default function NavBarContainer() {
                   <ul style={{ listStyleType: "none" }}>
                     <li>
                       {" "}
-                      <Link
-                        href="/services"
-                        id={styles.services}
-                        className={styles.dropdownlink}>
+                      <Link href="/services" className={styles.dropdownlink}>
                         Our Services
                       </Link>
                     </li>
