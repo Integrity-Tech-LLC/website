@@ -64,11 +64,20 @@ export default function Maintenance() {
       <div className={styles.container}>
         <h2 className={styles.header}>Consistent Upkeep</h2>
         <ul className={styles.text}>
-          <li className={styles.priceMonth}>$1000/month</li>
+          <li className={styles.priceMonth}>$750/month</li>
           <li>Includes Basic Upkeep and Moderate Upkeep</li>
           <li>Free Premium hosting</li>
           <li>Free Database hosting</li>
           <li>Up to 10 email addresses on your Google Workspace account</li>
+          <li>Up to 5 free service hours per month</li>
+        </ul>
+      </div>
+      <div className={styles.container}>
+        <h2 className={styles.header}>Full-Time Upkeep</h2>
+        <ul className={styles.text}>
+          <li className={styles.priceMonth}>$1000/month</li>
+          <li>Includes Basic Upkeep, Moderate Upkeep and Consistent Upkeep</li>
+          <li>Up to 15 email addresses on your Google Workspace account</li>
           <li>Up to 8 free service hours per month</li>
         </ul>
       </div>
