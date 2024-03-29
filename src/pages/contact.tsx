@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "@/styles/Pages/Contact.module.css";
-import contact from "public/contactpagephoto.jpeg";
+import greyTexture from "public/grey_texture.jpeg";
 import Image from "next/image";
 import { emailFormatValidationHelper } from "@/helpers/emailFormatValidationHelper";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
@@ -135,7 +135,7 @@ export default function Contact() {
       )}
       <div
         style={{
-          backgroundImage: `url(${contact.src})`,
+          backgroundImage: `url(${greyTexture.src})`,
           width: "100%",
           backgroundSize: "100% 650px",
           backgroundRepeat: "no-repeat",

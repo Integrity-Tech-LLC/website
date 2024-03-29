@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "@/styles/Pages/OurWork.module.css";
-import brand from "public/brand.jpeg";
+import greyTexture from "public/grey_texture.jpeg";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineArrowRight } from "react-icons/ai";
@@ -10,7 +10,7 @@ export default function OurWork() {
     <>
       <div
         style={{
-          backgroundImage: `url(${brand.src})`,
+          backgroundImage: `url(${greyTexture.src})`,
           width: "100%",
           backgroundSize: "100% 650px",
           backgroundRepeat: "no-repeat",

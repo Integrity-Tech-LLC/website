@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
-import smartphone from "public/smartphone.jpg";
+import greyTexture from "public/grey_texture.jpeg";
 import brand from "public/brand.jpeg";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -49,7 +49,7 @@ export default function Home() {
       </div>
       <div
         style={{
-          backgroundImage: `url(${smartphone.src})`,
+          backgroundImage: `url(${greyTexture.src})`,
           width: "100%",
           backgroundSize: "100% 400px",
           backgroundRepeat: "no-repeat",
@@ -128,7 +128,7 @@ export default function Home() {
       </div>
       <div
         style={{
-          backgroundImage: `url(${brand.src})`,
+          backgroundImage: `url(${greyTexture.src})`,
           width: "100%",
           backgroundSize: "100% 430px",
           backgroundRepeat: "no-repeat",
@@ -246,7 +246,7 @@ export default function Home() {
         </div>
         <div
           style={{
-            backgroundImage: `url(${contact.src})`,
+            backgroundImage: `url(${greyTexture.src})`,
             width: "100%",
             backgroundSize: "100% 400px",
             backgroundRepeat: "no-repeat",

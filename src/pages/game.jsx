@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "@/styles/Pages/Game.module.css";
-import review from "public/review.jpeg";
+import greyTexture from "public/grey_texture.jpeg";
 import Image from "next/image";
 import { GiSpikyExplosion } from "react-icons/gi";
 
@@ -167,7 +167,7 @@ const clickFunc = () => {
     <>
       <div
         style={{
-          backgroundImage: `url(${review.src})`,
+          backgroundImage: `url(${greyTexture.src})`,
           width: "100%",
           backgroundSize: "100% 250px",
           backgroundRepeat: "no-repeat",

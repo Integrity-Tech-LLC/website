@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "@/styles/Pages/AboutUs.module.css";
-import team from "public/meetteambackground.jpeg";
+import greyTexture from "public/grey_texture.jpeg";
 import Image from "next/image";
 
 export default function AboutUs() {
@@ -8,7 +8,7 @@ export default function AboutUs() {
     <>
       <div
         style={{
-          backgroundImage: `url(${team.src})`,
+          backgroundImage: `url(${greyTexture.src})`,
           width: "100%",
           backgroundSize: "100% 550px",
           backgroundRepeat: "no-repeat",

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "@/styles/Pages/Services.module.css";
-import smartphone from "public/smartphone.jpg";
+import greyTexture from "public/grey_texture.jpeg";
 import Link from "next/link";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
@@ -9,7 +9,7 @@ export default function Services() {
     <>
       <div
         style={{
-          backgroundImage: `url(${smartphone.src})`,
+          backgroundImage: `url(${greyTexture.src})`,
           width: "100%",
           backgroundSize: "100% 400px",
           backgroundRepeat: "no-repeat",
