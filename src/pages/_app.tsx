@@ -29,8 +29,6 @@ export default function App({ Component, pageProps }: AppProps) {
           style={{
             backgroundColor: "rgb(255, 255, 255, 0.5)",
             minHeight: "100vh",
-            paddingTop: 40,
-            paddingBottom: 40,
           }}>
           <NavBarContainer />
           <ErrorBoundary>
