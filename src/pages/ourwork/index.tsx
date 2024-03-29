@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "@/styles/Pages/OurWork.module.css";
-import greyTexture from "public/grey_texture.jpeg";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineArrowRight } from "react-icons/ai";
@@ -8,14 +7,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 export default function OurWork() {
   return (
     <>
-      <div
-        style={{
-          backgroundImage: `url(${greyTexture.src})`,
-          width: "100%",
-          backgroundSize: "100% 650px",
-          backgroundRepeat: "no-repeat",
-          marginTop: 50,
-        }}>
+      <div>
         <div className={styles.banner}>
           <h2 className={styles.bannerHeader}>
             Be Inspired By The Dreams of Others

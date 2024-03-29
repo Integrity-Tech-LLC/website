@@ -1,10 +1,7 @@
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
-import greyTexture from "public/grey_texture.jpeg";
-import brand from "public/brand.jpeg";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import contact from "public/contactpagephoto.jpeg";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 export default function Home() {
@@ -47,14 +44,7 @@ export default function Home() {
           priority
         />
       </div>
-      <div
-        style={{
-          backgroundImage: `url(${greyTexture.src})`,
-          width: "100%",
-          backgroundSize: "100% 400px",
-          backgroundRepeat: "no-repeat",
-          marginTop: 50,
-        }}>
+      <div>
         <div style={{ marginTop: "-80px" }} className={styles.bodyBlack}>
           <h2 className={styles.headerBlack}>
             Your resource for custom websites and apps
@@ -126,13 +116,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div
-        style={{
-          backgroundImage: `url(${greyTexture.src})`,
-          width: "100%",
-          backgroundSize: "100% 430px",
-          backgroundRepeat: "no-repeat",
-        }}>
+      <div>
         <div className={styles.bodyBlack}>
           <h2 className={styles.headerBlack}>Our Work Speaks For Itself</h2>
           <div className={styles.weclean}>
@@ -244,17 +228,8 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div
-          style={{
-            backgroundImage: `url(${greyTexture.src})`,
-            width: "100%",
-            backgroundSize: "100% 400px",
-            backgroundRepeat: "no-repeat",
-            marginTop: 100,
-          }}>
-          <div
-            style={{ marginTop: "-80px", height: 400 }}
-            className={styles.bodyBlack}>
+        <div>
+          <div style={{ paddingBottom: 100 }} className={styles.bodyBlack}>
             <h2 className={styles.headerBlack}>Get In Touch!</h2>
             <p className={styles.textBlack}>
               We offer free estimates! Contact us below and we'll walk you

@@ -1,18 +1,10 @@
 import React from "react";
 import styles from "@/styles/Pages/Services.module.css";
-import greyTexture from "public/grey_texture.jpeg";
 
 export default function Maintenance() {
   return (
     <>
-      <div
-        style={{
-          backgroundImage: `url(${greyTexture.src})`,
-          width: "100%",
-          backgroundSize: "100% 400px",
-          backgroundRepeat: "no-repeat",
-          marginTop: 50,
-        }}>
+      <div>
         <div className={styles.banner}>
           <h2 className={styles.bannerHeader}>Maintenance Packages</h2>
           <p className={styles.bannerText}>

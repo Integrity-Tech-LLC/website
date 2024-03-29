@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "@/styles/Pages/Reviews.module.css";
-import greyTexture from "public/grey_texture.jpeg";
 import Image from "next/image";
 
 export default function Reviews() {
@@ -8,7 +7,6 @@ export default function Reviews() {
     <>
       <div
         style={{
-          backgroundImage: `url(${greyTexture.src})`,
           width: "100%",
           backgroundSize: "100% 250px",
           backgroundRepeat: "no-repeat",

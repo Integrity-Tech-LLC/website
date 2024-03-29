@@ -1,20 +1,12 @@
 import React from "react";
 import styles from "@/styles/Pages/OurWork.module.css";
-import greyTexture from "public/grey_texture.jpeg";
 import Link from "next/link";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 export default function Integrations() {
   return (
     <>
-      <div
-        style={{
-          backgroundImage: `url(${greyTexture.src})`,
-          width: "100%",
-          backgroundSize: "100% 650px",
-          backgroundRepeat: "no-repeat",
-          marginTop: 50,
-        }}>
+      <div>
         <div className={styles.banner}>
           <h2 className={styles.bannerHeader}>Need some inspiration?</h2>
           <p className={styles.bannerText}>

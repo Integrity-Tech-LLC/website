@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styles from "@/styles/Pages/Contact.module.css";
-import greyTexture from "public/grey_texture.jpeg";
 import Image from "next/image";
 import { emailFormatValidationHelper } from "@/helpers/emailFormatValidationHelper";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
@@ -133,15 +132,7 @@ export default function Contact() {
           </div>
         </div>
       )}
-      <div
-        style={{
-          backgroundImage: `url(${greyTexture.src})`,
-          width: "100%",
-          backgroundSize: "100% 650px",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          marginTop: 50,
-        }}>
+      <div>
         <div className={styles.banner}>
           <h2 className={styles.bannerHeader}>We're Glad to Hear From You!</h2>
           <p className={styles.bannerText}>

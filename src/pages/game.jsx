@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styles from "@/styles/Pages/Game.module.css";
-import greyTexture from "public/grey_texture.jpeg";
 import Image from "next/image";
 import { GiSpikyExplosion } from "react-icons/gi";
 
@@ -165,13 +164,7 @@ const clickFunc = () => {
 
   return (
     <>
-      <div
-        style={{
-          backgroundImage: `url(${greyTexture.src})`,
-          width: "100%",
-          backgroundSize: "100% 250px",
-          backgroundRepeat: "no-repeat",
-        }}>
+      <div>
         <div className={styles.banner}>
           <br /><br /><br />
           <h2 className={styles.bannerHeader}>Logo Attack! Time: {timer}</h2>
