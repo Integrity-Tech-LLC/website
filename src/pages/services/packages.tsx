@@ -40,7 +40,8 @@ export default function Packages() {
               <span className={styles.hyperlinkwhite}>Logo Attack.</span>
             </Link>{" "}
             It's a game we built on our own website to demonstrate the level of
-            customization we can offer.
+            creativity that's afforded to you by choosing us. You will almost
+            never hear us say "that's impossible".
             <br />
             <br /> All custom websites are required to have a{" "}
             <Link href={`/services/maintenance`}>
