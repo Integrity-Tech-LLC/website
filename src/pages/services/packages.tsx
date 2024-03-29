@@ -25,10 +25,17 @@ export default function Packages() {
             <br />
             <br />
             We never use third-party platforms like Wordpress to build your
-            site. We build everything from the ground up. This is designed to
-            allow you to have even further control over your site and reduces
-            overhead so we can pass the savings onto you. If you want an idea of
-            how much control you can have, check out{" "}
+            site. We build everything from the ground up. This has many
+            benefits, including complete control over your site as well as
+            unmatched loading speed. This is something our competitors simply
+            can not compete with. Look no further than our own website for an
+            example. I challenge you to find a website that's quicker than ours.
+            Fast load times can greatly improve user experience as well as give
+            you a huge SEO advantage.
+            <br />
+            <br />
+            If you want an example of the level of customization you can have,
+            check out{" "}
             <Link href={`/game`}>
               <span className={styles.hyperlinkwhite}>Logo Attack.</span>
             </Link>{" "}
