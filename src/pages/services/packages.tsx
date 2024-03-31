@@ -67,7 +67,7 @@ export default function Packages() {
       <div className={styles.container}>
         <h2 className={styles.header}>Business Grower</h2>
         <ul className={styles.text}>
-          <li className={styles.price}>$5,000</li>
+          <li className={styles.price}>$7,500</li>
           <li>Includes everything from Business Starter</li>
           <li>Fully customizable website with up to 15 pages</li>
           <li>
@@ -91,7 +91,7 @@ export default function Packages() {
       <div className={styles.container}>
         <h2 className={styles.header}>Business Rocket</h2>
         <ul className={styles.text}>
-          <li className={styles.price}>$10,000</li>
+          <li className={styles.price}>$15,000</li>
           <li>Includes everything from Business Starter and Business Grower</li>
           <li>
             E-commerce integration (Example: Shopify, BigCommerce or Etsy
@@ -100,13 +100,39 @@ export default function Packages() {
           <li>Fully customizable website with up to 30 pages</li>
           <li>Total of 15 employee logins</li>
           <li>
-            Total of 10 additional custom integrations of your choosing (see{" "}
+            Total of 5 additional custom integrations of your choosing (see{" "}
             <Link href={`/services/integrations`}>
               <span className={styles.hyperlink}>
                 suggested integrations here
               </span>
             </Link>{" "}
             if you need some inspiration.)
+          </li>
+        </ul>
+      </div>
+      <div className={styles.container}>
+        <h2 className={styles.header}>E-Commerce Rocket</h2>
+        <ul className={styles.text}>
+          <li className={styles.price}>$35,000</li>
+          <li>
+            Includes Business Starter, Business Grower, and Business Rocket
+          </li>
+          <li>Built from scratch E-Commerce store that is truly your own</li>
+          <li>Completely 100% customized and branded to your requirements</li>
+          <li>
+            Stripe, Square, or Paypal integration designed to allow you to take
+            payments
+          </li>
+          <li>
+            Integration with Mailchimp so you can send out marketing emails and
+            set reminders [abandoned cart emails for example]
+          </li>
+          <li>
+            We charge only the base transaction fee for most credit card
+            transactions and our normal rates. Unlike mass produced E-Commerce
+            platforms we never charge additional per sale. Your sales are your
+            greatest asset; build your E-Commerce site with us and claim back
+            your profits.
           </li>
         </ul>
       </div>
