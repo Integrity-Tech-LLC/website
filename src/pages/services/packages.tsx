@@ -128,11 +128,9 @@ export default function Packages() {
             set reminders [abandoned cart emails for example]
           </li>
           <li>
-            We charge only the base transaction fee for most credit card
-            transactions and our normal rates. Unlike mass produced E-Commerce
-            platforms we never charge additional per sale. Your sales are your
-            greatest asset; build your E-Commerce site with us and claim back
-            your profits.
+            Unlike mass produced E-Commerce platforms we never charge additional
+            per sale. Your sales are your greatest asset; build your E-Commerce
+            site with us and claim back your profits.
           </li>
         </ul>
       </div>
