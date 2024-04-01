@@ -70,15 +70,13 @@ export default function Packages() {
           <li className={styles.price}>$7,500</li>
           <li>Includes everything from Business Starter</li>
           <li>Fully customizable website with up to 15 pages</li>
-          <li>
-            Login portal for internal use, includes up to 5 employee logins
-          </li>
+          <li>Login portal, includes up to 5 logins</li>
+          <li>Basic CMS (ability to update body text on pages)</li>
           <li>Calendly integration</li>
           <li>Google Maps integration</li>
           <li>Database implementation</li>
           <li>
-            Up to 3 additional custom integrations and features of your choosing
-            (see{" "}
+            Up to 3 custom integrations and features of your choosing (see{" "}
             <Link href={`/services/integrations`}>
               <span className={styles.hyperlink}>
                 suggested integrations here
@@ -98,9 +96,10 @@ export default function Packages() {
             integration)
           </li>
           <li>Fully customizable website with up to 30 pages</li>
-          <li>Total of 15 employee logins</li>
+          <li>Total of 15 logins</li>
+          <li>Premium CMS (update text and photo galleries)</li>
           <li>
-            Total of 5 additional custom integrations of your choosing (see{" "}
+            Total of 5 custom integrations of your choosing (see{" "}
             <Link href={`/services/integrations`}>
               <span className={styles.hyperlink}>
                 suggested integrations here
@@ -117,17 +116,16 @@ export default function Packages() {
           <li>
             Includes Business Starter, Business Grower, and Business Rocket
           </li>
-          <li>Built from scratch E-Commerce store that is truly your own</li>
+          <li>Custom built E-Commerce store that is truly your own</li>
           <li>Completely 100% customized and branded to your requirements</li>
           <li>
-            Stripe, Square, or Paypal integration designed to allow you to take
-            payments
+            Complete CMS (update products, create promotions and gift cards,
+            edit content and photos)
           </li>
-          <li>
-            Integration with Mailchimp so you can send out marketing emails and
-            set reminders [abandoned cart emails for example]
-          </li>
-          <li>
+          <li>Stripe, Square, or Paypal integration</li>
+          <li>Integration with Mailchimp</li>
+          <li style={{ listStyleType: "none" }}>
+            <br />
             Unlike mass produced E-Commerce platforms we never charge additional
             per sale. Your sales are your greatest asset; build your E-Commerce
             site with us and claim back your profits.
