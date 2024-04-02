@@ -128,7 +128,7 @@ export default function Home() {
       </div>
       <div>
         <div className={styles.bodyBlack}>
-          <AnimationOnScroll animateIn="fadeInLeft">
+          <AnimationOnScroll animateIn="fadeInDown">
             <h2 className={styles.headerBlack}>Our Work Speaks For Itself</h2>
           </AnimationOnScroll>
           <AnimationOnScroll animateIn="animate__zoomIn">
@@ -161,7 +161,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.bodyWhite}>
-          <AnimationOnScroll animateIn="zoomInDown">
+          <AnimationOnScroll animateIn="fadeInDown">
             <h2 className={styles.headerWhite}>Who is Integrity Tech?</h2>
           </AnimationOnScroll>
           <AnimationOnScroll animateIn="animate__zoomIn">
