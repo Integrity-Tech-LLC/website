@@ -1,7 +1,7 @@
-import "animate.css/animate.min.css";
-import { AnimationOnScroll } from "react-animation-on-scroll";
 import React from "react";
 import styles from "@/styles/Pages/Services.module.css";
+import animations from "@/styles/Animations/Animations.module.css";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import Link from "next/link";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
@@ -10,6 +10,8 @@ export default function Services() {
     <>
       <div>
         <div className={styles.banner}>
+          <br />
+          <br />
           <h2 className={styles.bannerHeader}>Consider Us Your Key</h2>
           <p className={styles.bannerText}>
             Technology can be daunting, but unlocking its potential can be a
@@ -21,7 +23,9 @@ export default function Services() {
           </p>
         </div>
       </div>
-      <AnimationOnScroll animateIn="fadeInLeft" className={styles.container}>
+      <AnimationOnScroll
+        animateIn={animations.fadeInLeft}
+        className={styles.container100}>
         <h2 className={styles.header}>
           Fully Customized and Professional Websites
         </h2>
@@ -39,7 +43,9 @@ export default function Services() {
           </div>
         </p>
       </AnimationOnScroll>
-      <AnimationOnScroll animateIn="fadeInRight" className={styles.container}>
+      <AnimationOnScroll
+        animateIn={animations.fadeInRight}
+        className={styles.container100}>
         <h2 className={styles.header}>Custom Web and Mobile Apps</h2>
         <p className={styles.text}>
           With all the software products out there you would think there would
@@ -54,6 +60,8 @@ export default function Services() {
           </div>
         </p>
       </AnimationOnScroll>
+      <br />
+      <br />
     </>
   );
 }

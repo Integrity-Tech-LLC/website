@@ -1,5 +1,5 @@
 import React from "react";
-import "animate.css/animate.min.css";
+import animations from "@/styles/Animations/Animations.module.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import styles from "@/styles/Pages/Services.module.css";
 
@@ -25,7 +25,9 @@ export default function Maintenance() {
           </p>
         </div>
       </div>
-      <AnimationOnScroll animateIn="fadeInLeft" className={styles.container}>
+      <AnimationOnScroll
+        animateIn={animations.fadeInLeft}
+        className={styles.container}>
         <h2 className={styles.header}>Bare-bones Upkeep</h2>
         <ul className={styles.text}>
           <li className={styles.priceMonth}>$50/month</li>
@@ -35,7 +37,9 @@ export default function Maintenance() {
           <li>Free SSL</li>
         </ul>
       </AnimationOnScroll>
-      <AnimationOnScroll animateIn="fadeInRight" className={styles.container}>
+      <AnimationOnScroll
+        animateIn={animations.fadeInRight}
+        className={styles.container}>
         <h2 className={styles.header}>Basic Upkeep</h2>
         <ul className={styles.text}>
           <li className={styles.priceMonth}>$200/month</li>
@@ -47,7 +51,9 @@ export default function Maintenance() {
           <li>Up to 1 free service hour per month</li>
         </ul>
       </AnimationOnScroll>
-      <AnimationOnScroll animateIn="fadeInLeft" className={styles.container}>
+      <AnimationOnScroll
+        animateIn={animations.fadeInLeft}
+        className={styles.container}>
         <h2 className={styles.header}>Moderate Upkeep</h2>
         <ul className={styles.text}>
           <li className={styles.priceMonth}>$400/month</li>
@@ -56,7 +62,9 @@ export default function Maintenance() {
           <li>Up to 3 free service hours per month</li>
         </ul>
       </AnimationOnScroll>
-      <AnimationOnScroll animateIn="fadeInRight" className={styles.container}>
+      <AnimationOnScroll
+        animateIn={animations.fadeInRight}
+        className={styles.container}>
         <h2 className={styles.header}>Consistent Upkeep</h2>
         <ul className={styles.text}>
           <li className={styles.priceMonth}>$750/month</li>
@@ -67,7 +75,9 @@ export default function Maintenance() {
           <li>Up to 5 free service hours per month</li>
         </ul>
       </AnimationOnScroll>
-      <AnimationOnScroll animateIn="fadeInLeft" className={styles.container}>
+      <AnimationOnScroll
+        animateIn={animations.fadeInLeft}
+        className={styles.container}>
         <h2 className={styles.header}>Full-Time Upkeep</h2>
         <ul className={styles.text}>
           <li className={styles.priceMonth}>$1000/month</li>

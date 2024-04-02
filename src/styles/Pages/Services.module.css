@@ -5,6 +5,13 @@
     vertical-align: top;
 }
 
+.container100 {
+    width: 100%;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
 @media screen and (max-width: 1450px) {
     .container {
         width: 100%;

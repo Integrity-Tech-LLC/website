@@ -1,5 +1,5 @@
 import React from "react";
-import "animate.css/animate.min.css";
+import animations from "@/styles/Animations/Animations.module.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import styles from "@/styles/Pages/Services.module.css";
 import Link from "next/link";
@@ -32,7 +32,9 @@ export default function Packages() {
           </p>
         </div>
       </div>
-      <AnimationOnScroll animateIn="fadeInLeft" className={styles.container}>
+      <AnimationOnScroll
+        animateIn={animations.fadeInLeft}
+        className={styles.container}>
         <h2 className={styles.header}>Business Starter</h2>
         <ul className={styles.text}>
           <li className={styles.price}>$2,500</li>
@@ -50,7 +52,9 @@ export default function Packages() {
           <li>Business Gmail set-up</li>
         </ul>
       </AnimationOnScroll>
-      <AnimationOnScroll animateIn="fadeInRight" className={styles.container}>
+      <AnimationOnScroll
+        animateIn={animations.fadeInRight}
+        className={styles.container}>
         <h2 className={styles.header}>Business Grower</h2>
         <ul className={styles.text}>
           <li className={styles.price}>$7,500</li>
@@ -72,7 +76,9 @@ export default function Packages() {
           </li>
         </ul>
       </AnimationOnScroll>
-      <AnimationOnScroll animateIn="fadeInLeft" className={styles.container}>
+      <AnimationOnScroll
+        animateIn={animations.fadeInLeft}
+        className={styles.container}>
         <h2 className={styles.header}>Business Rocket</h2>
         <ul className={styles.text}>
           <li className={styles.price}>$15,000</li>
@@ -95,7 +101,9 @@ export default function Packages() {
           </li>
         </ul>
       </AnimationOnScroll>
-      <AnimationOnScroll animateIn="fadeInRight" className={styles.container}>
+      <AnimationOnScroll
+        animateIn={animations.fadeInRight}
+        className={styles.container}>
         <h2 className={styles.header}>E-Commerce Rocket</h2>
         <ul className={styles.text}>
           <li className={styles.price}>$35,000</li>
@@ -118,7 +126,9 @@ export default function Packages() {
           </li>
         </ul>
       </AnimationOnScroll>
-      <AnimationOnScroll animateIn="fadeInLeft" className={styles.container}>
+      <AnimationOnScroll
+        animateIn={animations.fadeInLeft}
+        className={styles.container}>
         <h2 className={styles.header}>Custom Application</h2>
         <ul className={styles.text}>
           <li className={styles.price}>Varies</li>

@@ -1,4 +1,4 @@
-import "animate.css/animate.min.css";
+import animations from "@/styles/Animations/Animations.module.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
@@ -48,12 +48,12 @@ export default function Home() {
       </div>
       <div>
         <div style={{ marginTop: "-80px" }} className={styles.bodyBlack}>
-          <AnimationOnScroll animateIn="animate__fadeInDown">
+          <AnimationOnScroll animateIn={animations.fadeInDown}>
             <h2 className={styles.headerBlack}>
               Your resource for custom websites and apps
             </h2>
           </AnimationOnScroll>
-          <AnimationOnScroll animateIn="animate__fadeIn">
+          <AnimationOnScroll animateIn={animations.fadeIn}>
             <p className={styles.textBlack}>
               We offer fully customizable websites and web applications tailored
               to your unique business needs, ensuring a fully utilized online
@@ -68,10 +68,10 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.bodyWhite}>
-        <AnimationOnScroll animateIn="animate__fadeInRight">
+        <AnimationOnScroll animateIn={animations.fadeInRight}>
           <h2 className={styles.headerWhite}>We Make an Impression!</h2>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__zoomIn">
+        <AnimationOnScroll animateIn={animations.zoomIn}>
           {current === 1 && (
             <div className={styles.container}>
               <div className={styles.text}>
@@ -128,10 +128,10 @@ export default function Home() {
       </div>
       <div>
         <div className={styles.bodyBlack}>
-          <AnimationOnScroll animateIn="fadeInDown">
+          <AnimationOnScroll animateIn={animations.fadeInDown}>
             <h2 className={styles.headerBlack}>Our Work Speaks For Itself</h2>
           </AnimationOnScroll>
-          <AnimationOnScroll animateIn="animate__zoomIn">
+          <AnimationOnScroll animateIn={animations.zoomIn}>
             <div className={styles.weclean}>
               <h2 className={styles.header}>WeClean SaaS App</h2>
               <div className={styles.text}>
@@ -161,10 +161,10 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.bodyWhite}>
-          <AnimationOnScroll animateIn="fadeInDown">
+          <AnimationOnScroll animateIn={animations.fadeInDown}>
             <h2 className={styles.headerWhite}>Who is Integrity Tech?</h2>
           </AnimationOnScroll>
-          <AnimationOnScroll animateIn="animate__zoomIn">
+          <AnimationOnScroll animateIn={animations.zoomIn}>
             {team === 1 && (
               <div className={styles.container}>
                 <h2 className={styles.header}>Christopher Neisen</h2>
@@ -250,10 +250,10 @@ export default function Home() {
         </div>
         <div>
           <div style={{ paddingBottom: 100 }} className={styles.bodyBlack}>
-            <AnimationOnScroll animateIn="animate__fadeInLeft">
+            <AnimationOnScroll animateIn={animations.fadeInLeft}>
               <h2 className={styles.headerBlack}>Get In Touch!</h2>
             </AnimationOnScroll>
-            <AnimationOnScroll animateIn="animate__fadeInRight">
+            <AnimationOnScroll animateIn={animations.fadeInRight}>
               <p className={styles.textBlack}>
                 We offer free estimates! Contact us below and we'll walk you
                 through the process from start to finish. We look forward to

@@ -1,5 +1,5 @@
 import React from "react";
-import "animate.css/animate.min.css";
+import animations from "@/styles/Animations/Animations.module.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import styles from "@/styles/Pages/OurWork.module.css";
 import Link from "next/link";
@@ -20,7 +20,9 @@ export default function Integrations() {
           </p>
         </div>
       </div>
-      <AnimationOnScroll animateIn="fadeInUp" className={styles.body}>
+      <AnimationOnScroll
+        animateIn={animations.fadeInUp}
+        className={styles.body}>
         <h2 className={styles.header}>Suggested Integrations</h2>
         <div className={styles.text}>
           <ul>

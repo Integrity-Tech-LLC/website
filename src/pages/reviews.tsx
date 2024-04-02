@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "@/styles/Pages/Reviews.module.css";
-import "animate.css/animate.min.css";
+import animations from "@/styles/Animations/Animations.module.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import Image from "next/image";
 
@@ -23,7 +23,9 @@ export default function Reviews() {
           </p>
         </div>
       </div>
-      <AnimationOnScroll animateIn="fadeInLeft" className={styles.container}>
+      <AnimationOnScroll
+        animateIn={animations.fadeInLeft}
+        className={styles.container}>
         <div className={styles.text}>
           <Image
             src="/jared.jpeg"
@@ -52,7 +54,9 @@ export default function Reviews() {
           </p>
         </div>
       </AnimationOnScroll>
-      <AnimationOnScroll animateIn="fadeInRight" className={styles.container}>
+      <AnimationOnScroll
+        animateIn={animations.fadeInRight}
+        className={styles.container}>
         <div className={styles.text}>
           <Image
             src="/jason.jpeg"

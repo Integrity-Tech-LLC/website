@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "@/styles/Pages/Contact.module.css";
-import "animate.css/animate.min.css";
+import animations from "@/styles/Animations/Animations.module.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import Image from "next/image";
 import { emailFormatValidationHelper } from "@/helpers/emailFormatValidationHelper";
@@ -146,7 +146,9 @@ export default function Contact() {
         </div>
       </div>
       {!messageSent ? (
-        <AnimationOnScroll animateIn="fadeInUp" className={styles.body}>
+        <AnimationOnScroll
+          animateIn={animations.fadeInUp}
+          className={styles.body}>
           <div className={styles.text}>
             {/* <div className={styles.inputFieldRadio}>
               <input
@@ -281,7 +283,9 @@ export default function Contact() {
           </div>
         </AnimationOnScroll>
       ) : (
-        <AnimationOnScroll animateIn="fadeInUp" className={styles.container}>
+        <AnimationOnScroll
+          animateIn={animations.fadeInUp}
+          className={styles.container}>
           <p className={styles.confirm}>
             Thank you for your message! We'll reach out to you very soon!
           </p>

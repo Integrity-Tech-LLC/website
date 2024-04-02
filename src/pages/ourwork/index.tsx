@@ -2,7 +2,7 @@ import React from "react";
 import styles from "@/styles/Pages/OurWork.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import "animate.css/animate.min.css";
+import animations from "@/styles/Animations/Animations.module.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
@@ -23,7 +23,9 @@ export default function OurWork() {
           </p>
         </div>
       </div>
-      <AnimationOnScroll animateIn="fadeInUp" className={styles.body}>
+      <AnimationOnScroll
+        animateIn={animations.fadeInUp}
+        className={styles.body}>
         <h2 className={styles.header}>WeClean SaaS App</h2>
         <div className={styles.text}>
           <Image
