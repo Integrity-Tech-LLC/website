@@ -21,7 +21,7 @@ export default function Services() {
           </p>
         </div>
       </div>
-      <div className={styles.container}>
+      <AnimationOnScroll animateIn="fadeInLeft" className={styles.container}>
         <h2 className={styles.header}>
           Fully Customized and Professional Websites
         </h2>
@@ -38,8 +38,8 @@ export default function Services() {
             </Link>
           </div>
         </p>
-      </div>
-      <div className={styles.container}>
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn="fadeInRight" className={styles.container}>
         <h2 className={styles.header}>Custom Web and Mobile Apps</h2>
         <p className={styles.text}>
           With all the software products out there you would think there would
@@ -53,7 +53,7 @@ export default function Services() {
             </Link>
           </div>
         </p>
-      </div>
+      </AnimationOnScroll>
     </>
   );
 }

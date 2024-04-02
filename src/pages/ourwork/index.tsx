@@ -2,6 +2,8 @@ import React from "react";
 import styles from "@/styles/Pages/OurWork.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 export default function OurWork() {
@@ -9,6 +11,8 @@ export default function OurWork() {
     <>
       <div>
         <div className={styles.banner}>
+          <br />
+          <br />
           <h2 className={styles.bannerHeader}>
             Be Inspired By The Dreams of Others
           </h2>
@@ -19,7 +23,7 @@ export default function OurWork() {
           </p>
         </div>
       </div>
-      <div className={styles.body}>
+      <AnimationOnScroll animateIn="fadeInUp" className={styles.body}>
         <h2 className={styles.header}>WeClean SaaS App</h2>
         <div className={styles.text}>
           <Image
@@ -50,7 +54,7 @@ export default function OurWork() {
             </Link>
           </div>
         </div>
-      </div>
+      </AnimationOnScroll>
     </>
   );
 }

@@ -1,4 +1,6 @@
 import React from "react";
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import styles from "@/styles/Pages/Services.module.css";
 
 export default function Maintenance() {
@@ -6,6 +8,8 @@ export default function Maintenance() {
     <>
       <div>
         <div className={styles.banner}>
+          <br />
+          <br />
           <h2 className={styles.bannerHeader}>Maintenance Packages</h2>
           <p className={styles.bannerText}>
             All custom websites are required to have a monthly maintenance plan.
@@ -21,7 +25,7 @@ export default function Maintenance() {
           </p>
         </div>
       </div>
-      <div className={styles.container}>
+      <AnimationOnScroll animateIn="fadeInLeft" className={styles.container}>
         <h2 className={styles.header}>Bare-bones Upkeep</h2>
         <ul className={styles.text}>
           <li className={styles.priceMonth}>$50/month</li>
@@ -30,8 +34,8 @@ export default function Maintenance() {
           <li>Free domain registration</li>
           <li>Free SSL</li>
         </ul>
-      </div>
-      <div className={styles.container}>
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn="fadeInRight" className={styles.container}>
         <h2 className={styles.header}>Basic Upkeep</h2>
         <ul className={styles.text}>
           <li className={styles.priceMonth}>$200/month</li>
@@ -42,8 +46,8 @@ export default function Maintenance() {
           <li>Up to 2 email addresses on your Google Workspace account</li>
           <li>Up to 1 free service hour per month</li>
         </ul>
-      </div>
-      <div className={styles.container}>
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn="fadeInLeft" className={styles.container}>
         <h2 className={styles.header}>Moderate Upkeep</h2>
         <ul className={styles.text}>
           <li className={styles.priceMonth}>$400/month</li>
@@ -51,8 +55,8 @@ export default function Maintenance() {
           <li>Up to 5 email addresses on your Google Workspace account</li>
           <li>Up to 3 free service hours per month</li>
         </ul>
-      </div>
-      <div className={styles.container}>
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn="fadeInRight" className={styles.container}>
         <h2 className={styles.header}>Consistent Upkeep</h2>
         <ul className={styles.text}>
           <li className={styles.priceMonth}>$750/month</li>
@@ -62,8 +66,8 @@ export default function Maintenance() {
           <li>Up to 10 email addresses on your Google Workspace account</li>
           <li>Up to 5 free service hours per month</li>
         </ul>
-      </div>
-      <div className={styles.container}>
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn="fadeInLeft" className={styles.container}>
         <h2 className={styles.header}>Full-Time Upkeep</h2>
         <ul className={styles.text}>
           <li className={styles.priceMonth}>$1000/month</li>
@@ -71,7 +75,7 @@ export default function Maintenance() {
           <li>Up to 15 email addresses on your Google Workspace account</li>
           <li>Up to 8 free service hours per month</li>
         </ul>
-      </div>
+      </AnimationOnScroll>
     </>
   );
 }

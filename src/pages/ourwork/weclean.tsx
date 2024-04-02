@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "@/styles/Pages/OurWork/WeClean.module.css";
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import weclean from "public/WeClean.png";
 import Image from "next/image";
 
@@ -23,7 +25,7 @@ export default function WeClean() {
           </p>
         </div>
       </div>
-      <div className={styles.body}>
+      <AnimationOnScroll animateIn="fadeInUp" className={styles.body}>
         <div className={styles.text}>
           <Image
             src="/WeClean.png"
@@ -130,7 +132,7 @@ export default function WeClean() {
             the future.
           </p>
         </div>
-      </div>
+      </AnimationOnScroll>
     </>
   );
 }

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "@/styles/Pages/Contact.module.css";
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import Image from "next/image";
 import { emailFormatValidationHelper } from "@/helpers/emailFormatValidationHelper";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
@@ -133,6 +135,8 @@ export default function Contact() {
         </div>
       )}
       <div>
+        <br />
+        <br />
         <div className={styles.banner}>
           <h2 className={styles.bannerHeader}>We're Glad to Hear From You!</h2>
           <p className={styles.bannerText}>
@@ -142,7 +146,7 @@ export default function Contact() {
         </div>
       </div>
       {!messageSent ? (
-        <div className={styles.body}>
+        <AnimationOnScroll animateIn="fadeInUp" className={styles.body}>
           <div className={styles.text}>
             {/* <div className={styles.inputFieldRadio}>
               <input
@@ -275,14 +279,25 @@ export default function Contact() {
               </>
             )} */}
           </div>
-        </div>
+        </AnimationOnScroll>
       ) : (
-        <div className={styles.body}>
+        <AnimationOnScroll animateIn="fadeInUp" className={styles.container}>
           <p className={styles.confirm}>
             Thank you for your message! We'll reach out to you very soon!
           </p>
-        </div>
+        </AnimationOnScroll>
       )}
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 }

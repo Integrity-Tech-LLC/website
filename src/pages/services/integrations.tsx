@@ -1,4 +1,6 @@
 import React from "react";
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import styles from "@/styles/Pages/OurWork.module.css";
 import Link from "next/link";
 import { AiOutlineArrowRight } from "react-icons/ai";
@@ -8,18 +10,17 @@ export default function Integrations() {
     <>
       <div>
         <div className={styles.banner}>
+          <br />
+          <br />
           <h2 className={styles.bannerHeader}>Need some inspiration?</h2>
           <p className={styles.bannerText}>
-            Have you ever heard the phrase "you don't know what you don't know"?
-            How can you make a decision when you don't know what is available to
-            you? Let us help. Below is a list of common integrations that are
-            used in many different business websites. Here at Integrity Tech we
-            are able to incorporate any of these features into your custom
-            website.
+            Below is a list of common integrations that are used in many
+            different business websites. We are able to incorporate any of these
+            features into your custom website.
           </p>
         </div>
       </div>
-      <div className={styles.body}>
+      <AnimationOnScroll animateIn="fadeInUp" className={styles.body}>
         <h2 className={styles.header}>Suggested Integrations</h2>
         <div className={styles.text}>
           <ul>
@@ -64,7 +65,7 @@ export default function Integrations() {
             </Link>
           </div>
         </div>
-      </div>
+      </AnimationOnScroll>
     </>
   );
 }

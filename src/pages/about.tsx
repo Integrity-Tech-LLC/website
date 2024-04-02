@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "@/styles/Pages/AboutUs.module.css";
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import Image from "next/image";
 
 export default function AboutUs() {
@@ -10,7 +12,7 @@ export default function AboutUs() {
           <h2 className={styles.bannerHeader}>Meet The Team!</h2>
         </div>
       </div>
-      <div className={styles.container}>
+      <AnimationOnScroll animateIn="fadeInLeft" className={styles.container}>
         <h2 className={styles.header}>Christopher Neisen</h2>
         <div className={styles.text}>
           <Image
@@ -52,8 +54,8 @@ export default function AboutUs() {
           <br />
           <div className={styles.link}>--Founder and Software Engineer</div>
         </div>
-      </div>
-      <div className={styles.container}>
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn="fadeInUp" className={styles.container}>
         <h2 className={styles.header}>Megan Neisen</h2>
         <div className={styles.text}>
           <Image
@@ -78,8 +80,8 @@ export default function AboutUs() {
           <br />
           <div className={styles.link}>--Bookkeeper and Content Editor</div>
         </div>
-      </div>
-      <div className={styles.container}>
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn="fadeInRight" className={styles.container}>
         <h2 className={styles.header}>Cooper</h2>
         <div className={styles.text}>
           <Image
@@ -102,7 +104,7 @@ export default function AboutUs() {
           <br />
           <div className={styles.link}>--Office Mascot</div>
         </div>
-      </div>
+      </AnimationOnScroll>
     </>
   );
 }

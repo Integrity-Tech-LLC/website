@@ -1,4 +1,6 @@
 import React from "react";
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import styles from "@/styles/Pages/Services.module.css";
 import Link from "next/link";
 
@@ -7,33 +9,17 @@ export default function Packages() {
     <>
       <div>
         <div className={styles.banner}>
+          <br />
+          <br />
           <h2 className={styles.bannerHeader}>Website Packages</h2>
           <p className={styles.bannerText}>
             We offer a unique model where we create services in bundles and
-            price them at a fixed rate. This will save you a consultation call
-            and is meant to mimic the feeling of shopping in the supermarket. We
-            can then add any additional features or customization to your plan
-            as extras.
-            <br />
-            <br />
-            We never use third-party platforms like Wordpress to build your
-            site. We build everything from the ground up. This has many
-            benefits, including complete control over your site as well as
-            unmatched loading speed. This is something our competitors simply
-            can not compete with. Look no further than our own website for an
-            example. I challenge you to find a website that's quicker than ours.
-            Fast load times can greatly improve user experience as well as give
-            you a huge SEO advantage.
-            <br />
-            <br />
-            If you want an example of the level of customization you can have,
-            check out{" "}
-            <Link href={`/game`}>
-              <span className={styles.hyperlinkwhite}>Logo Attack.</span>
-            </Link>{" "}
-            It's a game we built on our own website to demonstrate the level of
-            creativity that's afforded to you by choosing us. You will almost
-            never hear us say "that's impossible".
+            price them at a fixed rate. We never use third-party platforms like
+            Wordpress to build your site. We build everything from the ground
+            up. This has many benefits, including complete control over your
+            site as well as unmatched loading speed. Look no further than our
+            own website for an example. Fast load times can greatly improve user
+            experience as well as give you a huge SEO advantage.
             <br />
             <br /> All custom websites are required to have a{" "}
             <Link href={`/services/maintenance`}>
@@ -46,7 +32,7 @@ export default function Packages() {
           </p>
         </div>
       </div>
-      <div className={styles.container}>
+      <AnimationOnScroll animateIn="fadeInLeft" className={styles.container}>
         <h2 className={styles.header}>Business Starter</h2>
         <ul className={styles.text}>
           <li className={styles.price}>$2,500</li>
@@ -63,8 +49,8 @@ export default function Packages() {
           <li>Google business registration</li>
           <li>Business Gmail set-up</li>
         </ul>
-      </div>
-      <div className={styles.container}>
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn="fadeInRight" className={styles.container}>
         <h2 className={styles.header}>Business Grower</h2>
         <ul className={styles.text}>
           <li className={styles.price}>$7,500</li>
@@ -85,8 +71,8 @@ export default function Packages() {
             if you need some inspiration.)
           </li>
         </ul>
-      </div>
-      <div className={styles.container}>
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn="fadeInLeft" className={styles.container}>
         <h2 className={styles.header}>Business Rocket</h2>
         <ul className={styles.text}>
           <li className={styles.price}>$15,000</li>
@@ -108,8 +94,8 @@ export default function Packages() {
             if you need some inspiration.)
           </li>
         </ul>
-      </div>
-      <div className={styles.container}>
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn="fadeInRight" className={styles.container}>
         <h2 className={styles.header}>E-Commerce Rocket</h2>
         <ul className={styles.text}>
           <li className={styles.price}>$35,000</li>
@@ -131,8 +117,8 @@ export default function Packages() {
             site with us and claim back your profits.
           </li>
         </ul>
-      </div>
-      <div className={styles.container}>
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn="fadeInLeft" className={styles.container}>
         <h2 className={styles.header}>Custom Application</h2>
         <ul className={styles.text}>
           <li className={styles.price}>Varies</li>
@@ -145,7 +131,7 @@ export default function Packages() {
             to schedule a free consultation.
           </li>
         </ul>
-      </div>
+      </AnimationOnScroll>
     </>
   );
 }

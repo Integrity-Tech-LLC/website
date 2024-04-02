@@ -2,6 +2,7 @@
     width: 100%;
     padding: 20px;
     display: inline-block;
+    min-height: 645px;
 }
 
 @media screen and (max-width: 1450px) {

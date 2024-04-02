@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "@/styles/Pages/Reviews.module.css";
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import Image from "next/image";
 
 export default function Reviews() {
@@ -21,7 +23,7 @@ export default function Reviews() {
           </p>
         </div>
       </div>
-      <div className={styles.container}>
+      <AnimationOnScroll animateIn="fadeInLeft" className={styles.container}>
         <div className={styles.text}>
           <Image
             src="/jared.jpeg"
@@ -49,8 +51,8 @@ export default function Reviews() {
             WeCleanLocal
           </p>
         </div>
-      </div>
-      <div className={styles.container}>
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn="fadeInRight" className={styles.container}>
         <div className={styles.text}>
           <Image
             src="/jason.jpeg"
@@ -76,7 +78,13 @@ export default function Reviews() {
             Capital
           </p>
         </div>
-      </div>
+      </AnimationOnScroll>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 }
