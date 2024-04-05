@@ -57,9 +57,9 @@ export default function Home() {
             </h2>
           </AnimationOnScroll>
           <br />
-          <div className={styles.contactWhite}>
-            <Link href="/contact">Book appointment</Link>
-          </div>
+          <Link className={styles.contactWhite} href="/contact">
+            Book appointment
+          </Link>
         </div>
       </div>
       <div>
@@ -82,9 +82,9 @@ export default function Home() {
               presence.{" "}
             </p>
           </AnimationOnScroll>
-          <div className={styles.contactBlack}>
-            <Link href={`/services`}>Services</Link>
-          </div>
+          <Link className={styles.contactBlack} href={`/services`}>
+            Services
+          </Link>
           <br />
           <br />
         </div>
@@ -153,10 +153,9 @@ export default function Home() {
           animateIn={animations.fadeInRight}>
           <h2 className={styles.headerWhite}>We Make an Impression!</h2>
         </AnimationOnScroll>
-
-        <div className={styles.contactWhite}>
-          <Link href={`/reviews`}>Reviews</Link>
-        </div>
+        <Link className={styles.contactWhite} href={`/reviews`}>
+          Reviews
+        </Link>
         <br />
         <br />
       </div>
@@ -194,9 +193,9 @@ export default function Home() {
               </div>
             </div>
           </AnimationOnScroll>
-          <div className={styles.contactBlack}>
-            <Link href={`/ourwork/weclean`}>Project Summary</Link>
-          </div>
+          <Link className={styles.contactBlack} href={`/ourwork/weclean`}>
+            Project Summary
+          </Link>
           <br />
           <br />
         </div>
@@ -294,9 +293,9 @@ export default function Home() {
             animateIn={animations.fadeInRight}>
             <h2 className={styles.headerWhite}>Who is Integrity Tech?</h2>
           </AnimationOnScroll>
-          <div className={styles.contactWhite}>
-            <Link href={`/about`}>Read More</Link>
-          </div>
+          <Link className={styles.contactWhite} href={`/about`}>
+            Read More
+          </Link>
           <br />
           <br />
         </div>
@@ -320,9 +319,9 @@ export default function Home() {
             </AnimationOnScroll>
             <br />
             <br />
-            <div className={styles.contactBlack}>
-              <Link href="/contact">Contact Us</Link>
-            </div>
+            <Link className={styles.contactBlack} href="/contact">
+              Contact Us
+            </Link>
           </div>
         </div>
       </div>

@@ -165,7 +165,7 @@ export default function Maintenance() {
               size={20}
               style={{ color: "green", paddingTop: 6 }}
             />
-            Free basic hosting
+            Free premium hosting
           </li>
           <li>
             {" "}
@@ -220,7 +220,7 @@ export default function Maintenance() {
               size={20}
               style={{ color: "green", paddingTop: 6 }}
             />
-            Free basic hosting
+            Free premium hosting
           </li>
           <li>
             {" "}
@@ -275,7 +275,7 @@ export default function Maintenance() {
               size={20}
               style={{ color: "green", paddingTop: 6 }}
             />
-            Free basic hosting
+            Free premium hosting
           </li>
           <li>
             {" "}
