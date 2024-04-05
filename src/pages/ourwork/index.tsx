@@ -24,6 +24,7 @@ export default function OurWork() {
         </div>
       </div>
       <AnimationOnScroll
+        animateOnce={true}
         animateIn={animations.fadeInUp}
         className={styles.body}>
         <h2 className={styles.header}>WeClean SaaS App</h2>

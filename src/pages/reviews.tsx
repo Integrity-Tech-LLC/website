@@ -24,6 +24,7 @@ export default function Reviews() {
         </div>
       </div>
       <AnimationOnScroll
+        animateOnce={true}
         animateIn={animations.fadeInLeft}
         className={styles.container}>
         <div className={styles.text}>
@@ -55,6 +56,7 @@ export default function Reviews() {
         </div>
       </AnimationOnScroll>
       <AnimationOnScroll
+        animateOnce={true}
         animateIn={animations.fadeInRight}
         className={styles.container}>
         <div className={styles.text}>

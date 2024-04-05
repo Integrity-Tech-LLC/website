@@ -24,6 +24,7 @@ export default function Services() {
         </div>
       </div>
       <AnimationOnScroll
+        animateOnce={true}
         animateIn={animations.fadeInLeft}
         className={styles.container100}>
         <h2 className={styles.header}>
@@ -44,6 +45,7 @@ export default function Services() {
         </p>
       </AnimationOnScroll>
       <AnimationOnScroll
+        animateOnce={true}
         animateIn={animations.fadeInRight}
         className={styles.container100}>
         <h2 className={styles.header}>Custom Web and Mobile Apps</h2>

@@ -3,6 +3,7 @@ import animations from "@/styles/Animations/Animations.module.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import styles from "@/styles/Pages/Services.module.css";
 import Link from "next/link";
+import { IoCheckmarkCircle } from "react-icons/io5";
 
 export default function Packages() {
   return (
@@ -32,101 +33,545 @@ export default function Packages() {
           </p>
         </div>
       </div>
+      <br />
       <AnimationOnScroll
+        animateOnce={true}
         animateIn={animations.fadeInLeft}
         className={styles.container}>
         <h2 className={styles.header}>Business Starter</h2>
         <ul className={styles.text}>
           <li className={styles.price}>$2,500</li>
-          <li>Fully customizable website with up to 7 pages</li>
-          <li>Complete Google ReCaptcha protection</li>
           <li>
-            Contact form for your customers to send you an email straight from
-            your site
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Fully customizable website with up to 7 pages
           </li>
-          <li>Mobile responsiveness</li>
-          <li>Domain registration</li>
-          <li>Website hosting</li>
-          <li>Google workspace set-up</li>
-          <li>Google business registration</li>
-          <li>Business Gmail set-up</li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Complete Google ReCaptcha protection
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Contact form
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Mobile responsiveness
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Domain registration
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Website hosting
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Google workspace set-up
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Google Maps integration
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Google business registration
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Business Gmail set-up
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "white", paddingTop: 6 }}
+            />
+            Login portal
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "white", paddingTop: 6 }}
+            />
+            CMS
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "white", paddingTop: 6 }}
+            />
+            Database implementation
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "white", paddingTop: 6 }}
+            />
+            Custom integrations
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "white", paddingTop: 6 }}
+            />
+            E-commerce
+          </li>
         </ul>
       </AnimationOnScroll>
       <AnimationOnScroll
+        animateOnce={true}
         animateIn={animations.fadeInRight}
-        className={styles.container}>
-        <h2 className={styles.header}>Business Grower</h2>
+        className={styles.container}
+        style={{ marginTop: "-23px" }}>
+        <h2 className={styles.mostPopular}>Most Popular</h2>
+        <h2 style={{ backgroundColor: "green" }} className={styles.header}>
+          Business Grower
+        </h2>
         <ul className={styles.text}>
           <li className={styles.price}>$7,500</li>
-          <li>Includes everything from Business Starter</li>
-          <li>Fully customizable website with up to 15 pages</li>
-          <li>Login portal, includes up to 5 logins</li>
-          <li>Basic CMS (ability to update body text on pages)</li>
-          <li>Calendly integration</li>
-          <li>Google Maps integration</li>
-          <li>Database implementation</li>
           <li>
-            Up to 3 custom integrations and features of your choosing (see{" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Fully customizable website with up to 15 pages
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Complete Google ReCaptcha protection
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Contact form
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Mobile responsiveness
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Domain registration
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Website hosting
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Google workspace set-up
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Google Maps integration
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Google business registration
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Business Gmail set-up
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Login portal (up to 5 accounts)
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            CMS (basic: edit text)
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Database implementation
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Custom integrations (up to 3,{" "}
             <Link href={`/services/integrations`}>
               <span className={styles.hyperlink}>
-                suggested integrations here
+                example integrations here
               </span>
             </Link>{" "}
-            if you need some inspiration.)
+            )
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "white", paddingTop: 6 }}
+            />
+            E-commerce
           </li>
         </ul>
       </AnimationOnScroll>
       <AnimationOnScroll
+        animateOnce={true}
         animateIn={animations.fadeInLeft}
         className={styles.container}>
         <h2 className={styles.header}>Business Rocket</h2>
         <ul className={styles.text}>
           <li className={styles.price}>$15,000</li>
-          <li>Includes everything from Business Starter and Business Grower</li>
           <li>
-            E-commerce integration (Example: Shopify, BigCommerce or Etsy
-            integration)
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Fully customizable website with up to 30 pages
           </li>
-          <li>Fully customizable website with up to 30 pages</li>
-          <li>Total of 15 logins</li>
-          <li>Premium CMS (update text and photo galleries)</li>
           <li>
-            Total of 5 custom integrations of your choosing (see{" "}
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Complete Google ReCaptcha protection
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Contact form
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Mobile responsiveness
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Domain registration
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Website hosting
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Google workspace set-up
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Google Maps integration
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Google business registration
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Business Gmail set-up
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Login portal (up to 15 accounts)
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            CMS (premium: edit text and photo galleries)
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Database implementation
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Custom integrations (up to 5,{" "}
             <Link href={`/services/integrations`}>
               <span className={styles.hyperlink}>
-                suggested integrations here
+                example integrations here
               </span>
             </Link>{" "}
-            if you need some inspiration.)
+            )
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            E-commerce integration (connect your Shopify, BigCommerce, or Etsy
+            account)
           </li>
         </ul>
       </AnimationOnScroll>
       <AnimationOnScroll
+        animateOnce={true}
         animateIn={animations.fadeInRight}
         className={styles.container}>
         <h2 className={styles.header}>E-Commerce Rocket</h2>
         <ul className={styles.text}>
           <li className={styles.price}>$35,000</li>
           <li>
-            Includes Business Starter, Business Grower, and Business Rocket
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Fully customizable website with up to 50 pages
           </li>
-          <li>Custom built E-Commerce store that is truly your own</li>
-          <li>Completely 100% customized and branded to your requirements</li>
           <li>
-            Complete CMS (update products, create promotions and gift cards,
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Complete Google ReCaptcha protection
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Contact form
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Mobile responsiveness
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Domain registration
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Website hosting
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Google workspace set-up
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Google Maps integration
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Google business registration
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Business Gmail set-up
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Login portal (unlimited accounts)
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            CMS (complete: update products, create promotions and gift cards,
             edit content and photos)
           </li>
-          <li>Stripe, Square, or Paypal integration</li>
-          <li>Integration with Mailchimp</li>
-          <li style={{ listStyleType: "none" }}>
-            <br />
-            Unlike mass produced E-Commerce platforms we never charge additional
-            per sale. Your sales are your greatest asset; build your E-Commerce
-            site with us and claim back your profits.
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Database implementation
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Custom integrations (up to 5,{" "}
+            <Link href={`/services/integrations`}>
+              <span className={styles.hyperlink}>
+                example integrations here
+              </span>
+            </Link>{" "}
+            )
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            E-commerce (100% custom built to your requirements)
           </li>
         </ul>
       </AnimationOnScroll>
       <AnimationOnScroll
+        animateOnce={true}
         animateIn={animations.fadeInLeft}
         className={styles.container}>
         <h2 className={styles.header}>Custom Application</h2>

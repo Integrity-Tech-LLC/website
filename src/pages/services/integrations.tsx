@@ -21,6 +21,7 @@ export default function Integrations() {
         </div>
       </div>
       <AnimationOnScroll
+        animateOnce={true}
         animateIn={animations.fadeInUp}
         className={styles.body}>
         <h2 className={styles.header}>Suggested Integrations</h2>

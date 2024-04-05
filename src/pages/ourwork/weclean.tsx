@@ -26,6 +26,7 @@ export default function WeClean() {
         </div>
       </div>
       <AnimationOnScroll
+        animateOnce={true}
         animateIn={animations.fadeInUp}
         className={styles.body}>
         <div className={styles.text}>

@@ -2,6 +2,7 @@ import React from "react";
 import animations from "@/styles/Animations/Animations.module.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import styles from "@/styles/Pages/Services.module.css";
+import { IoCheckmarkCircle } from "react-icons/io5";
 
 export default function Maintenance() {
   return (
@@ -25,65 +26,287 @@ export default function Maintenance() {
           </p>
         </div>
       </div>
+      <br />
       <AnimationOnScroll
+        animateOnce={true}
         animateIn={animations.fadeInLeft}
         className={styles.container}>
         <h2 className={styles.header}>Bare-bones Upkeep</h2>
         <ul className={styles.text}>
           <li className={styles.priceMonth}>$50/month</li>
-          <li>Free website monitoring</li>
-          <li>Free basic hosting</li>
-          <li>Free domain registration</li>
-          <li>Free SSL</li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free website monitoring
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free basic hosting
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free domain registration
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free SSL
+          </li>
+          <li>
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "white", paddingTop: 6 }}
+            />
+            Free email addresses
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "white", paddingTop: 6 }}
+            />
+            Free service hours
+          </li>
         </ul>
       </AnimationOnScroll>
       <AnimationOnScroll
+        animateOnce={true}
         animateIn={animations.fadeInRight}
-        className={styles.container}>
-        <h2 className={styles.header}>Basic Upkeep</h2>
+        className={styles.container}
+        style={{ marginTop: "-23px" }}>
+        <h2 className={styles.mostPopular}>Most Popular</h2>
+        <h2 style={{ backgroundColor: "green" }} className={styles.header}>
+          Basic Upkeep
+        </h2>
         <ul className={styles.text}>
           <li className={styles.priceMonth}>$200/month</li>
-          <li>Free website monitoring</li>
-          <li>Free basic hosting</li>
-          <li>Free domain registration</li>
-          <li>Free SSL</li>
-          <li>Up to 2 email addresses on your Google Workspace account</li>
-          <li>Up to 1 free service hour per month</li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free website monitoring
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free basic hosting
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free domain registration
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free SSL
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free email addresses (up to 2)
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free service hours (1 a month)
+          </li>
         </ul>
       </AnimationOnScroll>
       <AnimationOnScroll
+        animateOnce={true}
         animateIn={animations.fadeInLeft}
         className={styles.container}>
         <h2 className={styles.header}>Moderate Upkeep</h2>
         <ul className={styles.text}>
           <li className={styles.priceMonth}>$400/month</li>
-          <li>Includes everything from Basic Upkeep</li>
-          <li>Up to 5 email addresses on your Google Workspace account</li>
-          <li>Up to 3 free service hours per month</li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free website monitoring
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free basic hosting
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free domain registration
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free SSL
+          </li>
+          <li>
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free email addresses (up to 5)
+          </li>
+          <li>
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free service hours (up to 3 a month)
+          </li>
         </ul>
       </AnimationOnScroll>
       <AnimationOnScroll
+        animateOnce={true}
         animateIn={animations.fadeInRight}
         className={styles.container}>
         <h2 className={styles.header}>Consistent Upkeep</h2>
         <ul className={styles.text}>
           <li className={styles.priceMonth}>$750/month</li>
-          <li>Includes Basic Upkeep and Moderate Upkeep</li>
-          <li>Free Premium hosting</li>
-          <li>Free Database hosting</li>
-          <li>Up to 10 email addresses on your Google Workspace account</li>
-          <li>Up to 5 free service hours per month</li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free website monitoring
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free basic hosting
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free domain registration
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free SSL
+          </li>
+          <li>
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free email addresses (up to 10)
+          </li>
+          <li>
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free service hours (up to 5 a month)
+          </li>
         </ul>
       </AnimationOnScroll>
       <AnimationOnScroll
+        animateOnce={true}
         animateIn={animations.fadeInLeft}
         className={styles.container}>
         <h2 className={styles.header}>Full-Time Upkeep</h2>
         <ul className={styles.text}>
           <li className={styles.priceMonth}>$1000/month</li>
-          <li>Includes Basic Upkeep, Moderate Upkeep and Consistent Upkeep</li>
-          <li>Up to 15 email addresses on your Google Workspace account</li>
-          <li>Up to 8 free service hours per month</li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free website monitoring
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free basic hosting
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free domain registration
+          </li>
+          <li>
+            {" "}
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free SSL
+          </li>
+          <li>
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free email addresses (up to 15)
+          </li>
+          <li>
+            <IoCheckmarkCircle
+              size={20}
+              style={{ color: "green", paddingTop: 6 }}
+            />
+            Free service hours (up to 8 a month)
+          </li>
         </ul>
       </AnimationOnScroll>
     </>

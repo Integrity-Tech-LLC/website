@@ -15,6 +15,7 @@ export default function AboutUs() {
         </div>
       </div>
       <AnimationOnScroll
+        animateOnce={true}
         animateIn={animations.fadeInLeft}
         className={styles.container}>
         <h2 className={styles.header}>Christopher Neisen</h2>
@@ -60,6 +61,7 @@ export default function AboutUs() {
         </div>
       </AnimationOnScroll>
       <AnimationOnScroll
+        animateOnce={true}
         animateIn={animations.fadeInUp}
         className={styles.container}>
         <h2 className={styles.header}>Megan Neisen</h2>
@@ -88,6 +90,7 @@ export default function AboutUs() {
         </div>
       </AnimationOnScroll>
       <AnimationOnScroll
+        animateOnce={true}
         animateIn={animations.fadeInRight}
         className={styles.container}>
         <h2 className={styles.header}>Cooper</h2>

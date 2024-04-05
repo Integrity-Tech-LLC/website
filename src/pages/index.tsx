@@ -4,7 +4,6 @@ import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { AiOutlineArrowRight } from "react-icons/ai";
 
 export default function Home() {
   const [current, setCurrent] = useState(1);
@@ -37,43 +36,72 @@ export default function Home() {
   return (
     <>
       <div className={styles.banner}>
-        <Image
-          className={styles.logo}
-          src="/homepagelogo.png"
-          alt="company logo"
-          width={400}
-          height={250}
-          priority
-        />
+        <div className={styles.containerLogo}>
+          <Image
+            className={styles.logo}
+            src="/homepagelogo.png"
+            alt="company logo"
+            width={400}
+            height={250}
+            priority
+          />
+        </div>
+        <div className={styles.containerTop}>
+          <AnimationOnScroll
+            animateOnce={true}
+            animateIn={animations.fadeInDown}>
+            <h2 className={styles.headerWhite}>
+              You dream it,
+              <br />
+              We build it
+            </h2>
+          </AnimationOnScroll>
+          <br />
+          <div className={styles.contactWhite}>
+            <Link href="/contact">Book appointment</Link>
+          </div>
+        </div>
       </div>
       <div>
         <div style={{ marginTop: "-80px" }} className={styles.bodyBlack}>
-          <AnimationOnScroll animateIn={animations.fadeInDown}>
+          <AnimationOnScroll
+            animateOnce={true}
+            className={styles.containerHeader}
+            animateIn={animations.fadeInDown}>
             <h2 className={styles.headerBlack}>
               Your resource for custom websites and apps
             </h2>
           </AnimationOnScroll>
-          <AnimationOnScroll animateIn={animations.fadeIn}>
+          <AnimationOnScroll
+            animateOnce={true}
+            className={styles.container}
+            animateIn={animations.fadeIn}>
             <p className={styles.textBlack}>
               We offer fully customizable websites and web applications tailored
               to your unique business needs, ensuring a fully utilized online
               presence.{" "}
             </p>
           </AnimationOnScroll>
-          <div className={styles.link}>
-            <Link href={`/services`}>
-              Services <AiOutlineArrowRight size={18} />
-            </Link>
+          <div className={styles.contactBlack}>
+            <Link href={`/services`}>Services</Link>
           </div>
+          <br />
+          <br />
         </div>
       </div>
       <div className={styles.bodyWhite}>
-        <AnimationOnScroll animateIn={animations.fadeInRight}>
+        <AnimationOnScroll
+          animateOnce={true}
+          className={styles.containerHeaderReviewsMobile}
+          animateIn={animations.fadeInRight}>
           <h2 className={styles.headerWhite}>We Make an Impression!</h2>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn={animations.zoomIn}>
+        <AnimationOnScroll
+          animateOnce={true}
+          className={styles.container}
+          animateIn={animations.zoomIn}>
           {current === 1 && (
-            <div className={styles.container}>
+            <div className={styles.card}>
               <div className={styles.text}>
                 <Image
                   src="/jared.jpeg"
@@ -96,7 +124,7 @@ export default function Home() {
             </div>
           )}
           {current === 2 && (
-            <div className={styles.container}>
+            <div className={styles.card}>
               <div className={styles.text}>
                 <Image
                   src="/jason.jpeg"
@@ -119,19 +147,31 @@ export default function Home() {
             </div>
           )}
         </AnimationOnScroll>
+        <AnimationOnScroll
+          animateOnce={true}
+          className={styles.containerHeaderReviews}
+          animateIn={animations.fadeInRight}>
+          <h2 className={styles.headerWhite}>We Make an Impression!</h2>
+        </AnimationOnScroll>
 
-        <div className={styles.linkReviews}>
-          <Link href={`/reviews`}>
-            Reviews <AiOutlineArrowRight size={18} />
-          </Link>
+        <div className={styles.contactWhite}>
+          <Link href={`/reviews`}>Reviews</Link>
         </div>
+        <br />
+        <br />
       </div>
       <div>
         <div className={styles.bodyBlack}>
-          <AnimationOnScroll animateIn={animations.fadeInDown}>
+          <AnimationOnScroll
+            animateOnce={true}
+            className={styles.containerHeaderOurWork}
+            animateIn={animations.fadeInLeft}>
             <h2 className={styles.headerBlack}>Our Work Speaks For Itself</h2>
           </AnimationOnScroll>
-          <AnimationOnScroll animateIn={animations.zoomIn}>
+          <AnimationOnScroll
+            animateOnce={true}
+            className={styles.container}
+            animateIn={animations.zoomIn}>
             <div className={styles.weclean}>
               <h2 className={styles.header}>WeClean SaaS App</h2>
               <div className={styles.text}>
@@ -154,19 +194,25 @@ export default function Home() {
               </div>
             </div>
           </AnimationOnScroll>
-          <div className={styles.link}>
-            <Link href={`/ourwork/weclean`}>
-              Project Summary <AiOutlineArrowRight size={18} />
-            </Link>
+          <div className={styles.contactBlack}>
+            <Link href={`/ourwork/weclean`}>Project Summary</Link>
           </div>
+          <br />
+          <br />
         </div>
         <div className={styles.bodyWhite}>
-          <AnimationOnScroll animateIn={animations.fadeInDown}>
+          <AnimationOnScroll
+            animateOnce={true}
+            className={styles.containerHeaderAboutMobile}
+            animateIn={animations.fadeInDown}>
             <h2 className={styles.headerWhite}>Who is Integrity Tech?</h2>
           </AnimationOnScroll>
-          <AnimationOnScroll animateIn={animations.zoomIn}>
+          <AnimationOnScroll
+            animateOnce={true}
+            className={styles.container}
+            animateIn={animations.zoomIn}>
             {team === 1 && (
-              <div className={styles.container}>
+              <div className={styles.card}>
                 <h2 className={styles.header}>Christopher Neisen</h2>
                 <div className={styles.text}>
                   <Image
@@ -191,7 +237,7 @@ export default function Home() {
               </div>
             )}
             {team === 2 && (
-              <div className={styles.container}>
+              <div className={styles.card}>
                 <h2 className={styles.header}>Megan Neisen</h2>
                 <div className={styles.text}>
                   <Image
@@ -218,7 +264,7 @@ export default function Home() {
               </div>
             )}
             {team === 3 && (
-              <div className={styles.container}>
+              <div className={styles.card}>
                 <h2 className={styles.header}>Cooper</h2>
                 <div className={styles.text}>
                   <Image
@@ -242,25 +288,39 @@ export default function Home() {
               </div>
             )}
           </AnimationOnScroll>
-          <div className={styles.linkWhite}>
-            <Link href={`/about`}>
-              Read More <AiOutlineArrowRight size={18} />
-            </Link>
+          <AnimationOnScroll
+            animateOnce={true}
+            className={styles.containerHeaderAbout}
+            animateIn={animations.fadeInRight}>
+            <h2 className={styles.headerWhite}>Who is Integrity Tech?</h2>
+          </AnimationOnScroll>
+          <div className={styles.contactWhite}>
+            <Link href={`/about`}>Read More</Link>
           </div>
+          <br />
+          <br />
         </div>
         <div>
           <div style={{ paddingBottom: 100 }} className={styles.bodyBlack}>
-            <AnimationOnScroll animateIn={animations.fadeInLeft}>
+            <AnimationOnScroll
+              animateOnce={true}
+              className={styles.containerHeaderContact}
+              animateIn={animations.fadeInLeft}>
               <h2 className={styles.headerBlack}>Get In Touch!</h2>
             </AnimationOnScroll>
-            <AnimationOnScroll animateIn={animations.fadeInRight}>
+            <AnimationOnScroll
+              animateOnce={true}
+              className={styles.container}
+              animateIn={animations.fadeInRight}>
               <p className={styles.textBlack}>
                 We offer free estimates! Contact us below and we'll walk you
                 through the process from start to finish. We look forward to
                 hearing from you!
               </p>
             </AnimationOnScroll>
-            <div className={styles.contact}>
+            <br />
+            <br />
+            <div className={styles.contactBlack}>
               <Link href="/contact">Contact Us</Link>
             </div>
           </div>

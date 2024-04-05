@@ -147,6 +147,7 @@ export default function Contact() {
       </div>
       {!messageSent ? (
         <AnimationOnScroll
+          animateOnce={true}
           animateIn={animations.fadeInUp}
           className={styles.body}>
           <div className={styles.text}>
@@ -284,6 +285,7 @@ export default function Contact() {
         </AnimationOnScroll>
       ) : (
         <AnimationOnScroll
+          animateOnce={true}
           animateIn={animations.fadeInUp}
           className={styles.container}>
           <p className={styles.confirm}>
