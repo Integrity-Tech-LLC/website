@@ -33,7 +33,7 @@ export default function Maintenance() {
         className={styles.container}>
         <h2 className={styles.header}>Bare-bones Upkeep</h2>
         <ul className={styles.text}>
-          <li className={styles.priceMonth}>$50/month</li>
+          <li className={styles.priceMonth}>$20/month</li>
           <li>
             {" "}
             <IoCheckmarkCircle
