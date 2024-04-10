@@ -50,14 +50,14 @@ export default function Home() {
           <AnimationOnScroll
             animateOnce={true}
             animateIn={animations.fadeInDown}>
-            <h2 className={styles.headerWhite}>
+            <h2 className={styles.headerBlue}>
               You dream it,
               <br />
               We build it
             </h2>
           </AnimationOnScroll>
           <br />
-          <Link className={styles.contactWhite} href="/contact">
+          <Link className={styles.contactBlue} href="/contact">
             Book appointment
           </Link>
         </div>

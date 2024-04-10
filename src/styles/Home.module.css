@@ -198,6 +198,21 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.headerBlue {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    color: #06038d;
+    text-align: center;
+    width: 100%;
+    max-width: 710px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .link {
     color: rgb(139, 158, 183, 0.85);
     font-family: 'Montserrat';
@@ -344,6 +359,21 @@
     cursor: pointer;
 }
 
+.contactBlue {
+    width: 220px;
+    padding: 20px;
+    border: 2px solid #06038d;
+    color: #06038d;
+    border-radius: 20px;
+    font-size: 18px;
+    display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    margin: 0 auto;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .contactBlack {
     width: 220px;
     padding: 20px;
@@ -366,6 +396,21 @@
     border: 2px solid white;
     color: white;
     background-color: #000000;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    margin: 0 auto;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contactBlue:hover {
+    width: 220px;
+    padding: 20px;
+    border: 2px solid white;
+    color: white;
+    background-color: #06038d;
     border-radius: 20px;
     font-size: 18px;
     font-family: 'Montserrat';
