@@ -70,7 +70,7 @@ export default function Services() {
         <p className={styles.text}>
           Do you already have a website or application but there's a persistant
           issue with it that you can't seem to solve on your own? Reach out to
-          me! I'll have that issue resolved for you before you can blink.
+          us! We'll have that issue resolved for you before you can blink.
           <div className={styles.link}>
             <Link href={`/contact`}>
               Contact Us <AiOutlineArrowRight size={18} />
