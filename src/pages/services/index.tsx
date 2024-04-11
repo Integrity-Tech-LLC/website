@@ -62,6 +62,22 @@ export default function Services() {
           </div>
         </p>
       </AnimationOnScroll>
+      <AnimationOnScroll
+        animateOnce={true}
+        animateIn={animations.fadeInLeft}
+        className={styles.container100}>
+        <h2 className={styles.header}>Website Servicing</h2>
+        <p className={styles.text}>
+          Do you already have a website or application but there's a persistant
+          issue with it that you can't seem to solve on your own? Reach out to
+          me! I'll have that issue resolved for you before you can blink.
+          <div className={styles.link}>
+            <Link href={`/contact`}>
+              Contact Us <AiOutlineArrowRight size={18} />
+            </Link>
+          </div>
+        </p>
+      </AnimationOnScroll>
       <br />
       <br />
     </>
