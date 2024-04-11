@@ -26,7 +26,7 @@ export default function Services() {
       <AnimationOnScroll
         animateOnce={true}
         animateIn={animations.fadeInLeft}
-        className={styles.container100}>
+        className={styles.container}>
         <h2 className={styles.header}>
           Fully Customized and Professional Websites
         </h2>
@@ -47,7 +47,7 @@ export default function Services() {
       <AnimationOnScroll
         animateOnce={true}
         animateIn={animations.fadeInRight}
-        className={styles.container100}>
+        className={styles.container}>
         <h2 className={styles.header}>Custom Web and Mobile Apps</h2>
         <p className={styles.text}>
           With all the software products out there you would think there would
@@ -64,9 +64,9 @@ export default function Services() {
       </AnimationOnScroll>
       <AnimationOnScroll
         animateOnce={true}
-        animateIn={animations.fadeInLeft}
+        animateIn={animations.fadeInUp}
         className={styles.container100}>
-        <h2 className={styles.header}>Website Servicing</h2>
+        <h2 className={styles.header}>Website and App Servicing</h2>
         <p className={styles.text}>
           Do you already have a website or application but there's a persistant
           issue with it that you can't seem to solve on your own? Reach out to
