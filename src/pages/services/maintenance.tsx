@@ -66,21 +66,6 @@ export default function Maintenance() {
             />
             Free SSL
           </li>
-          <li>
-            <IoCheckmarkCircle
-              size={20}
-              style={{ color: "white", paddingTop: 6 }}
-            />
-            Free email addresses
-          </li>
-          <li>
-            {" "}
-            <IoCheckmarkCircle
-              size={20}
-              style={{ color: "white", paddingTop: 6 }}
-            />
-            Free service hours
-          </li>
         </ul>
       </AnimationOnScroll>
       <AnimationOnScroll

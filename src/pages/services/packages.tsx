@@ -120,46 +120,6 @@ export default function Packages() {
             />
             Business Gmail set-up
           </li>
-          <li>
-            {" "}
-            <IoCheckmarkCircle
-              size={20}
-              style={{ color: "white", paddingTop: 6 }}
-            />
-            Login portal
-          </li>
-          <li>
-            {" "}
-            <IoCheckmarkCircle
-              size={20}
-              style={{ color: "white", paddingTop: 6 }}
-            />
-            CMS
-          </li>
-          <li>
-            {" "}
-            <IoCheckmarkCircle
-              size={20}
-              style={{ color: "white", paddingTop: 6 }}
-            />
-            Database implementation
-          </li>
-          <li>
-            {" "}
-            <IoCheckmarkCircle
-              size={20}
-              style={{ color: "white", paddingTop: 6 }}
-            />
-            Custom integrations
-          </li>
-          <li>
-            {" "}
-            <IoCheckmarkCircle
-              size={20}
-              style={{ color: "white", paddingTop: 6 }}
-            />
-            E-commerce
-          </li>
         </ul>
       </AnimationOnScroll>
       <AnimationOnScroll
@@ -289,14 +249,6 @@ export default function Packages() {
               </span>
             </Link>{" "}
             )
-          </li>
-          <li>
-            {" "}
-            <IoCheckmarkCircle
-              size={20}
-              style={{ color: "white", paddingTop: 6 }}
-            />
-            E-commerce
           </li>
         </ul>
       </AnimationOnScroll>
