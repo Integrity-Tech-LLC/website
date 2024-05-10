@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "@/styles/Pages/OurWork.module.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,28 +6,41 @@ import animations from "@/styles/Animations/Animations.module.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
-export default function OurWork() {
+export default function OurWorkApps() {
+  const [current, setCurrent] = useState(1);
+  useEffect(() => {
+    if (current) {
+      setTimeout(() => {
+        if (current === 1) {
+          setCurrent(2);
+        } else if (current === 2) {
+          setCurrent(3);
+        } else if (current === 3) {
+          setCurrent(1);
+        }
+      }, 8000);
+    }
+  }, [current]);
   return (
     <>
       <div>
         <div className={styles.banner}>
           <br />
           <br />
-          <h2 className={styles.bannerHeader}>
-            Be Inspired By The Dreams of Others
-          </h2>
+          <h2 className={styles.bannerHeader}>Custom Websites and Apps!</h2>
           <p className={styles.bannerText}>
-            Here are some examples of what we've done for others, and we can do
-            the same for you! There is no problem too complex for us, and no
-            dream that we can't help you achieve.
+            Whatever it is you need, we can build it. Check out some of our work
+            below. What we did for our previous and current clients, we can also
+            do for you!
           </p>
         </div>
       </div>
       <AnimationOnScroll
         animateOnce={true}
-        animateIn={animations.fadeInUp}
-        className={styles.body}>
-        <h2 className={styles.header}>WeClean SaaS App</h2>
+        animateIn={animations.fadeInLeft}
+        className={styles.bodyapps}
+        style={{ verticalAlign: "top" }}>
+        <h2 className={styles.header}>Custom Applications</h2>
         <div className={styles.text}>
           <Image
             src="/WeClean.png"
@@ -37,7 +50,10 @@ export default function OurWork() {
             className={styles.img}
             priority
           />
-
+          <div style={{ textAlign: "center", width: "100%" }}>
+            <b>WeClean SaaS App</b>
+          </div>
+          <br />
           <p>
             WeCleanLocal has a dream to help the cleaning industry automate and
             manage many of their organizational tasks. The WeClean SaaS App has
@@ -56,6 +72,88 @@ export default function OurWork() {
               <AiOutlineArrowRight size={10} />
             </Link>
           </div>
+        </div>
+      </AnimationOnScroll>
+      <AnimationOnScroll
+        animateOnce={true}
+        animateIn={animations.fadeInRight}
+        className={styles.bodywebsites}>
+        <h2 className={styles.header}>Custom Websites</h2>
+
+        <div className={styles.textwebsites} style={{ textAlign: "center" }}>
+          {current === 1 ? (
+            <>
+              <div style={{ textAlign: "center", width: "100%" }}>
+                <b>Kompletion.net</b>
+                <br />
+                <br />
+              </div>
+              <Image
+                src="/kompletion.jpg"
+                alt="kompletion"
+                width={300}
+                height={600}
+                className={styles.imgwork}
+                priority
+              />
+              <br />
+              <br />
+              <div className={styles.link}>
+                <a href="https://www.kompletion.net">
+                  <span>See Kompletion's Website</span>{" "}
+                  <AiOutlineArrowRight size={10} />
+                </a>
+              </div>
+            </>
+          ) : current === 2 ? (
+            <>
+              <div style={{ textAlign: "center", width: "100%" }}>
+                <b>Ellie B's (Work In Progress)</b>
+                <br />
+                <br />
+              </div>
+              <Image
+                src="/elliebs.jpg"
+                alt="elliebs"
+                width={300}
+                height={600}
+                className={styles.imgwork}
+                priority
+              />
+              <br />
+              <br />
+              <div className={styles.link}>
+                <a href="https://ellie-bs-8976d03d5862.herokuapp.com/">
+                  <span>See Ellieb's Website</span>{" "}
+                  <AiOutlineArrowRight size={10} />
+                </a>
+              </div>
+            </>
+          ) : (
+            <>
+              <div style={{ textAlign: "center", width: "100%" }}>
+                <b>True Blue (Work In Progress)</b>
+                <br />
+                <br />
+              </div>
+              <Image
+                src="/trueblue.jpg"
+                alt="trueblue"
+                width={300}
+                height={600}
+                className={styles.imgdesktop}
+                priority
+              />
+              <br />
+              <br />
+              <div className={styles.link}>
+                <a href="https://true-blue-living-7b93d0a0df8a.herokuapp.com/">
+                  <span>See True Blue's Website</span>{" "}
+                  <AiOutlineArrowRight size={10} />
+                </a>
+              </div>
+            </>
+          )}
         </div>
       </AnimationOnScroll>
     </>

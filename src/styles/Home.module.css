@@ -6,7 +6,6 @@
 
 .container {
     width: 50%;
-    padding: 20px;
     display: inline-block;
     vertical-align: top;
 }
@@ -77,6 +76,8 @@
 @media screen and (max-width: 1450px) {
     .container {
         width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .containerTop {
         width: 100%;
@@ -284,6 +285,25 @@
     margin-right: auto;
 }
 
+.textwebsites {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 1px solid #06038d;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: top;
+    width: 50%;
+    max-width: 710px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .signature {
     text-align: right;
     color: rgb(139, 158, 183, 0.85)
@@ -298,8 +318,14 @@
     animation-iteration-count: infinite;
 }
 .weclean {
-    width: 98%;
+    width: 100%;
     padding: 20px;
+}
+.websites {
+    width: 100%;
+    animation-name: enter;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
 }
 .wecleanimg {
     display: block;
@@ -325,6 +351,21 @@
     background-color: #06038d;
     text-align: center;
     width: 100%;
+    max-width: 710px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headerwebsites {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 40px;
+    color: #FFFFFF;
+    background-color: #06038d;
+    text-align: center;
+    width: 50%;
     max-width: 710px;
     margin-left: auto;
     margin-right: auto;
@@ -451,6 +492,12 @@
         width: 100%;
     }
     .headerWhite {
+        width: 100%;
+    }
+    .headerwebsites {
+        width: 100%;
+    }
+    .textwebsites {
         width: 100%;
     }
     .link {

@@ -5,6 +5,12 @@
     vertical-align: top;
 }
 
+.imgdesktop {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
 @media screen and (max-width: 1450px) {
     .container {
         width: 100%;

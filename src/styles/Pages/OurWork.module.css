@@ -1,22 +1,60 @@
-.body {
-    width: 100%;
+.bodywebsites {
+    width: 25%;
+    min-width: 400px;
     padding: 20px;
     display: inline-block;
-    min-height: 645px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bodyapps {
+    width: 70%;
+    min-width: 400px;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.body {
+    margin-top: 90px;
+    margin-bottom: 100px;
+    width: 100%;
+    min-width: 400px;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.imgwork {
+display: inline-block;
+text-align: center;
+}
+
+.img {
+         margin: 0 auto;
+        margin-bottom: 40px;
 }
 
 @media screen and (max-width: 1450px) {
-    .img {
-        margin: 0 auto;
-        margin-bottom: 40px;
-    }
-}
+           .bodywebsites {
+               width: 100%;
+               padding: 20px;
+               display: inline-block;
+           }
 
-@media screen and (min-width: 1450px) {
-    .img {
-        float: left;
-        margin-right: 10px;
-    }
+             .bodyapps {
+               width: 100%;
+               padding: 20px;
+               display: inline-block;
+           }
+          .body {
+            
+               width: 100%;
+               padding: 20px;
+               display: inline-block;
+           }
 }
 
 .text {
@@ -36,6 +74,28 @@
     padding: 30px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.textwebsites {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 1px solid #06038d;
+    border-radius: 0px 0px 5px 5px;
+    text-align: left;
+    vertical-align: top;
+    width: 100%;
+    max-width: 710px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: enter;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
 }
 
 .banner {
@@ -105,4 +165,25 @@
 
 .link:hover {
     color: #06038d;
+}
+
+@keyframes enter {
+
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+
+    75% {
+        opacity: 1;
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }

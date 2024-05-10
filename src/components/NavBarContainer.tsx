@@ -16,6 +16,7 @@ export default function NavBarContainer() {
   const pathRoot = pathRootHelper(router.pathname);
   const [mobileNav, setMobileNav] = useState(false);
   const [servicesSub, setServicesSub] = useState(false);
+  const [ourWorkSub, setOurWorkSub] = useState(false);
   console.log(router.pathname);
   return (
     <>
@@ -114,13 +115,53 @@ export default function NavBarContainer() {
             }>
             Reviews
           </Link>
-          <Link
-            href="/ourwork"
-            className={
-              pathRoot == "/ourwork" ? styles.linkActive : styles.link
-            }>
-            Our Work
-          </Link>
+          <div id={styles.ourworkContainer}>
+            <div>
+              <Link
+                href="/ourwork"
+                className={
+                  pathRoot == "/ourwork" ? styles.linkActive : styles.link
+                }>
+                Our Work
+              </Link>
+            </div>
+            <ul id={styles.ourworkdropdowncontent}>
+              <li style={{ marginBottom: 20 }}>
+                {" "}
+                <Link
+                  href="/ourwork"
+                  className={
+                    pathRoot == "/ourwork"
+                      ? styles.dropdownlinkactive
+                      : styles.dropdownlink
+                  }>
+                  Our Work
+                </Link>
+              </li>
+              <li style={{ fontSize: 12 }}>
+                <Link
+                  href="/ourwork/apps"
+                  className={
+                    router.pathname == "/ourwork/apps"
+                      ? styles.dropdownlinkactive
+                      : styles.dropdownlink
+                  }>
+                  Custom Applications
+                </Link>
+              </li>
+              <li style={{ fontSize: 12 }}>
+                <Link
+                  href="/ourwork/websites"
+                  className={
+                    router.pathname == "/ourwork/websites"
+                      ? styles.dropdownlinkactive
+                      : styles.dropdownlink
+                  }>
+                  Custom Websites
+                </Link>
+              </li>
+            </ul>
+          </div>
           <Link
             href="/about"
             className={pathRoot == "/about" ? styles.linkActive : styles.link}>
@@ -228,15 +269,67 @@ export default function NavBarContainer() {
                 Reviews
               </Link>
             </div>
-            <div onClick={() => setMobileNav(false)}>
-              <Link
-                href="/ourwork"
+            <div
+              style={{ marginLeft: 25 }}
+              onClick={() => setOurWorkSub(!ourWorkSub)}>
+              <span
                 className={
                   pathRoot == "/ourwork" ? styles.linkActive : styles.link
                 }>
                 Our Work
-              </Link>
+              </span>{" "}
+              {servicesSub ? (
+                <span>
+                  <MdOutlineKeyboardArrowDown
+                    style={{ verticalAlign: "text-top", color: "white" }}
+                    size={22}
+                  />
+                </span>
+              ) : (
+                <span>
+                  <MdKeyboardArrowRight
+                    style={{ verticalAlign: "text-top", color: "white" }}
+                    size={22}
+                  />
+                </span>
+              )}
             </div>
+            {ourWorkSub && (
+              <div onClick={() => setMobileNav(false)}>
+                <div className={styles.subMenuServices}>
+                  <ul style={{ listStyleType: "none" }}>
+                    <li>
+                      {" "}
+                      <Link href="/ourwork" className={styles.dropdownlink}>
+                        Our Work
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/ourwork/apps"
+                        className={
+                          router.pathname == "/ourwork/apps"
+                            ? styles.dropdownlinkactive
+                            : styles.dropdownlink
+                        }>
+                        Custom Applications
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/ourwork/websites"
+                        className={
+                          router.pathname == "/services/maintenance"
+                            ? styles.dropdownlinkactive
+                            : styles.dropdownlink
+                        }>
+                        Custom Websites
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            )}
             <div onClick={() => setMobileNav(false)}>
               <Link
                 href="/about"

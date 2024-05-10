@@ -17,6 +17,14 @@ export default function App({ Component, pageProps }: AppProps) {
         appendTo: "head", // optional, default to "head", can be "head" or "body",
         nonce: undefined,
       }}>
+      <Head>
+        <title>Integrity Tech</title>
+        <meta
+          name="description"
+          content="Website for software company Integrity Tech"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <main
         style={{
           backgroundImage: `url(${paperTexture.src})`,

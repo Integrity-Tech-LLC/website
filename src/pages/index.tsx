@@ -4,10 +4,12 @@ import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 export default function Home() {
   const [current, setCurrent] = useState(1);
-  const [team, setTeam] = useState(1);
+  const [team, setTeam] = useState(3);
+  const [websites, setWebsites] = useState(1);
   useEffect(() => {
     if (current) {
       setTimeout(() => {
@@ -29,6 +31,20 @@ export default function Home() {
           setTeam(3);
         } else if (team === 3) {
           setTeam(1);
+        }
+      }, 8000);
+    }
+  }, [team]);
+
+  useEffect(() => {
+    if (websites) {
+      setTimeout(() => {
+        if (websites === 1) {
+          setWebsites(2);
+        } else if (websites === 2) {
+          setWebsites(3);
+        } else if (websites === 3) {
+          setWebsites(1);
         }
       }, 8000);
     }
@@ -163,12 +179,6 @@ export default function Home() {
         <div className={styles.bodyBlack}>
           <AnimationOnScroll
             animateOnce={true}
-            className={styles.containerHeaderOurWork}
-            animateIn={animations.fadeInLeft}>
-            <h2 className={styles.headerBlack}>Our Work Speaks For Itself</h2>
-          </AnimationOnScroll>
-          <AnimationOnScroll
-            animateOnce={true}
             className={styles.container}
             animateIn={animations.zoomIn}>
             <div className={styles.weclean}>
@@ -192,10 +202,70 @@ export default function Home() {
                 <br />
               </div>
             </div>
+            <Link className={styles.contactBlack} href={`/ourwork/apps`}>
+              Custom Apps
+            </Link>
           </AnimationOnScroll>
-          <Link className={styles.contactBlack} href={`/ourwork/weclean`}>
-            Project Summary
-          </Link>
+          <AnimationOnScroll
+            animateOnce={true}
+            className={styles.container}
+            style={{ marginTop: 20 }}
+            animateIn={animations.zoomIn}>
+            <div className={styles.websites}>
+              {websites === 1 ? (
+                <>
+                  <h2 className={styles.headerwebsites}>Kompletion.net</h2>
+                  <div className={styles.textwebsites}>
+                    <Image
+                      src="/kompletion.jpg"
+                      alt="kompletion"
+                      width={300}
+                      height={600}
+                      className={styles.imgwork}
+                      priority
+                    />
+                  </div>
+                </>
+              ) : websites === 2 ? (
+                <>
+                  <h2 className={styles.headerwebsites}>
+                    Ellie B's (Work In Progress)
+                  </h2>
+                  <div className={styles.textwebsites}>
+                    <Image
+                      src="/elliebs.jpg"
+                      alt="elliebs"
+                      width={300}
+                      height={600}
+                      className={styles.imgwork}
+                      priority
+                    />
+                  </div>
+                </>
+              ) : (
+                <>
+                  <h2 className={styles.headerwebsites}>
+                    True Blue (Work In Progress)
+                  </h2>
+                  <div className={styles.textwebsites}>
+                    <Image
+                      src="/trueblue.jpg"
+                      alt="trueblue"
+                      width={300}
+                      height={600}
+                      className={styles.imgdesktop}
+                      priority
+                    />
+                  </div>
+                </>
+              )}
+            </div>
+            <br />
+            <Link className={styles.contactBlack} href={`/ourwork/websites`}>
+              Custom Websites
+            </Link>
+          </AnimationOnScroll>
+
           <br />
           <br />
         </div>
