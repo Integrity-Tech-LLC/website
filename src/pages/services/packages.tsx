@@ -127,7 +127,7 @@ export default function Packages() {
         animateIn={animations.fadeInRight}
         className={styles.container}
         style={{ marginTop: "-23px" }}>
-        <h2 className={styles.mostPopular}>Most Popular</h2>
+        <h2 className={styles.mostPopular}>Best Value</h2>
         <h2 style={{ backgroundColor: "green" }} className={styles.header}>
           Business Grower
         </h2>
