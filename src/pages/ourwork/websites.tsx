@@ -22,7 +22,7 @@ export default function OurWorkApps() {
         animateIn={animations.fadeInUp}
         className={styles.bodywebsites}>
         <h2 className={styles.header}>Kompletion.net</h2>
-        <div className={styles.text}>
+        <div className={styles.text} style={{ textAlign: "center" }}>
           <Image
             src="/kompletion.jpg"
             alt="kompletion"
@@ -46,7 +46,7 @@ export default function OurWorkApps() {
         animateIn={animations.fadeInUp}
         className={styles.bodywebsites}>
         <h2 className={styles.header}>Ellie B's (Work In Progress)</h2>
-        <div className={styles.text}>
+        <div className={styles.text} style={{ textAlign: "center" }}>
           <Image
             src="/elliebs.jpg"
             alt="elliebs"
@@ -70,7 +70,7 @@ export default function OurWorkApps() {
         animateIn={animations.fadeInUp}
         className={styles.bodywebsites}>
         <h2 className={styles.header}>True Blue (Work In Progress)</h2>
-        <div className={styles.text}>
+        <div className={styles.text} style={{ textAlign: "center" }}>
           <Image
             src="/trueblue.jpg"
             alt="trueblue"
